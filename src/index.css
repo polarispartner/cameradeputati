@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: "Open Sans", ui-sans-serif, sans-serif;
+  --color-blu: #063955;
+}
+
+.font-condensed {
+  font-stretch: 75%;
+}
+
+/*
+  Tavolo multimediale 50" 4K (3840x2160) orizzontale.
+  Design di riferimento: 1920x1080 (canvas dei PSD).
+  Scaling: font-size del root legato al viewport width così che
+  tutte le misure in `rem` (default Tailwind) scalino linearmente:
+  1rem = 16px @ 1920w → 32px @ 3840w.
+*/
+html {
+  font-size: calc(100vw / 120); /* 1920 / 120 = 16 */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(3rem); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-3rem); }
+  to   { opacity: 1; transform: translateX(0); }
+}
