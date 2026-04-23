@@ -6,9 +6,9 @@ import {
 } from '@tanstack/react-router'
 import Intro from './components/Intro'
 import Menu from './components/Menu'
-import RuoloDonne from './components/RuoloDonne'
-import FotoVideo from './components/FotoVideo'
-import FotoVideoDetail from './components/FotoVideoDetail'
+import TopicPage from './components/TopicPage'
+import GridPage from './components/GridPage'
+import DetailPage from './components/DetailPage'
 
 const rootRoute = createRootRoute({
   component: () => <Outlet />,
@@ -26,30 +26,30 @@ const menuRoute = createRoute({
   component: Menu,
 })
 
-const donneRoute = createRoute({
+const topicRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/donne',
-  component: RuoloDonne,
+  path: '/t/$topicId',
+  component: TopicPage,
 })
 
-const fotoVideoRoute = createRoute({
+const gridRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/donne/$sectionId/foto',
-  component: FotoVideo,
+  path: '/t/$topicId/$sectionId/$subType',
+  component: GridPage,
 })
 
-const fotoVideoDetailRoute = createRoute({
+const detailRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: '/donne/$sectionId/foto/$itemId',
-  component: FotoVideoDetail,
+  path: '/t/$topicId/$sectionId/$subType/$itemId',
+  component: DetailPage,
 })
 
 const routeTree = rootRoute.addChildren([
   introRoute,
   menuRoute,
-  donneRoute,
-  fotoVideoRoute,
-  fotoVideoDetailRoute,
+  topicRoute,
+  gridRoute,
+  detailRoute,
 ])
 
 export const router = createRouter({ routeTree })

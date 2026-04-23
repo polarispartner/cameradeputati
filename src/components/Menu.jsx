@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import bgImg from "../assets/images/menu-bg.jpg";
+import { TOPICS } from "../data/content";
 import donneRetino from "../assets/images/menu/01_Il ruolo delle donne_RETINO.svg";
 import donnePieno from "../assets/images/menu/01_Il ruolo delle donne_PIENO.svg";
 import consultaRetino from "../assets/images/menu/02_La Consulta nazionale_RETINO.svg";
@@ -12,15 +13,22 @@ import costituenteRetino from "../assets/images/menu/04_Assemblea_RETINO.svg";
 import costituentePieno from "../assets/images/menu/04_Assemblea_PIENO.svg";
 
 const sections = [
-  { id: "donne", to: "/donne", alt: "Il ruolo delle donne", retino: donneRetino, pieno: donnePieno },
-  { id: "consulta", to: null, alt: "La Consulta nazionale", retino: consultaRetino, pieno: consultaPieno },
-  { id: "referendum", to: null, alt: "Il Referendum del 2 giugno", retino: referendumRetino, pieno: referendumPieno },
-  { id: "costituente", to: null, alt: "L'Assemblea Costituente", retino: costituenteRetino, pieno: costituentePieno },
+  { id: "donne", to: "/t/donne", alt: "Il ruolo delle donne", retino: donneRetino, pieno: donnePieno },
+  { id: "consulta", to: "/t/consulta", alt: "La Consulta nazionale", retino: consultaRetino, pieno: consultaPieno },
+  { id: "referendum", to: "/t/referendum", alt: "Il Referendum del 2 giugno", retino: referendumRetino, pieno: referendumPieno },
+  { id: "costituente", to: "/t/costituente", alt: "L'Assemblea Costituente", retino: costituenteRetino, pieno: costituentePieno },
 ];
 
 export default function Menu() {
   const navigate = useNavigate();
   const [tapped, setTapped] = useState(null);
+
+  useEffect(() => {
+    TOPICS.forEach((t) => {
+      const img = new Image();
+      img.src = t.bg;
+    });
+  }, []);
 
   const onSection = (s) => {
     if (tapped) return;
@@ -32,7 +40,10 @@ export default function Menu() {
   };
 
   return (
-    <div className="relative flex h-full w-full overflow-hidden bg-black">
+    <div
+      className="relative flex h-full w-full overflow-hidden bg-black"
+      style={{ animation: 'page-fade-in 320ms ease-out' }}
+    >
       <Sidebar />
 
       <main className="relative flex-1 overflow-hidden">
