@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import bgImg from "../assets/images/menu-bg.jpg";
-import { TOPICS } from "../data/content";
 import donneRetino from "../assets/images/menu/01_Il ruolo delle donne_RETINO.svg";
 import donnePieno from "../assets/images/menu/01_Il ruolo delle donne_PIENO.svg";
 import consultaRetino from "../assets/images/menu/02_La Consulta nazionale_RETINO.svg";
@@ -22,13 +21,6 @@ const sections = [
 export default function Menu() {
   const navigate = useNavigate();
   const [tapped, setTapped] = useState(null);
-
-  useEffect(() => {
-    TOPICS.forEach((t) => {
-      const img = new Image();
-      img.src = t.bg;
-    });
-  }, []);
 
   const onSection = (s) => {
     if (tapped) return;
