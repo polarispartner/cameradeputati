@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import { findTopic } from "../data/content";
@@ -105,12 +105,7 @@ export default function TopicPage() {
   const { topicId } = useParams({ from: "/t/$topicId" });
   const topic = findTopic(topicId);
   const [openId, setOpenId] = useState(null);
-  const [bgLoaded, setBgLoaded] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    setBgLoaded(false);
-  }, [topic?.bg]);
 
   if (!topic) return null;
 
@@ -128,16 +123,17 @@ export default function TopicPage() {
   const widthPct = 100 / topic.sections.length;
 
   return (
-    <div className="relative flex h-full w-full overflow-hidden bg-black">
+    <div
+      className="relative flex h-full w-full overflow-hidden bg-black"
+      style={{ animation: 'page-fade-in 200ms ease-out' }}
+    >
       <Sidebar bgColor={topic.theme} showBack />
 
       <main className="relative flex-1 overflow-hidden">
         <img
           src={topic.bg}
           alt=""
-          onLoad={() => setBgLoaded(true)}
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300"
-          style={{ opacity: bgLoaded ? 1 : 0 }}
+          className="absolute inset-0 h-full w-full object-cover"
           draggable={false}
         />
         <div className="absolute inset-0 bg-black/45" />

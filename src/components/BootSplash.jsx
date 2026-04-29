@@ -1,26 +1,5 @@
 import { useEffect, useState } from "react";
-
-const imageModules = import.meta.glob(
-  "../assets/images/**/*.{jpg,jpeg,png,svg,webp}",
-  { eager: true, query: "?url", import: "default" }
-);
-const ALL_IMAGES = Object.values(imageModules);
-
-async function preloadOne(url) {
-  const img = new Image();
-  img.decoding = "async";
-  img.src = url;
-  try {
-    if (img.decode) await img.decode();
-    else
-      await new Promise((res, rej) => {
-        img.onload = res;
-        img.onerror = rej;
-      });
-  } catch {
-    // network/decoding errors: don't block boot, the SW retry/UI fallback handles it
-  }
-}
+import { ALL_IMAGES, preloadAll } from "../lib/preloadImages";
 
 export default function BootSplash({ onReady }) {
   const [done, setDone] = useState(0);
@@ -28,20 +7,11 @@ export default function BootSplash({ onReady }) {
 
   useEffect(() => {
     let cancelled = false;
-    let count = 0;
-
-    Promise.all(
-      ALL_IMAGES.map((url) =>
-        preloadOne(url).then(() => {
-          if (cancelled) return;
-          count += 1;
-          setDone(count);
-        })
-      )
-    ).then(() => {
+    preloadAll((n) => {
+      if (!cancelled) setDone(n);
+    }).then(() => {
       if (!cancelled) onReady?.();
     });
-
     return () => {
       cancelled = true;
     };

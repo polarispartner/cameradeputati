@@ -16,6 +16,8 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         navigateFallback: "/index.html",
         cleanupOutdatedCaches: true,
+        skipWaiting: true,
+        clientsClaim: true,
       },
       includeAssets: ["favicon.svg"],
       manifest: false,

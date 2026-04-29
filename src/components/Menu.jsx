@@ -28,14 +28,11 @@ export default function Menu() {
     setTimeout(() => {
       setTapped(null);
       if (s.to) navigate({ to: s.to });
-    }, 320);
+    }, 120);
   };
 
   return (
-    <div
-      className="relative flex h-full w-full overflow-hidden bg-black"
-      style={{ animation: 'page-fade-in 320ms ease-out' }}
-    >
+    <div className="relative flex h-full w-full overflow-hidden bg-black">
       <Sidebar />
 
       <main className="relative flex-1 overflow-hidden">
