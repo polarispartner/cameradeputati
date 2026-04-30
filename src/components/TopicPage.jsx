@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
+import ScreenLoader from "./ScreenLoader";
 import { findTopic } from "../data/content";
+import { useImagesReady } from "../lib/useImagesReady";
 
 function Submenu({ items, onPick }) {
   const ITEM_H = 48;
@@ -107,6 +109,12 @@ export default function TopicPage() {
   const [openId, setOpenId] = useState(null);
   const navigate = useNavigate();
 
+  const preloadUrls = useMemo(
+    () => (topic?.bg ? [topic.bg] : []),
+    [topic?.bg],
+  );
+  const ready = useImagesReady(preloadUrls);
+
   if (!topic) return null;
 
   const onSection = (id) => {
@@ -130,6 +138,7 @@ export default function TopicPage() {
       <Sidebar bgColor={topic.theme} showBack />
 
       <main className="relative flex-1 overflow-hidden">
+        {!ready && <ScreenLoader themeColor={topic.theme} />}
         <img
           src={topic.bg}
           alt=""
@@ -138,6 +147,7 @@ export default function TopicPage() {
         />
         <div className="absolute inset-0 bg-black/45" />
 
+        {ready && (
         <div className="relative flex h-full w-full flex-col items-center justify-center">
           <h1
             className="text-center text-[5.5rem] leading-[1] font-black tracking-tight"
@@ -183,6 +193,7 @@ export default function TopicPage() {
             })}
           </ul>
         </div>
+        )}
       </main>
     </div>
   );

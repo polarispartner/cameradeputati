@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
+import ScreenLoader from "./ScreenLoader";
 import { findTopic, findSection, findSubsection } from "../data/content";
+import { useImagesReady } from "../lib/useImagesReady";
 
 const PAGE_SIZE = 18;
 const ANIM_MS = 280;
@@ -25,6 +27,13 @@ export default function GridPage() {
     () => items.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE),
     [items, page],
   );
+
+  const preloadUrls = useMemo(() => {
+    const urls = visible.map((it) => it.thumb ?? it.image).filter(Boolean);
+    if (topic?.bg) urls.push(topic.bg);
+    return urls;
+  }, [visible, topic?.bg]);
+  const ready = useImagesReady(preloadUrls);
 
   const canPrev = page > 0;
   const canNext = page < totalPages - 1;
@@ -68,6 +77,8 @@ export default function GridPage() {
       />
 
       <main className="relative flex-1 overflow-hidden">
+        {!ready && <ScreenLoader themeColor={theme} />}
+
         <img
           src={topic.bg}
           alt=""
@@ -76,71 +87,74 @@ export default function GridPage() {
         />
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="relative flex h-full w-full min-h-0 flex-col px-[4rem] py-[2.5rem]">
-          <header className="shrink-0">
-            <h1
-              className="text-[4.5rem] leading-[1] font-black tracking-tight"
-              style={{ color: theme }}
-            >
-              {section?.title ?? "Sezione"}
-            </h1>
-            <h2 className="mt-[0.5rem] text-[2.75rem] leading-[1] font-black tracking-tight text-white">
-              {subsection?.title ?? ""}
-            </h2>
-          </header>
+        {ready && (
+          <div className="relative flex h-full w-full min-h-0 flex-col px-[4rem] py-[2.5rem]">
+            <header className="shrink-0">
+              <h1
+                className="text-[4.5rem] leading-[1] font-black tracking-tight"
+                style={{ color: theme }}
+              >
+                {section?.title ?? "Sezione"}
+              </h1>
+              <h2 className="mt-[0.5rem] text-[2.75rem] leading-[1] font-black tracking-tight text-white">
+                {subsection?.title ?? ""}
+              </h2>
+            </header>
 
-          <div className="mt-[2rem] flex min-h-0 flex-1 flex-col">
-            <div
-              key={page}
-              className="grid min-h-0 flex-1 grid-cols-6 grid-rows-3 gap-x-[1.5rem] gap-y-[1.25rem]"
-              style={{ animation }}
-            >
-              {visible.map((item) => {
-                const isPressed = pressedId === item.id;
-                return (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => handleCardPress(item.id)}
-                    className="flex min-h-0 cursor-pointer flex-col items-center gap-[0.5rem]"
-                  >
-                    <div
-                      className="aspect-square min-h-0 max-h-full max-w-full flex-1 overflow-hidden border-[0.4rem] transition-colors duration-150"
-                      style={{ borderColor: isPressed ? theme : "#ffffff" }}
+            <div className="mt-[2rem] flex min-h-0 flex-1 flex-col">
+              <div
+                key={page}
+                className="grid min-h-0 flex-1 grid-cols-6 grid-rows-3 gap-x-[1.5rem] gap-y-[1.25rem]"
+                style={{ animation }}
+              >
+                {visible.map((item) => {
+                  const isPressed = pressedId === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleCardPress(item.id)}
+                      className="flex min-h-0 cursor-pointer flex-col items-center gap-[0.5rem]"
                     >
-                      <img
-                        src={item.image}
-                        alt=""
-                        draggable={false}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <p className="line-clamp-3 h-[3.9rem] w-full shrink-0 text-center text-[1rem] leading-[1.3] font-medium text-white">
-                      {item.title}
-                    </p>
-                  </button>
-                );
-              })}
-            </div>
-
-            {totalPages > 1 && (
-              <div className="mt-[1rem] flex shrink-0 justify-end gap-[1rem]">
-                <PagerButton
-                  direction="prev"
-                  disabled={!canPrev}
-                  onPress={goPrev}
-                  theme={theme}
-                />
-                <PagerButton
-                  direction="next"
-                  disabled={!canNext}
-                  onPress={goNext}
-                  theme={theme}
-                />
+                      <div
+                        className="aspect-square min-h-0 max-h-full max-w-full flex-1 overflow-hidden border-[0.4rem] transition-colors duration-150"
+                        style={{ borderColor: isPressed ? theme : "#ffffff" }}
+                      >
+                        <img
+                          src={item.thumb ?? item.image}
+                          alt=""
+                          draggable={false}
+                          decoding="async"
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                      <p className="line-clamp-3 h-[3.9rem] w-full shrink-0 text-center text-[1rem] leading-[1.3] font-medium text-white">
+                        {item.title}
+                      </p>
+                    </button>
+                  );
+                })}
               </div>
-            )}
+
+              {totalPages > 1 && (
+                <div className="mt-[1rem] flex shrink-0 justify-end gap-[1rem]">
+                  <PagerButton
+                    direction="prev"
+                    disabled={!canPrev}
+                    onPress={goPrev}
+                    theme={theme}
+                  />
+                  <PagerButton
+                    direction="next"
+                    disabled={!canNext}
+                    onPress={goNext}
+                    theme={theme}
+                  />
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </main>
     </div>
   );

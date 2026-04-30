@@ -9,16 +9,14 @@ export default function PdfFlipbook({ pages, themeColor }) {
   return (
     <div className="flex h-full w-full min-h-0 flex-col items-stretch">
       <div className="relative flex min-h-0 flex-1 items-center justify-center">
-        {pages.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt=""
-            draggable={false}
-            className="absolute max-h-full max-w-full object-contain transition-opacity duration-200"
-            style={{ opacity: i === pageIndex ? 1 : 0 }}
-          />
-        ))}
+        <img
+          key={pageIndex}
+          src={pages[pageIndex]}
+          alt=""
+          draggable={false}
+          decoding="async"
+          className="max-h-full max-w-full object-contain"
+        />
       </div>
 
       {total > 1 && (

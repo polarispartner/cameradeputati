@@ -1,7 +1,10 @@
+import { useMemo } from "react";
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import PdfFlipbook from "./PdfFlipbook";
+import ScreenLoader from "./ScreenLoader";
 import { findTopic, findSection, findSubsection, findItem } from "../data/content";
+import { useImagesReady } from "../lib/useImagesReady";
 
 export default function DetailPage() {
   const { topicId, sectionId, subType, itemId } = useParams({
@@ -13,6 +16,15 @@ export default function DetailPage() {
   const section = findSection(topicId, sectionId);
   const subsection = findSubsection(topicId, sectionId, subType);
   const item = findItem(topicId, sectionId, subType, itemId);
+
+  const preloadUrls = useMemo(() => {
+    const urls = [];
+    if (item?.pages) urls.push(...item.pages);
+    else if (item?.image) urls.push(item.image);
+    if (topic?.bg) urls.push(topic.bg);
+    return urls;
+  }, [item, topic?.bg]);
+  const ready = useImagesReady(preloadUrls);
 
   if (!topic) return null;
 
@@ -30,6 +42,7 @@ export default function DetailPage() {
       />
 
       <main className="relative flex-1 overflow-hidden">
+        {!ready && <ScreenLoader themeColor={topic.theme} />}
         <img
           src={topic.bg}
           alt=""
@@ -38,6 +51,7 @@ export default function DetailPage() {
         />
         <div className="absolute inset-0 bg-black/80" />
 
+        {ready && (
         <div className="relative flex h-full w-full min-h-0 flex-col px-[4rem] py-[2.5rem]">
           <header className="shrink-0">
             <h1
@@ -74,6 +88,7 @@ export default function DetailPage() {
             </div>
           </div>
         </div>
+        )}
       </main>
     </div>
   );

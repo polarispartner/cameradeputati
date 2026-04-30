@@ -12,12 +12,28 @@ export default defineConfig({
       registerType: "autoUpdate",
       injectRegister: false,
       workbox: {
-        globPatterns: ["**/*.{js,css,html,svg,png,jpg,jpeg,webp,woff2}"],
-        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        // Precache app shell only (JS/CSS/HTML/fonts/SVG icons).
+        // Content images and PDF pages are cached on-demand at runtime.
+        globPatterns: ["**/*.{js,css,html,svg,woff2}"],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "/index.html",
         cleanupOutdatedCaches: true,
         skipWaiting: true,
         clientsClaim: true,
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.destination === "image",
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images",
+              expiration: {
+                maxEntries: 400,
+                maxAgeSeconds: 60 * 60 * 24 * 60, // 60 days
+              },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+        ],
       },
       includeAssets: ["favicon.svg"],
       manifest: false,

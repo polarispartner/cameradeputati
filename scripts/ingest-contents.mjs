@@ -14,6 +14,8 @@ const OUT_ROOT = join(ROOT, 'src', 'assets', 'images', 'contents')
 const MANIFEST = join(OUT_ROOT, 'manifest.js')
 const MAX_WIDTH = 3840 // 4K landscape — beyond this is wasted on the target display
 const JPG_QUALITY = 82
+const THUMB_WIDTH = 640
+const THUMB_QUALITY = 70
 
 // Per-topic config: maps source folder names → content.js ids.
 // Add a new entry here when a new topic's contents arrive.
@@ -117,12 +119,19 @@ async function extractDocxText(path) {
   }
 }
 
-async function processImage(srcPath, outPath) {
-  await mkdir(dirname(outPath), { recursive: true })
-  await sharp(srcPath, { unlimited: true })
+async function processImage(srcPath, outFullPath, outThumbPath) {
+  await mkdir(dirname(outFullPath), { recursive: true })
+  const pipeline = sharp(srcPath, { unlimited: true })
+  await pipeline
+    .clone()
     .resize({ width: MAX_WIDTH, withoutEnlargement: true })
     .jpeg({ quality: JPG_QUALITY, mozjpeg: true })
-    .toFile(outPath)
+    .toFile(outFullPath)
+  await pipeline
+    .clone()
+    .resize({ width: THUMB_WIDTH, withoutEnlargement: true })
+    .jpeg({ quality: THUMB_QUALITY, mozjpeg: true })
+    .toFile(outThumbPath)
 }
 
 function jsIdent(s) {
@@ -202,21 +211,31 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
         const cache = await readCache(outDir)
         const cacheValid =
           cache &&
+          cache.version === 2 &&
           JSON.stringify(cache.inputs) === JSON.stringify(inputHashes) &&
           Array.isArray(cache.pages) &&
           cache.pages.length === imageFiles.length &&
-          cache.pages.every((p) => existsSync(join(outDir, p)))
+          Array.isArray(cache.thumbs) &&
+          cache.thumbs.length === imageFiles.length &&
+          cache.pages.every((p) => existsSync(join(outDir, p))) &&
+          cache.thumbs.every((p) => existsSync(join(outDir, p)))
 
         let pageFiles
+        let thumbFiles
         if (cacheValid) {
           pageFiles = cache.pages
+          thumbFiles = cache.thumbs
         } else {
           pageFiles = []
+          thumbFiles = []
           for (let i = 0; i < imageFiles.length; i++) {
             const src = join(leafDir, imageFiles[i])
-            const outName = `page-${String(i + 1).padStart(2, '0')}.jpg`
-            await processImage(src, join(outDir, outName))
-            pageFiles.push(outName)
+            const stem = `page-${String(i + 1).padStart(2, '0')}`
+            const fullName = `${stem}.jpg`
+            const thumbName = `${stem}-thumb.jpg`
+            await processImage(src, join(outDir, fullName), join(outDir, thumbName))
+            pageFiles.push(fullName)
+            thumbFiles.push(thumbName)
           }
           console.log(`[ingest] ${topicId}/${secId}/${subType}/${slug} (${pageFiles.length}p)`)
         }
@@ -226,16 +245,20 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
           description = await extractDocxText(join(leafDir, docxFile))
         }
 
-        await writeCache(outDir, { inputs: inputHashes, pages: pageFiles, description })
+        await writeCache(outDir, { version: 2, inputs: inputHashes, pages: pageFiles, thumbs: thumbFiles, description })
 
         const baseIdent = `c${counterRef.n++}_${jsIdent(slug).slice(0, 20)}`
-        const importNames = pageFiles.map((_, idx) => `${baseIdent}_p${idx + 1}`)
+        const pageIdents = pageFiles.map((_, idx) => `${baseIdent}_p${idx + 1}`)
+        const thumbIdent = `${baseIdent}_t`
         pageFiles.forEach((file, idx) => {
           const rel = './' + relative(OUT_ROOT, join(outDir, file)).replace(/\\/g, '/')
-          allImports.push({ ident: importNames[idx], relPath: rel })
+          allImports.push({ ident: pageIdents[idx], relPath: rel })
         })
+        // Use only the first page's thumb as the grid-tile thumbnail.
+        const thumbRel = './' + relative(OUT_ROOT, join(outDir, thumbFiles[0])).replace(/\\/g, '/')
+        allImports.push({ ident: thumbIdent, relPath: thumbRel })
 
-        items.push({ id, title, description, importNames })
+        items.push({ id, title, description, pageIdents, thumbIdent })
       }
       if (items.length > 0) {
         topicResult[secId][subType] = items
@@ -276,9 +299,9 @@ async function main() {
       for (const subType of Object.keys(topic[secId])) {
         lines.push(`      ${subType}: [`)
         for (const it of topic[secId][subType]) {
-          const pagesArr = `[${it.importNames.join(', ')}]`
+          const pagesArr = `[${it.pageIdents.join(', ')}]`
           lines.push(
-            `        { id: ${JSON.stringify(it.id)}, title: ${JSON.stringify(it.title)}, description: ${JSON.stringify(it.description)}, image: ${it.importNames[0]}, pages: ${pagesArr} },`,
+            `        { id: ${JSON.stringify(it.id)}, title: ${JSON.stringify(it.title)}, description: ${JSON.stringify(it.description)}, thumb: ${it.thumbIdent}, pages: ${pagesArr} },`,
           )
         }
         lines.push('      ],')
