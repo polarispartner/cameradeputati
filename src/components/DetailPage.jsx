@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
+import PdfFlipbook from "./PdfFlipbook";
 import { findTopic, findSection, findSubsection, findItem } from "../data/content";
 
 export default function DetailPage() {
@@ -52,13 +53,17 @@ export default function DetailPage() {
 
           <div className="mt-[2rem] flex min-h-0 flex-1 gap-[3rem]">
             <div className="flex min-h-0 w-1/2 items-center justify-center">
-              {item?.image && (
-                <img
-                  src={item.image}
-                  alt=""
-                  draggable={false}
-                  className="max-h-full max-w-full object-contain"
-                />
+              {item?.pages ? (
+                <PdfFlipbook pages={item.pages} themeColor={topic.theme} />
+              ) : (
+                item?.image && (
+                  <img
+                    src={item.image}
+                    alt=""
+                    draggable={false}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                )
               )}
             </div>
 

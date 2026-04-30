@@ -14,6 +14,9 @@ dist-ssr
 
 design
 
+# PDF rendering output (rigenerato da scripts/render-pdfs.mjs)
+src/assets/pdfs
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
