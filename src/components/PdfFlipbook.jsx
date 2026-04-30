@@ -21,33 +21,35 @@ export default function PdfFlipbook({ pages, themeColor }) {
         ))}
       </div>
 
-      <div className="mt-[1.5rem] flex shrink-0 items-center justify-center gap-[1.5rem]">
-        <button
-          type="button"
-          onClick={() => canPrev && setPageIndex((i) => i - 1)}
-          disabled={!canPrev}
-          aria-label="Pagina precedente"
-          className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full text-[2.5rem] font-black text-white transition-opacity duration-150 active:scale-95 disabled:opacity-30"
-          style={{ backgroundColor: themeColor }}
-        >
-          ‹
-        </button>
+      {total > 1 && (
+        <div className="mt-[1.5rem] flex shrink-0 items-center justify-center gap-[1.5rem]">
+          <button
+            type="button"
+            onClick={() => canPrev && setPageIndex((i) => i - 1)}
+            disabled={!canPrev}
+            aria-label="Pagina precedente"
+            className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full text-[2.5rem] font-black text-white transition-opacity duration-150 active:scale-95 disabled:opacity-30"
+            style={{ backgroundColor: themeColor }}
+          >
+            ‹
+          </button>
 
-        <div className="min-w-[6rem] text-center text-[1.5rem] font-bold tabular-nums text-white">
-          {pageIndex + 1} / {total}
+          <div className="min-w-[6rem] text-center text-[1.5rem] font-bold tabular-nums text-white">
+            {pageIndex + 1} / {total}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => canNext && setPageIndex((i) => i + 1)}
+            disabled={!canNext}
+            aria-label="Pagina successiva"
+            className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full text-[2.5rem] font-black text-white transition-opacity duration-150 active:scale-95 disabled:opacity-30"
+            style={{ backgroundColor: themeColor }}
+          >
+            ›
+          </button>
         </div>
-
-        <button
-          type="button"
-          onClick={() => canNext && setPageIndex((i) => i + 1)}
-          disabled={!canNext}
-          aria-label="Pagina successiva"
-          className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full text-[2.5rem] font-black text-white transition-opacity duration-150 active:scale-95 disabled:opacity-30"
-          style={{ backgroundColor: themeColor }}
-        >
-          ›
-        </button>
-      </div>
+      )}
     </div>
   )
 }

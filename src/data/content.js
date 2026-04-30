@@ -3,6 +3,7 @@ import consultaBg from '../assets/images/consulta-bg.jpg'
 import referendumBg from '../assets/images/referendum-bg.jpg'
 import costituenteBg from '../assets/images/costituente-bg.jpg'
 import { PDF_PAGES } from '../assets/pdfs/manifest'
+import { TOPIC_ITEMS } from '../assets/images/contents/manifest'
 
 const item = (id, title, image, description, extra = {}) => ({
   id,
@@ -220,6 +221,25 @@ const buildItems = (prefix, titles, image) =>
     item(`${prefix}-${i + 1}`, title, image, LOREM),
   )
 
+const SUB_ORDER = ['foto', 'giornale', 'documenti']
+const SUB_TITLE_BY_TOPIC = {
+  referendum: { foto: 'Foto/Video', giornale: 'Stampa', documenti: 'Documenti' },
+}
+const DEFAULT_SUB_TITLE = { foto: 'Foto/Video', giornale: 'Giornale', documenti: 'Documenti' }
+
+const buildTopicSubsections = (topicId, sectionId) => {
+  const sec = TOPIC_ITEMS[topicId]?.[sectionId] || {}
+  const titles = SUB_TITLE_BY_TOPIC[topicId] || DEFAULT_SUB_TITLE
+  return SUB_ORDER.filter((t) => sec[t]?.length).map((type) => ({
+    type,
+    title: titles[type],
+    items: sec[type].map((it) => ({
+      ...it,
+      description: it.description || LOREM,
+    })),
+  }))
+}
+
 export const TOPICS = [
   {
     id: 'donne',
@@ -317,32 +337,9 @@ export const TOPICS = [
     theme: '#8ebdf5',
     bg: referendumBg,
     sections: [
-      {
-        id: 'campagna',
-        title: 'La campagna',
-        subsections: [
-          { type: 'foto', title: 'Foto/Video', items: buildItems('ref-camp-foto', REFERENDUM_TITLES.campagna, referendumBg) },
-          { type: 'giornale', title: 'Giornale', items: buildItems('ref-camp-giornale', REFERENDUM_TITLES.campagna.slice(0, 10), referendumBg) },
-          { type: 'documenti', title: 'Documenti', items: buildItems('ref-camp-doc', REFERENDUM_TITLES.campagna.slice(0, 8), referendumBg) },
-        ],
-      },
-      {
-        id: 'voto',
-        title: 'Il voto',
-        subsections: [
-          { type: 'foto', title: 'Foto/Video', items: buildItems('ref-voto-foto', REFERENDUM_TITLES.voto, referendumBg) },
-          { type: 'giornale', title: 'Giornale', items: buildItems('ref-voto-giornale', REFERENDUM_TITLES.voto.slice(0, 10), referendumBg) },
-        ],
-      },
-      {
-        id: 'risultati',
-        title: 'I risultati',
-        subsections: [
-          { type: 'foto', title: 'Foto/Video', items: buildItems('ref-ris-foto', REFERENDUM_TITLES.risultati, referendumBg) },
-          { type: 'giornale', title: 'Giornale', items: buildItems('ref-ris-giornale', REFERENDUM_TITLES.risultati.slice(0, 12), referendumBg) },
-          { type: 'documenti', title: 'Documenti', items: buildItems('ref-ris-doc', REFERENDUM_TITLES.risultati.slice(0, 6), referendumBg) },
-        ],
-      },
+      { id: 'campagna', title: 'La campagna', subsections: buildTopicSubsections('referendum', 'campagna') },
+      { id: 'voto', title: 'Il voto', subsections: buildTopicSubsections('referendum', 'voto') },
+      { id: 'risultati', title: 'I risultati', subsections: buildTopicSubsections('referendum', 'risultati') },
     ],
   },
   {

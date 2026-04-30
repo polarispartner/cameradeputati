@@ -12,10 +12,15 @@ dist
 dist-ssr
 *.local
 
-design
+/design
+/contents
 
 # PDF rendering output (rigenerato da scripts/render-pdfs.mjs)
 src/assets/pdfs
+
+# Cache dello script di ingest (gli asset e il manifest sono committati come statici;
+# ri-eseguire scripts/ingest-contents.mjs solo quando arrivano nuovi contenuti).
+src/assets/images/contents/**/.cache.json
 
 # Editor directories and files
 .vscode/*

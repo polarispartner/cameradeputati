@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "render-pdfs": "node scripts/render-pdfs.mjs",
+    "ingest-contents": "node scripts/ingest-contents.mjs",
     "predev": "npm run render-pdfs",
     "prebuild": "npm run render-pdfs",
     "dev": "vite",
@@ -28,7 +29,9 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+    "mammoth": "^1.12.0",
     "pdf-to-img": "^6.0.0",
+    "sharp": "^0.34.5",
     "vite": "^8.0.9",
     "vite-plugin-pwa": "^1.2.0",
     "workbox-window": "^7.4.0"
