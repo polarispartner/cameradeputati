@@ -21,6 +21,15 @@ html {
   font-size: calc(100vw / 120); /* 1920 / 120 = 16 */
 }
 
+/*
+  Modalità totem verticale (test).
+  Canvas di riferimento: 1080x1920 (lo stesso PSD ruotato di 90°).
+  1rem = 16px @ 1080w → 32px @ 2160w.
+*/
+html[data-orientation="vertical"] {
+  font-size: calc(100vw / 67.5); /* 1080 / 67.5 = 16 */
+}
+
 html,
 body,
 #root {

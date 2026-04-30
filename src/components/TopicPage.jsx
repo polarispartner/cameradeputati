@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import ScreenLoader from "./ScreenLoader";
 import { findTopic } from "../data/content";
 import { useImagesReady } from "../lib/useImagesReady";
+import { useOrientation } from "../lib/orientation";
 
 function Submenu({ items, onPick }) {
   const ITEM_H = 48;
@@ -108,6 +109,7 @@ export default function TopicPage() {
   const topic = findTopic(topicId);
   const [openId, setOpenId] = useState(null);
   const navigate = useNavigate();
+  const isVertical = useOrientation() === "vertical";
 
   const preloadUrls = useMemo(
     () => (topic?.bg ? [topic.bg] : []),
@@ -132,7 +134,7 @@ export default function TopicPage() {
 
   return (
     <div
-      className="relative flex h-full w-full overflow-hidden bg-black"
+      className={`relative flex h-full w-full overflow-hidden bg-black ${isVertical ? "flex-col" : ""}`}
       style={{ animation: 'page-fade-in 200ms ease-out' }}
     >
       <Sidebar bgColor={topic.theme} showBack />

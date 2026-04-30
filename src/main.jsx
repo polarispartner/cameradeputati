@@ -4,7 +4,10 @@ import { Workbox } from 'workbox-window'
 import App from './App.jsx'
 import BootSplash from './components/BootSplash.jsx'
 import BgKeeper from './components/BgKeeper.jsx'
+import { initOrientation } from './lib/orientation.js'
 import './index.css'
+
+initOrientation()
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   const wb = new Workbox('/sw.js')

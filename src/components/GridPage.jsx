@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import ScreenLoader from "./ScreenLoader";
 import { findTopic, findSection, findSubsection } from "../data/content";
 import { useImagesReady } from "../lib/useImagesReady";
+import { useOrientation } from "../lib/orientation";
 
 const PAGE_SIZE = 18;
 const ANIM_MS = 280;
@@ -16,6 +17,7 @@ export default function GridPage() {
   const [page, setPage] = useState(0);
   const [direction, setDirection] = useState("next");
   const [pressedId, setPressedId] = useState(null);
+  const isVertical = useOrientation() === "vertical";
 
   const topic = findTopic(topicId);
   const section = findSection(topicId, sectionId);
@@ -69,7 +71,9 @@ export default function GridPage() {
       : `slide-in-left ${ANIM_MS}ms ease-out`;
 
   return (
-    <div className="relative flex h-full w-full overflow-hidden bg-black">
+    <div
+      className={`relative flex h-full w-full overflow-hidden bg-black ${isVertical ? "flex-col" : ""}`}
+    >
       <Sidebar
         bgColor={theme}
         showBack
@@ -104,7 +108,9 @@ export default function GridPage() {
             <div className="mt-[2rem] flex min-h-0 flex-1 flex-col">
               <div
                 key={page}
-                className="grid min-h-0 flex-1 grid-cols-6 grid-rows-3 gap-x-[1.5rem] gap-y-[1.25rem]"
+                className={`grid min-h-0 flex-1 gap-x-[1.5rem] gap-y-[1.25rem] ${
+                  isVertical ? "grid-cols-3 grid-rows-6" : "grid-cols-6 grid-rows-3"
+                }`}
                 style={{ animation }}
               >
                 {visible.map((item) => {
