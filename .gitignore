@@ -21,6 +21,7 @@ src/assets/pdfs
 # Cache dello script di ingest (gli asset e il manifest sono committati come statici;
 # ri-eseguire scripts/ingest-contents.mjs solo quando arrivano nuovi contenuti).
 src/assets/images/contents/**/.cache.json
+src/assets/images/.bgs.cache.json
 
 # Editor directories and files
 .vscode/*

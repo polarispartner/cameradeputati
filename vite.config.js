@@ -12,9 +12,13 @@ export default defineConfig({
       registerType: "autoUpdate",
       injectRegister: false,
       workbox: {
-        // Precache app shell only (JS/CSS/HTML/fonts/SVG icons).
+        // Precache app shell + the 6 always-needed background images.
         // Content images and PDF pages are cached on-demand at runtime.
-        globPatterns: ["**/*.{js,css,html,svg,woff2}"],
+        globPatterns: [
+          "**/*.{js,css,html,svg,woff2}",
+          "assets/*-bg-*.jpg",
+          "assets/homepage-bg-*.jpg",
+        ],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "/index.html",
         cleanupOutdatedCaches: true,

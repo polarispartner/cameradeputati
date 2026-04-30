@@ -6,6 +6,7 @@
   "scripts": {
     "render-pdfs": "node scripts/render-pdfs.mjs",
     "ingest-contents": "node scripts/ingest-contents.mjs",
+    "compress-bgs": "node scripts/compress-bgs.mjs",
     "predev": "npm run render-pdfs",
     "prebuild": "npm run render-pdfs",
     "dev": "vite",
