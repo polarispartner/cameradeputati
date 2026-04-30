@@ -29,7 +29,11 @@ export default function Intro() {
       />
 
       {/* Overlay bianco a tutta larghezza dietro il blocco contenuti */}
-      <div className="absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-center bg-white/60 py-[4rem]">
+      <div
+        className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-center bg-white/60 py-[4rem] ${
+          orientation === 'vertical' ? 'px-[3rem]' : ''
+        }`}
+      >
         <div className="flex flex-col items-center text-blu">
           <div className="flex flex-col items-start">
           {/* Loghi */}

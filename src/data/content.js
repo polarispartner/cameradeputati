@@ -2,7 +2,6 @@ import donneBg from '../assets/images/ruolo-donne-bg.jpg'
 import consultaBg from '../assets/images/consulta-bg.jpg'
 import referendumBg from '../assets/images/referendum-bg.jpg'
 import costituenteBg from '../assets/images/costituente-bg.jpg'
-import { PDF_PAGES } from '../assets/pdfs/manifest'
 import { TOPIC_ITEMS } from '../assets/images/contents/manifest'
 
 const item = (id, title, image, description, extra = {}) => ({
@@ -253,20 +252,7 @@ export const TOPICS = [
         subsections: [
           { type: 'foto', title: 'Foto/Video', items: buildItems('donne-suffragio-foto', DONNE_TITLES, donneBg) },
           { type: 'giornale', title: 'Giornale', items: buildItems('donne-suffragio-giornale', DONNE_TITLES.slice(0, 12), donneBg) },
-          {
-            type: 'documenti',
-            title: 'Documenti',
-            items: [
-              item(
-                'donne-suffragio-doc-1',
-                DONNE_TITLES[0],
-                PDF_PAGES['donne/pdf-di-test'][0],
-                LOREM,
-                { pages: PDF_PAGES['donne/pdf-di-test'] },
-              ),
-              ...buildItems('donne-suffragio-doc-rest', DONNE_TITLES.slice(1, 8), donneBg),
-            ],
-          },
+          { type: 'documenti', title: 'Documenti', items: buildItems('donne-suffragio-doc', DONNE_TITLES.slice(0, 8), donneBg) },
         ],
       },
       {
