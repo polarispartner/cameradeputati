@@ -4,6 +4,7 @@ import logoCamera from '../../shared/assets/logo-camera.png'
 import logo80 from '../../shared/assets/logo-80.png'
 import anniImg from '../../shared/assets/anni.png'
 import homeIcon from '../../shared/assets/home.png'
+import HiddenReload from '../../shared/components/HiddenReload'
 import { PDF_PAGES } from './assets/pdfs/manifest'
 
 const ALL_PAGES = PDF_PAGES['Costituzione_copia_anastatica'] ?? []
@@ -33,6 +34,8 @@ export default function App() {
   const [leftPage, rightPage] = SPREADS[spread] ?? [null, null]
 
   return (
+    <>
+    <HiddenReload />
     <div className="flex h-full w-full flex-col overflow-hidden bg-blu">
       {/* Header */}
       <header className="relative flex shrink-0 flex-col items-center bg-white pt-[2.5rem] pb-[3rem]">
@@ -138,6 +141,7 @@ export default function App() {
         </div>
       </footer>
     </div>
+    </>
   )
 }
 

@@ -38,7 +38,7 @@ export default function Sidebar({ bgColor = "#063955", showBack = false, onBack 
 
         <p className="mt-[1rem] text-[2.5rem] leading-[2.75rem] font-medium">
           L'Assemblea Costituente
-          <br />a Montecitorios
+          <br />a Montecitorio
         </p>
       </div>
 
