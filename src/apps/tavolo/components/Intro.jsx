@@ -1,8 +1,8 @@
 import { useNavigate } from '@tanstack/react-router'
 import bgImg from '../../../shared/assets/homepage-bg.jpg'
-import logoCamera from '../assets/images/logo-camera.png'
-import logo80 from '../assets/images/logo-80.png'
-import anniImg from '../assets/images/anni.png'
+import logoCamera from '../../../shared/assets/logo-camera.png'
+import logo80 from '../../../shared/assets/logo-80.png'
+import anniImg from '../../../shared/assets/anni.png'
 
 /*
   Schermata di intro (00_HP).

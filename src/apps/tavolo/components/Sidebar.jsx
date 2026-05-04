@@ -2,7 +2,7 @@ import { useNavigate } from "@tanstack/react-router";
 import logoCamera from "../assets/images/Camera_dei_deputati_negativo@4x.png";
 import logo80 from "../assets/images/Logo_80_bianco_verticale@4x.png";
 import logo1946 from "../assets/images/LOGO 1946 white@4x.png";
-import homeIcon from "../assets/images/home.png";
+import homeIcon from "../../../shared/assets/home.png";
 
 export default function Sidebar({ bgColor = "#063955", showBack = false, onBack }) {
   const navigate = useNavigate();
