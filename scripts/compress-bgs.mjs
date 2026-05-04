@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto'
-import { readFile, writeFile, rename, stat } from 'node:fs/promises'
+import { readdir, readFile, writeFile, rename, stat } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -8,28 +8,19 @@ import sharp from 'sharp'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(HERE, '..')
-const IMG_DIR = join(ROOT, 'src', 'assets', 'images')
-const CACHE = join(IMG_DIR, '.bgs.cache.json')
+const APPS_DIR = join(ROOT, 'src', 'apps')
+const SHARED_DIR = join(ROOT, 'src', 'shared', 'assets')
 
 const MAX_WIDTH = 3840
 const QUALITY = 72
-
-const FILES = [
-  'homepage-bg.jpg',
-  'menu-bg.jpg',
-  'ruolo-donne-bg.jpg',
-  'consulta-bg.jpg',
-  'referendum-bg.jpg',
-  'costituente-bg.jpg',
-]
 
 async function hashFile(path) {
   return createHash('sha1').update(await readFile(path)).digest('hex')
 }
 
-async function readCache() {
-  if (!existsSync(CACHE)) return {}
-  try { return JSON.parse(await readFile(CACHE, 'utf8')) } catch { return {} }
+async function readCache(file) {
+  if (!existsSync(file)) return {}
+  try { return JSON.parse(await readFile(file, 'utf8')) } catch { return {} }
 }
 
 async function compress(src) {
@@ -45,40 +36,57 @@ function fmtKB(bytes) {
   return `${Math.round(bytes / 1024)} KB`
 }
 
-async function main() {
-  const cache = await readCache()
-  const next = {}
-  let savedTotal = 0
-
-  for (const name of FILES) {
-    const path = join(IMG_DIR, name)
-    if (!existsSync(path)) {
-      console.warn(`[compress-bgs] missing: ${name}`)
-      continue
+async function findBgs(dir) {
+  // Find all *-bg.jpg / *-bg-*.jpg under dir (one level deep into known image roots)
+  const out = []
+  if (!existsSync(dir)) return out
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) continue
+    if (/-bg(-\d+x?)?\.jpg$/i.test(entry.name) || entry.name === 'homepage-bg.jpg') {
+      out.push(join(dir, entry.name))
     }
+  }
+  return out
+}
+
+async function processDir(label, dir, cacheFile) {
+  const files = await findBgs(dir)
+  if (files.length === 0) return 0
+  const cache = await readCache(cacheFile)
+  const next = {}
+  let saved = 0
+  for (const path of files) {
+    const name = path.replace(dir + '/', '')
     const before = (await stat(path)).size
     const beforeHash = await hashFile(path)
-
     if (cache[name]?.outHash === beforeHash) {
-      console.log(`[compress-bgs] skip (already compressed): ${name} (${fmtKB(before)})`)
+      console.log(`[compress-bgs] ${label} skip (already): ${name} (${fmtKB(before)})`)
       next[name] = cache[name]
       continue
     }
-
     await compress(path)
     const after = (await stat(path)).size
-    const afterHash = await hashFile(path)
-    next[name] = { outHash: afterHash }
-    savedTotal += before - after
-    console.log(
-      `[compress-bgs] ${name}: ${fmtKB(before)} → ${fmtKB(after)} (-${fmtKB(before - after)})`,
-    )
+    next[name] = { outHash: await hashFile(path) }
+    saved += before - after
+    console.log(`[compress-bgs] ${label} ${name}: ${fmtKB(before)} → ${fmtKB(after)} (-${fmtKB(before - after)})`)
   }
+  await writeFile(cacheFile, JSON.stringify(next, null, 2))
+  return saved
+}
 
-  await writeFile(CACHE, JSON.stringify(next, null, 2))
-  if (savedTotal > 0) {
-    console.log(`[compress-bgs] total saved: ${fmtKB(savedTotal)}`)
+async function main() {
+  let total = 0
+  // Shared bgs
+  total += await processDir('shared', SHARED_DIR, join(SHARED_DIR, '.bgs.cache.json'))
+  // Per-app bgs in src/apps/<app>/assets/images/
+  if (existsSync(APPS_DIR)) {
+    for (const e of await readdir(APPS_DIR, { withFileTypes: true })) {
+      if (!e.isDirectory()) continue
+      const imgDir = join(APPS_DIR, e.name, 'assets', 'images')
+      total += await processDir(e.name, imgDir, join(imgDir, '.bgs.cache.json'))
+    }
   }
+  if (total > 0) console.log(`[compress-bgs] total saved: ${fmtKB(total)}`)
 }
 
 main().catch((err) => {

@@ -1,26 +1,31 @@
 import { defineConfig } from "vite";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 // https://vite.dev/config/
 export default defineConfig({
+  base: "./",
   plugins: [
     react(),
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: false,
+      filename: "sw.js",
+      // PWA serves the tavolo only. Totem entries don't register the SW.
       workbox: {
-        // Precache app shell + the 6 always-needed background images.
-        // Content images and PDF pages are cached on-demand at runtime.
         globPatterns: [
-          "**/*.{js,css,html,svg,woff2}",
+          "src/apps/tavolo/**/*.{js,css,html,svg,woff2}",
           "assets/*-bg-*.jpg",
           "assets/homepage-bg-*.jpg",
         ],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
-        navigateFallback: "/index.html",
+        navigateFallback: "/src/apps/tavolo/index.html",
         cleanupOutdatedCaches: true,
         skipWaiting: true,
         clientsClaim: true,
@@ -51,6 +56,14 @@ export default defineConfig({
     target: ["chrome70", "safari12"],
     cssTarget: "chrome70",
     rollupOptions: {
+      input: {
+        tavolo: resolve(__dirname, "src/apps/tavolo/index.html"),
+        "totem-costituzione": resolve(
+          __dirname,
+          "src/apps/totem-costituzione/index.html",
+        ),
+        "totem-b": resolve(__dirname, "src/apps/totem-b/index.html"),
+      },
       output: {
         manualChunks: undefined,
       },

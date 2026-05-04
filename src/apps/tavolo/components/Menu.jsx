@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
-import { useOrientation } from "../lib/orientation";
 import bgImg from "../assets/images/menu-bg.jpg";
 import donneRetino from "../assets/images/menu/01_Il ruolo delle donne_RETINO.svg";
 import donnePieno from "../assets/images/menu/01_Il ruolo delle donne_PIENO.svg";
@@ -22,7 +21,6 @@ const sections = [
 export default function Menu() {
   const navigate = useNavigate();
   const [tapped, setTapped] = useState(null);
-  const isVertical = useOrientation() === "vertical";
 
   const onSection = (s) => {
     if (tapped) return;
@@ -34,9 +32,7 @@ export default function Menu() {
   };
 
   return (
-    <div
-      className={`relative flex h-full w-full overflow-hidden bg-black ${isVertical ? "flex-col" : ""}`}
-    >
+    <div className="relative flex h-full w-full overflow-hidden bg-black">
       <Sidebar />
 
       <main className="relative flex-1 overflow-hidden">

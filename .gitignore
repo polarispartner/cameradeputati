@@ -14,14 +14,16 @@ dist-ssr
 
 /design
 /contents
+/pdfs
 
 # PDF rendering output (rigenerato da scripts/render-pdfs.mjs)
-src/assets/pdfs
+src/apps/*/assets/pdfs/
 
 # Cache dello script di ingest (gli asset e il manifest sono committati come statici;
 # ri-eseguire scripts/ingest-contents.mjs solo quando arrivano nuovi contenuti).
-src/assets/images/contents/**/.cache.json
-src/assets/images/.bgs.cache.json
+src/apps/*/assets/images/contents/**/.cache.json
+src/apps/*/assets/images/.bgs.cache.json
+src/shared/assets/.bgs.cache.json
 
 # Editor directories and files
 .vscode/*

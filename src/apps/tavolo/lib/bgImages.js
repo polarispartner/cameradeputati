@@ -1,4 +1,4 @@
-import homepageBg from '../assets/images/homepage-bg.jpg'
+import homepageBg from '../../../shared/assets/homepage-bg.jpg'
 import menuBg from '../assets/images/menu-bg.jpg'
 import donneBg from '../assets/images/ruolo-donne-bg.jpg'
 import consultaBg from '../assets/images/consulta-bg.jpg'

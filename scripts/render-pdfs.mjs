@@ -8,10 +8,15 @@ import { pdf } from 'pdf-to-img'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(HERE, '..')
-const SRC_DIR = join(ROOT, 'pdfs')
-const OUT_DIR = join(ROOT, 'src', 'assets', 'pdfs')
-const MANIFEST = join(OUT_DIR, 'manifest.js')
+const SRC_ROOT = join(ROOT, 'pdfs')
+const APPS_DIR = join(ROOT, 'src', 'apps')
 const SCALE = 2
+
+async function listApps() {
+  if (!existsSync(SRC_ROOT)) return []
+  const entries = await readdir(SRC_ROOT, { withFileTypes: true })
+  return entries.filter((e) => e.isDirectory()).map((e) => e.name)
+}
 
 async function walk(dir) {
   const out = []
@@ -67,52 +72,49 @@ function jsIdent(s) {
   return s.replace(/[^a-zA-Z0-9_$]/g, '_')
 }
 
-async function main() {
-  if (!existsSync(SRC_DIR)) {
-    console.log(`[render-pdfs] no source folder at ${relative(ROOT, SRC_DIR)} — skipping (using committed output)`)
-    return
-  }
-  const pdfPaths = await walk(SRC_DIR)
+async function renderApp(appName) {
+  const srcDir = join(SRC_ROOT, appName)
+  const outDir = join(APPS_DIR, appName, 'assets', 'pdfs')
+  const manifestPath = join(outDir, 'manifest.js')
+  const pdfPaths = await walk(srcDir)
   if (pdfPaths.length === 0) {
-    console.log(`[render-pdfs] no PDFs in ${relative(ROOT, SRC_DIR)} — skipping (using committed output)`)
+    console.log(`[render-pdfs] ${appName}: no PDFs — skipping`)
     return
   }
   pdfPaths.sort()
-
-  await mkdir(OUT_DIR, { recursive: true })
+  await mkdir(outDir, { recursive: true })
 
   const entries = []
   for (const srcPath of pdfPaths) {
-    const rel = relative(SRC_DIR, srcPath).replace(/\\/g, '/')
+    const rel = relative(srcDir, srcPath).replace(/\\/g, '/')
     const id = rel.replace(/\.pdf$/i, '')
-    const outDir = join(OUT_DIR, id)
+    const itemDir = join(outDir, id)
     const hash = await hashFile(srcPath)
 
     let pageFiles
-    const cache = await readCache(outDir)
+    const cache = await readCache(itemDir)
     if (cache && cache.hash === hash && Array.isArray(cache.pages)) {
-      const allExist = cache.pages.every((p) => existsSync(join(outDir, p)))
+      const allExist = cache.pages.every((p) => existsSync(join(itemDir, p)))
       if (allExist) {
         pageFiles = cache.pages
-        console.log(`[render-pdfs] cache hit: ${id} (${pageFiles.length} pages)`)
+        console.log(`[render-pdfs] ${appName} cache hit: ${id} (${pageFiles.length}p)`)
       }
     }
     if (!pageFiles) {
-      console.log(`[render-pdfs] rendering: ${id}`)
-      pageFiles = await renderPdf(srcPath, outDir)
-      await writeCache(outDir, { hash, pages: pageFiles })
+      console.log(`[render-pdfs] ${appName} rendering: ${id}`)
+      pageFiles = await renderPdf(srcPath, itemDir)
+      await writeCache(itemDir, { hash, pages: pageFiles })
     }
-    entries.push({ id, outDir, pages: pageFiles })
+    entries.push({ id, itemDir, pages: pageFiles })
   }
 
-  // Generate manifest.js
   const lines = ['// auto-generato da scripts/render-pdfs.mjs — non modificare', '']
   const mapEntries = []
-  for (const { id, outDir, pages } of entries) {
+  for (const { id, itemDir, pages } of entries) {
     const baseIdent = jsIdent(id)
     const importNames = pages.map((_, idx) => `${baseIdent}_p${idx + 1}`)
     pages.forEach((file, idx) => {
-      const rel = './' + relative(OUT_DIR, join(outDir, file)).replace(/\\/g, '/')
+      const rel = './' + relative(outDir, join(itemDir, file)).replace(/\\/g, '/')
       lines.push(`import ${importNames[idx]} from '${rel}'`)
     })
     mapEntries.push(`  ${JSON.stringify(id)}: [${importNames.join(', ')}],`)
@@ -122,8 +124,21 @@ async function main() {
   lines.push(...mapEntries)
   lines.push('}')
   lines.push('')
-  await writeFile(MANIFEST, lines.join('\n'))
-  console.log(`[render-pdfs] wrote ${relative(ROOT, MANIFEST)} (${entries.length} pdf${entries.length === 1 ? '' : 's'})`)
+  await writeFile(manifestPath, lines.join('\n'))
+  console.log(
+    `[render-pdfs] ${appName}: wrote ${relative(ROOT, manifestPath)} (${entries.length} pdf${entries.length === 1 ? '' : 's'})`,
+  )
+}
+
+async function main() {
+  const apps = await listApps()
+  if (apps.length === 0) {
+    console.log(`[render-pdfs] no source folders under ${relative(ROOT, SRC_ROOT)}/ — skipping`)
+    return
+  }
+  for (const app of apps) {
+    await renderApp(app)
+  }
 }
 
 main().catch((err) => {

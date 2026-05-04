@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { BG_IMAGES } from '../lib/bgImages'
 
 function decodeOne(url) {
   return new Promise((resolve) => {
@@ -14,15 +13,15 @@ function decodeOne(url) {
   })
 }
 
-export default function BootSplash({ onReady }) {
+export default function BootSplash({ images = [], onReady }) {
   const [done, setDone] = useState(0)
-  const total = BG_IMAGES.length
+  const total = images.length
 
   useEffect(() => {
     let cancelled = false
     let count = 0
     Promise.all(
-      BG_IMAGES.map((url) =>
+      images.map((url) =>
         decodeOne(url).then(() => {
           if (cancelled) return
           count += 1
@@ -35,6 +34,7 @@ export default function BootSplash({ onReady }) {
     return () => {
       cancelled = true
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onReady])
 
   const pct = total === 0 ? 100 : Math.round((done / total) * 100)

@@ -1,18 +1,16 @@
 import { useMemo } from "react";
 import { useParams, useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
-import PdfFlipbook from "./PdfFlipbook";
-import ScreenLoader from "./ScreenLoader";
+import PdfFlipbook from "../../../shared/components/PdfFlipbook";
+import ScreenLoader from "../../../shared/components/ScreenLoader";
 import { findTopic, findSection, findSubsection, findItem } from "../data/content";
-import { useImagesReady } from "../lib/useImagesReady";
-import { useOrientation } from "../lib/orientation";
+import { useImagesReady } from "../../../shared/lib/useImagesReady";
 
 export default function DetailPage() {
   const { topicId, sectionId, subType, itemId } = useParams({
     from: "/t/$topicId/$sectionId/$subType/$itemId",
   });
   const navigate = useNavigate();
-  const isVertical = useOrientation() === "vertical";
 
   const topic = findTopic(topicId);
   const section = findSection(topicId, sectionId);
@@ -31,9 +29,7 @@ export default function DetailPage() {
   if (!topic) return null;
 
   return (
-    <div
-      className={`relative flex h-full w-full overflow-hidden bg-black ${isVertical ? "flex-col" : ""}`}
-    >
+    <div className="relative flex h-full w-full overflow-hidden bg-black">
       <Sidebar
         bgColor={topic.theme}
         showBack
@@ -69,12 +65,8 @@ export default function DetailPage() {
             </h2>
           </header>
 
-          <div
-            className={`mt-[2rem] flex min-h-0 flex-1 gap-[3rem] ${isVertical ? "flex-col" : ""}`}
-          >
-            <div
-              className={`flex min-h-0 items-center justify-center ${isVertical ? "h-1/2 w-full" : "w-1/2"}`}
-            >
+          <div className="mt-[2rem] flex min-h-0 flex-1 gap-[3rem]">
+            <div className="flex min-h-0 w-1/2 items-center justify-center">
               {item?.pages ? (
                 <PdfFlipbook pages={item.pages} themeColor={topic.theme} />
               ) : (
@@ -89,9 +81,7 @@ export default function DetailPage() {
               )}
             </div>
 
-            <div
-              className={`flex min-h-0 items-center ${isVertical ? "h-1/2 w-full" : "w-1/2"}`}
-            >
+            <div className="flex min-h-0 w-1/2 items-center">
               <p className="max-h-full overflow-hidden text-[1.5rem] leading-[1.5] font-medium text-white">
                 {item?.description ?? ""}
               </p>

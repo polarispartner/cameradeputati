@@ -10,26 +10,29 @@ import mammoth from 'mammoth'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(HERE, '..')
 const SRC_ROOT = join(ROOT, 'contents')
-const OUT_ROOT = join(ROOT, 'src', 'assets', 'images', 'contents')
-const MANIFEST = join(OUT_ROOT, 'manifest.js')
-const MAX_WIDTH = 3840 // 4K landscape — beyond this is wasted on the target display
+const APPS_DIR = join(ROOT, 'src', 'apps')
+const MAX_WIDTH = 3840
 const JPG_QUALITY = 82
 const THUMB_WIDTH = 640
 const THUMB_QUALITY = 70
 
-// Per-topic config: maps source folder names → content.js ids.
-// Add a new entry here when a new topic's contents arrive.
-const TOPICS = {
-  referendum: {
-    sections: {
-      '1. LA CAMPAGNA': 'campagna',
-      '2. IL VOTO': 'voto',
-      '3. I RISULTATI': 'risultati',
+// Per-app, per-topic config: maps source folder names → content.js ids.
+// Add new app/topic entries here when new contents arrive.
+const APP_TOPICS = {
+  tavolo: {
+    referendum: {
+      sections: {
+        '1. LA CAMPAGNA': 'campagna',
+        '2. IL VOTO': 'voto',
+        '3. I RISULTATI': 'risultati',
+      },
     },
+    // donne: { sections: { ... } },
+    // consulta: { sections: { ... } },
+    // costituente: { sections: { ... } },
   },
-  // donne: { sections: { ... } },
-  // consulta: { sections: { ... } },
-  // costituente: { sections: { ... } },
+  // 'totem-costituzione': { ... },
+  // 'totem-b': { ... },
 }
 
 // Subtype folder name → content.js sub.type (shared across topics)
@@ -138,20 +141,21 @@ function jsIdent(s) {
   return s.replace(/[^a-zA-Z0-9_$]/g, '_')
 }
 
-async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
-  const topicSrcDir = join(SRC_ROOT, topicId)
+async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
+  const outRoot = join(APPS_DIR, app, 'assets', 'images', 'contents')
+  const topicSrcDir = join(SRC_ROOT, app, topicId)
   if (!existsSync(topicSrcDir)) {
-    console.log(`[ingest] no source for topic "${topicId}" (${relative(ROOT, topicSrcDir)}) — skipping`)
+    console.log(`[ingest] ${app}/${topicId}: no source — skipping`)
     return null
   }
-  const topicResult = {} // { sectionId: { subType: [items] } }
+  const topicResult = {}
 
   const sectionDirs = await listDir(topicSrcDir)
   for (const sec of sectionDirs) {
     if (!sec.isDirectory()) continue
     const secId = topicConfig.sections[sec.name]
     if (!secId) {
-      console.warn(`[ingest] ${topicId}: skipping unknown section folder: ${sec.name}`)
+      console.warn(`[ingest] ${app}/${topicId}: skipping unknown section folder: ${sec.name}`)
       continue
     }
     topicResult[secId] = topicResult[secId] || {}
@@ -162,7 +166,7 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
       if (!sub.isDirectory()) continue
       const subType = SUBTYPE_MAP[sub.name]
       if (!subType) {
-        console.warn(`[ingest] ${topicId}: skipping unknown subtype folder: ${sec.name}/${sub.name}`)
+        console.warn(`[ingest] ${app}/${topicId}: skipping unknown subtype folder: ${sec.name}/${sub.name}`)
         continue
       }
       const subDir = join(secDir, sub.name)
@@ -201,14 +205,14 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
           continue
         }
 
-        const outDir = join(OUT_ROOT, topicId, secId, subType, slug)
-        await mkdir(outDir, { recursive: true })
+        const itemOutDir = join(outRoot, topicId, secId, subType, slug)
+        await mkdir(itemOutDir, { recursive: true })
 
         const inputHashes = {}
         for (const f of [...imageFiles, ...(docxFile ? [docxFile] : [])]) {
           inputHashes[f] = await hashFile(join(leafDir, f))
         }
-        const cache = await readCache(outDir)
+        const cache = await readCache(itemOutDir)
         const cacheValid =
           cache &&
           cache.version === 2 &&
@@ -217,8 +221,8 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
           cache.pages.length === imageFiles.length &&
           Array.isArray(cache.thumbs) &&
           cache.thumbs.length === imageFiles.length &&
-          cache.pages.every((p) => existsSync(join(outDir, p))) &&
-          cache.thumbs.every((p) => existsSync(join(outDir, p)))
+          cache.pages.every((p) => existsSync(join(itemOutDir, p))) &&
+          cache.thumbs.every((p) => existsSync(join(itemOutDir, p)))
 
         let pageFiles
         let thumbFiles
@@ -233,11 +237,11 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
             const stem = `page-${String(i + 1).padStart(2, '0')}`
             const fullName = `${stem}.jpg`
             const thumbName = `${stem}-thumb.jpg`
-            await processImage(src, join(outDir, fullName), join(outDir, thumbName))
+            await processImage(src, join(itemOutDir, fullName), join(itemOutDir, thumbName))
             pageFiles.push(fullName)
             thumbFiles.push(thumbName)
           }
-          console.log(`[ingest] ${topicId}/${secId}/${subType}/${slug} (${pageFiles.length}p)`)
+          console.log(`[ingest] ${app}/${topicId}/${secId}/${subType}/${slug} (${pageFiles.length}p)`)
         }
 
         let description = ''
@@ -245,17 +249,16 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
           description = await extractDocxText(join(leafDir, docxFile))
         }
 
-        await writeCache(outDir, { version: 2, inputs: inputHashes, pages: pageFiles, thumbs: thumbFiles, description })
+        await writeCache(itemOutDir, { version: 2, inputs: inputHashes, pages: pageFiles, thumbs: thumbFiles, description })
 
         const baseIdent = `c${counterRef.n++}_${jsIdent(slug).slice(0, 20)}`
         const pageIdents = pageFiles.map((_, idx) => `${baseIdent}_p${idx + 1}`)
         const thumbIdent = `${baseIdent}_t`
         pageFiles.forEach((file, idx) => {
-          const rel = './' + relative(OUT_ROOT, join(outDir, file)).replace(/\\/g, '/')
+          const rel = './' + relative(outRoot, join(itemOutDir, file)).replace(/\\/g, '/')
           allImports.push({ ident: pageIdents[idx], relPath: rel })
         })
-        // Use only the first page's thumb as the grid-tile thumbnail.
-        const thumbRel = './' + relative(OUT_ROOT, join(outDir, thumbFiles[0])).replace(/\\/g, '/')
+        const thumbRel = './' + relative(outRoot, join(itemOutDir, thumbFiles[0])).replace(/\\/g, '/')
         allImports.push({ ident: thumbIdent, relPath: thumbRel })
 
         items.push({ id, title, description, pageIdents, thumbIdent })
@@ -268,23 +271,24 @@ async function ingestTopic(topicId, topicConfig, allImports, counterRef) {
   return topicResult
 }
 
-async function main() {
-  if (!existsSync(SRC_ROOT)) {
-    console.log(`[ingest] no source folder at ${relative(ROOT, SRC_ROOT)} — skipping`)
+async function ingestApp(app, topics) {
+  const outRoot = join(APPS_DIR, app, 'assets', 'images', 'contents')
+  const appSrcDir = join(SRC_ROOT, app)
+  if (!existsSync(appSrcDir)) {
+    console.log(`[ingest] ${app}: no source folder — skipping`)
     return
   }
-  await mkdir(OUT_ROOT, { recursive: true })
+  await mkdir(outRoot, { recursive: true })
 
   const allImports = []
   const counterRef = { n: 0 }
-  const topicResults = {} // { topicId: { sectionId: { subType: [items] } } }
+  const topicResults = {}
 
-  for (const [topicId, topicConfig] of Object.entries(TOPICS)) {
-    const result = await ingestTopic(topicId, topicConfig, allImports, counterRef)
+  for (const [topicId, topicConfig] of Object.entries(topics)) {
+    const result = await ingestTopic(app, topicId, topicConfig, allImports, counterRef)
     if (result) topicResults[topicId] = result
   }
 
-  // Write manifest.js
   const lines = ['// auto-generato da scripts/ingest-contents.mjs — non modificare', '']
   for (const { ident, relPath } of allImports) {
     lines.push(`import ${ident} from '${relPath}'`)
@@ -312,7 +316,8 @@ async function main() {
   }
   lines.push('}')
   lines.push('')
-  await writeFile(MANIFEST, lines.join('\n'))
+  const manifestPath = join(outRoot, 'manifest.js')
+  await writeFile(manifestPath, lines.join('\n'))
 
   let total = 0
   for (const topicId of Object.keys(topicResults)) {
@@ -320,11 +325,21 @@ async function main() {
       for (const subType of Object.keys(topicResults[topicId][secId])) {
         const n = topicResults[topicId][secId][subType].length
         total += n
-        console.log(`  ${topicId}/${secId}/${subType}: ${n}`)
+        console.log(`  ${app}/${topicId}/${secId}/${subType}: ${n}`)
       }
     }
   }
-  console.log(`[ingest] wrote ${relative(ROOT, MANIFEST)} (${total} items)`)
+  console.log(`[ingest] ${app}: wrote ${relative(ROOT, manifestPath)} (${total} items)`)
+}
+
+async function main() {
+  if (!existsSync(SRC_ROOT)) {
+    console.log(`[ingest] no source folder at ${relative(ROOT, SRC_ROOT)} — skipping`)
+    return
+  }
+  for (const [app, topics] of Object.entries(APP_TOPICS)) {
+    await ingestApp(app, topics)
+  }
 }
 
 main().catch((err) => {

@@ -2,12 +2,13 @@ import { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Workbox } from 'workbox-window'
 import App from './App.jsx'
-import BootSplash from './components/BootSplash.jsx'
+import BootSplash from '../../shared/components/BootSplash.jsx'
 import BgKeeper from './components/BgKeeper.jsx'
-import { initOrientation } from './lib/orientation.js'
-import './index.css'
+import { setOrientation } from '../../shared/lib/orientation.js'
+import { BG_IMAGES } from './lib/bgImages.js'
+import '../../shared/index.css'
 
-initOrientation()
+setOrientation('horizontal')
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   const wb = new Workbox('/sw.js')
@@ -26,7 +27,7 @@ function Boot() {
       <BgKeeper />
     </>
   ) : (
-    <BootSplash onReady={() => setReady(true)} />
+    <BootSplash images={BG_IMAGES} onReady={() => setReady(true)} />
   )
 }
 

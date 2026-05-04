@@ -1,9 +1,8 @@
 import { useNavigate } from '@tanstack/react-router'
-import bgImg from '../assets/images/homepage-bg.jpg'
+import bgImg from '../../../shared/assets/homepage-bg.jpg'
 import logoCamera from '../assets/images/logo-camera.png'
 import logo80 from '../assets/images/logo-80.png'
 import anniImg from '../assets/images/anni.png'
-import { useOrientation, setOrientation } from '../lib/orientation'
 
 /*
   Schermata di intro (00_HP).
@@ -16,7 +15,6 @@ import { useOrientation, setOrientation } from '../lib/orientation'
 
 export default function Intro() {
   const navigate = useNavigate()
-  const orientation = useOrientation()
   const onEnter = () => navigate({ to: '/menu' })
 
   return (
@@ -29,11 +27,7 @@ export default function Intro() {
       />
 
       {/* Overlay bianco a tutta larghezza dietro il blocco contenuti */}
-      <div
-        className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-center bg-white/60 py-[4rem] ${
-          orientation === 'vertical' ? 'px-[3rem]' : ''
-        }`}
-      >
+      <div className="absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-center bg-white/60 py-[4rem]">
         <div className="flex flex-col items-center text-blu">
           <div className="flex flex-col items-start">
           {/* Loghi */}
@@ -72,32 +66,6 @@ export default function Intro() {
         </div>
       </div>
 
-      <div className="absolute bottom-[1.5rem] left-1/2 -translate-x-1/2 flex items-center gap-[0.25rem] rounded-full bg-blu/90 p-[0.25rem] text-white">
-        <OrientationOption
-          label="Tavolo orizzontale"
-          active={orientation === 'horizontal'}
-          onClick={() => setOrientation('horizontal')}
-        />
-        <OrientationOption
-          label="Totem verticale"
-          active={orientation === 'vertical'}
-          onClick={() => setOrientation('vertical')}
-        />
-      </div>
     </div>
-  )
-}
-
-function OrientationOption({ label, active, onClick }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`cursor-pointer rounded-full px-[1.25rem] py-[0.625rem] text-[1.125rem] font-bold transition-colors duration-150 ${
-        active ? 'bg-white text-blu' : 'text-white active:opacity-70'
-      }`}
-    >
-      {label}
-    </button>
   )
 }
