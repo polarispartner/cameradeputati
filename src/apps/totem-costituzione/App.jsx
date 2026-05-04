@@ -67,8 +67,8 @@ export default function App() {
       </header>
 
       {/* Flipbook */}
-      <main className="relative flex flex-1 min-h-0 flex-col items-center justify-center px-[3rem] py-[3rem]">
-        <div className="relative flex w-full max-w-[40rem] min-h-0 flex-1 items-center justify-center">
+      <main className="relative flex flex-1 min-h-0 flex-col items-center justify-start px-[2rem] pt-[2.5rem] pb-[2rem]">
+        <div className="relative flex w-full min-h-0 flex-1 items-start justify-center">
           {/* spread */}
           <div className="flex h-full w-full items-stretch justify-center gap-[0.25rem]">
             <SpreadHalf src={leftPage} side="left" />
@@ -99,7 +99,7 @@ export default function App() {
         <button
           type="button"
           onClick={goHome}
-          className="mt-[2.5rem] flex shrink-0 cursor-pointer items-center gap-[0.75rem] rounded-full bg-white px-[1.75rem] py-[0.875rem] text-blu transition-opacity duration-150 active:opacity-80"
+          className="mt-[1.75rem] flex shrink-0 cursor-pointer items-center gap-[0.75rem] rounded-full bg-white px-[1.75rem] py-[0.875rem] text-blu transition-opacity duration-150 active:opacity-80"
         >
           <img src={homeIcon} alt="" className="h-[1.5rem] w-auto" draggable={false} />
           <span className="text-[1.5rem] font-bold">Home</span>
