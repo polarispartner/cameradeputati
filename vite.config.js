@@ -63,6 +63,7 @@ export default defineConfig({
           "src/apps/totem-costituzione/index.html",
         ),
         "totem-b": resolve(__dirname, "src/apps/totem-b/index.html"),
+        "totem-c": resolve(__dirname, "src/apps/totem-c/index.html"),
       },
       output: {
         manualChunks: undefined,

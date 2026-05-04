@@ -11,7 +11,7 @@ export default function App() {
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative flex h-full w-full flex-col items-center justify-center px-[3rem] text-center text-white">
-        <h1 className="text-[6rem] leading-[1] font-black tracking-tight">Totem B</h1>
+        <h1 className="text-[6rem] leading-[1] font-black tracking-tight">Totem C</h1>
         <p className="mt-[2rem] text-[2.5rem] font-medium opacity-80">in arrivo</p>
       </div>
     </div>
