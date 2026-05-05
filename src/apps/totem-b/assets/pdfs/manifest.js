@@ -103,6 +103,11 @@ import _17_saragat_p5 from './17-saragat/page-05.png'
 import _17_saragat_p6 from './17-saragat/page-06.png'
 import _17_saragat_p7 from './17-saragat/page-07.png'
 import _17_saragat_p8 from './17-saragat/page-08.png'
+import Cronologia_Istituzionale_p1 from './Cronologia Istituzionale/page-01.png'
+import Cronologia_Istituzionale_p2 from './Cronologia Istituzionale/page-02.png'
+import Cronologia_Istituzionale_p3 from './Cronologia Istituzionale/page-03.png'
+import Cronologia_Istituzionale_p4 from './Cronologia Istituzionale/page-04.png'
+import Cronologia_Istituzionale_p5 from './Cronologia Istituzionale/page-05.png'
 
 export const PDF_PAGES = {
   "01-aleramo": [_01_aleramo_p1, _01_aleramo_p2],
@@ -122,4 +127,5 @@ export const PDF_PAGES = {
   "15-pertini": [_15_pertini_p1, _15_pertini_p2, _15_pertini_p3, _15_pertini_p4, _15_pertini_p5, _15_pertini_p6, _15_pertini_p7],
   "16-romita": [_16_romita_p1, _16_romita_p2, _16_romita_p3, _16_romita_p4, _16_romita_p5, _16_romita_p6, _16_romita_p7, _16_romita_p8, _16_romita_p9, _16_romita_p10, _16_romita_p11, _16_romita_p12, _16_romita_p13, _16_romita_p14, _16_romita_p15, _16_romita_p16, _16_romita_p17, _16_romita_p18, _16_romita_p19, _16_romita_p20, _16_romita_p21, _16_romita_p22],
   "17-saragat": [_17_saragat_p1, _17_saragat_p2, _17_saragat_p3, _17_saragat_p4, _17_saragat_p5, _17_saragat_p6, _17_saragat_p7, _17_saragat_p8],
+  "Cronologia Istituzionale": [Cronologia_Istituzionale_p1, Cronologia_Istituzionale_p2, Cronologia_Istituzionale_p3, Cronologia_Istituzionale_p4, Cronologia_Istituzionale_p5],
 }
