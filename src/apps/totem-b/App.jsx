@@ -124,7 +124,7 @@ function ReaderView({ author, onBack }) {
       </div>
 
       <div className="relative flex min-h-0 flex-1">
-        <PdfFlipbook pages={pages} themeColor="#063955" />
+        <PdfFlipbook pages={pages} themeColor="#063955" arrows="side" />
       </div>
 
       <button
