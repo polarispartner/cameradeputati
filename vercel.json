@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/src/apps/tavolo/index.html" },
+    { "source": "/tavolo", "destination": "/src/apps/tavolo/index.html" },
+    { "source": "/totem-costituzione", "destination": "/src/apps/totem-costituzione/index.html" },
+    { "source": "/totem-b", "destination": "/src/apps/totem-b/index.html" },
+    { "source": "/totem-c", "destination": "/src/apps/totem-c/index.html" }
+  ]
+}

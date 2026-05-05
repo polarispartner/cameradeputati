@@ -26,6 +26,7 @@ export default defineConfig({
         ],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "/src/apps/tavolo/index.html",
+        navigateFallbackDenylist: [/^\/totem/, /^\/src\/apps\/totem/],
         cleanupOutdatedCaches: true,
         skipWaiting: true,
         clientsClaim: true,
