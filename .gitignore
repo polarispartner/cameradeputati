@@ -17,6 +17,7 @@ dist-ssr
 /pdfs
 /nuova_struttura
 /fix_nuova_struttura
+/la_memorialistica
 
 # Output di render-pdfs e ingest-contents: gli asset e i manifest sono committati come
 # statici; ri-eseguire gli script solo quando arrivano nuovi PDF/contenuti.

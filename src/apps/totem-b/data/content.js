@@ -1,2 +1,19 @@
-// Contenuti del totem-b — da popolare quando arriveranno PSD e materiali.
-export const TOPICS = []
+export const AUTHORS = [
+  { id: '01-aleramo',     name: 'Sibilla Aleramo',     title: 'Il 1946' },
+  { id: '02-andreotti',   name: 'Giulio Andreotti',    title: 'Gli «anni brevi» della Costituente' },
+  { id: '03-banti',       name: 'Anna Banti',          title: 'Il 1946' },
+  { id: '04-bellonci',    name: 'Maria Bellonci',      title: 'Il 1946' },
+  { id: '05-brin',        name: 'Irene Brin',          title: 'Avventure mondane 1946' },
+  { id: '06-calamandrei', name: 'Piero Calamandrei',   title: 'Discorso ai giovani' },
+  { id: '07-croce',       name: 'Benedetto Croce',     title: 'Pagine di diario' },
+  { id: '08-de-cespedes', name: 'Alba De Céspedes',    title: 'Il 1946' },
+  { id: '09-drago',       name: 'Antonietta Drago',    title: 'Le penne del pavone' },
+  { id: '10-fanfani',     name: 'Amintore Fanfani',    title: 'Messaggio del Presidente del Senato della Repubblica in occasione del ventesimo anniversario dell’Assemblea Costituente' },
+  { id: '11-garofalo',    name: 'Anna Garofalo',       title: 'Da sciuscià a cittadino' },
+  { id: '12-manzini',     name: 'Gianna Manzini',      title: 'Il 1946' },
+  { id: '13-nemi',        name: 'Orsola Nemi',         title: 'Il 1946' },
+  { id: '14-nenni',       name: 'Pietro Nenni',        title: 'Il Ministero per la Costituente' },
+  { id: '15-pertini',     name: 'Sandro Pertini',      title: 'Messaggio del Presidente della Camera dei deputati in occasione del ventesimo anniversario dell’Assemblea Costituente' },
+  { id: '16-romita',      name: 'Giuseppe Romita',     title: 'E una notte la monarchia fu in vantaggio' },
+  { id: '17-saragat',     name: 'Giuseppe Saragat',    title: 'Messaggio del Presidente della Repubblica in occasione del ventesimo anniversario dell’Assemblea Costituente' },
+]

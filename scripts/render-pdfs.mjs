@@ -69,7 +69,8 @@ async function renderPdf(srcPath, outDir) {
 }
 
 function jsIdent(s) {
-  return s.replace(/[^a-zA-Z0-9_$]/g, '_')
+  const safe = s.replace(/[^a-zA-Z0-9_$]/g, '_')
+  return /^[0-9]/.test(safe) ? '_' + safe : safe
 }
 
 async function renderApp(appName) {
