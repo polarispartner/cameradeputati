@@ -1,5 +1,5 @@
-import HiddenReload from '../../shared/components/HiddenReload'
-import backstageVideo from './assets/video/backstage.mp4'
+import HiddenReload from "../../shared/components/HiddenReload";
+import backstageVideo from "./assets/video/backstage.mp4";
 
 export default function App() {
   return (
@@ -10,11 +10,10 @@ export default function App() {
           src={backstageVideo}
           autoPlay
           loop
-          muted
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
     </>
-  )
+  );
 }
