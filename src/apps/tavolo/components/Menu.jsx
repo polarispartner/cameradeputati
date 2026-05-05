@@ -2,8 +2,10 @@ import { useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import bgImg from "../assets/images/menu-bg.jpg";
-import donneRetino from "../assets/images/menu/01_Il ruolo delle donne_RETINO.svg";
-import donnePieno from "../assets/images/menu/01_Il ruolo delle donne_PIENO.svg";
+// TODO: SVG provvisorio, mostra ancora il vecchio testo "Il ruolo delle donne".
+// Sostituire con asset definitivo "Il voto alle donne" appena fornito dal cliente.
+import donneRetino from "../assets/images/menu/01_Il voto alle donne_RETINO.svg";
+import donnePieno from "../assets/images/menu/01_Il voto alle donne_PIENO.svg";
 import consultaRetino from "../assets/images/menu/02_La Consulta nazionale_RETINO.svg";
 import consultaPieno from "../assets/images/menu/02_La Consulta nazionale_PIENO.svg";
 import referendumRetino from "../assets/images/menu/03_Il-Referendum_RETINO.svg";
@@ -12,9 +14,9 @@ import costituenteRetino from "../assets/images/menu/04_Assemblea_RETINO.svg";
 import costituentePieno from "../assets/images/menu/04_Assemblea_PIENO.svg";
 
 const sections = [
-  { id: "donne", to: "/t/donne", alt: "Il ruolo delle donne", retino: donneRetino, pieno: donnePieno },
+  { id: "donne", to: "/t/donne", alt: "Il voto alle donne", retino: donneRetino, pieno: donnePieno },
   { id: "consulta", to: "/t/consulta", alt: "La Consulta nazionale", retino: consultaRetino, pieno: consultaPieno },
-  { id: "referendum", to: "/t/referendum", alt: "Il Referendum del 2 giugno", retino: referendumRetino, pieno: referendumPieno },
+  { id: "referendum", to: "/t/referendum", alt: "Il Referendum istituzionale", retino: referendumRetino, pieno: referendumPieno },
   { id: "costituente", to: "/t/costituente", alt: "L'Assemblea Costituente", retino: costituenteRetino, pieno: costituentePieno },
 ];
 

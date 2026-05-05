@@ -15,6 +15,7 @@ dist-ssr
 /design
 /contents
 /pdfs
+/nuova_struttura
 
 # Output di render-pdfs e ingest-contents: gli asset e i manifest sono committati come
 # statici; ri-eseguire gli script solo quando arrivano nuovi PDF/contenuti.

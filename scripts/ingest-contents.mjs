@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto'
-import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readdir, readFile, writeFile, mkdir, stat } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import { dirname, join, relative, resolve, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -20,6 +20,18 @@ const THUMB_QUALITY = 70
 // Add new app/topic entries here when new contents arrive.
 const APP_TOPICS = {
   tavolo: {
+    donne: {
+      sections: {
+        "1. L'ESTENSIONE DEL SUFFRAGIO": 'suffragio',
+        '2. LE ELEZIONI AMMINISTRATIVE': 'amministrative',
+      },
+    },
+    consulta: {
+      sections: {
+        '1. LA COMPOSIZIONE': 'composizione',
+        '2. IL LAVORO': 'lavoro',
+      },
+    },
     referendum: {
       sections: {
         '1. LA CAMPAGNA': 'campagna',
@@ -27,9 +39,12 @@ const APP_TOPICS = {
         '3. I RISULTATI': 'risultati',
       },
     },
-    // donne: { sections: { ... } },
-    // consulta: { sections: { ... } },
-    // costituente: { sections: { ... } },
+    costituente: {
+      sections: {
+        '1. LA COMPOSIZIONE': 'composizione',
+        '2. IL LAVORO': 'lavoro',
+      },
+    },
   },
   // 'totem-costituzione': { ... },
   // 'totem-b': { ... },
@@ -194,10 +209,19 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
           .map((e) => e.name)
           .sort((a, b) => a.localeCompare(b, 'it', { numeric: true }))
 
-        const imageFiles = files.filter((f) => {
+        const imageCandidates = files.filter((f) => {
           const ext = extname(f).toLowerCase()
           return IMG_EXT.has(ext) || TIFF_EXT.has(ext)
         })
+        const imageFiles = []
+        for (const f of imageCandidates) {
+          const st = await stat(join(leafDir, f))
+          if (st.size === 0) {
+            console.warn(`[ingest] empty image: ${relative(ROOT, join(leafDir, f))} — skipping file`)
+            continue
+          }
+          imageFiles.push(f)
+        }
         const docxFile = files.find((f) => extname(f).toLowerCase() === '.docx')
 
         if (imageFiles.length === 0) {

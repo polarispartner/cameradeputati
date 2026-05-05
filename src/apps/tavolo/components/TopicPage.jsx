@@ -118,6 +118,11 @@ export default function TopicPage() {
   if (!topic) return null;
 
   const onSection = (id) => {
+    const sec = topic.sections.find((s) => s.id === id);
+    if (sec && sec.subsections.length === 1) {
+      onSub(id, sec.subsections[0].type);
+      return;
+    }
     setOpenId((curr) => (curr === id ? null : id));
   };
 
