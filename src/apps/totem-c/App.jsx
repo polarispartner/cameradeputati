@@ -10,6 +10,7 @@ export default function App() {
           src={backstageVideo}
           autoPlay
           loop
+          muted
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         />
