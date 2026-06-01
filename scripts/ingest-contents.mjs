@@ -6,6 +6,7 @@ import { dirname, join, relative, resolve, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 import mammoth from 'mammoth'
+import { pdf } from 'pdf-to-img'
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = resolve(HERE, '..')
@@ -15,6 +16,7 @@ const MAX_WIDTH = 3840
 const JPG_QUALITY = 82
 const THUMB_WIDTH = 640
 const THUMB_QUALITY = 70
+const PDF_SCALE = 2
 
 // Per-app, per-topic config: maps source folder names → content.js ids.
 // Add new app/topic entries here when new contents arrive.
@@ -59,6 +61,7 @@ const SUBTYPE_MAP = {
 
 const IMG_EXT = new Set(['.jpg', '.jpeg', '.png'])
 const TIFF_EXT = new Set(['.tif', '.tiff'])
+const PDF_EXT = new Set(['.pdf'])
 const SKIP_FILES = new Set(['.DS_Store', 'Thumbs.db'])
 
 function slugify(s) {
@@ -222,10 +225,22 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
           }
           imageFiles.push(f)
         }
+        const pdfCandidates = files.filter((f) => PDF_EXT.has(extname(f).toLowerCase()))
+        const pdfFiles = []
+        for (const f of pdfCandidates) {
+          const st = await stat(join(leafDir, f))
+          if (st.size === 0) {
+            console.warn(`[ingest] empty pdf: ${relative(ROOT, join(leafDir, f))} — skipping file`)
+            continue
+          }
+          pdfFiles.push(f)
+        }
         const docxFile = files.find((f) => extname(f).toLowerCase() === '.docx')
 
-        if (imageFiles.length === 0) {
-          console.warn(`[ingest] no image in: ${relative(ROOT, leafDir)} — skipping`)
+        // Items deliver either raster images or PDFs (documents); PDFs are
+        // rasterized to pages below. Images take precedence when both exist.
+        if (imageFiles.length === 0 && pdfFiles.length === 0) {
+          console.warn(`[ingest] no image/pdf in: ${relative(ROOT, leafDir)} — skipping`)
           continue
         }
 
@@ -233,7 +248,7 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
         await mkdir(itemOutDir, { recursive: true })
 
         const inputHashes = {}
-        for (const f of [...imageFiles, ...(docxFile ? [docxFile] : [])]) {
+        for (const f of [...imageFiles, ...pdfFiles, ...(docxFile ? [docxFile] : [])]) {
           inputHashes[f] = await hashFile(join(leafDir, f))
         }
         const cache = await readCache(itemOutDir)
@@ -242,9 +257,9 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
           cache.version === 2 &&
           JSON.stringify(cache.inputs) === JSON.stringify(inputHashes) &&
           Array.isArray(cache.pages) &&
-          cache.pages.length === imageFiles.length &&
           Array.isArray(cache.thumbs) &&
-          cache.thumbs.length === imageFiles.length &&
+          cache.pages.length > 0 &&
+          cache.pages.length === cache.thumbs.length &&
           cache.pages.every((p) => existsSync(join(itemOutDir, p))) &&
           cache.thumbs.every((p) => existsSync(join(itemOutDir, p)))
 
@@ -256,14 +271,33 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
         } else {
           pageFiles = []
           thumbFiles = []
-          for (let i = 0; i < imageFiles.length; i++) {
-            const src = join(leafDir, imageFiles[i])
-            const stem = `page-${String(i + 1).padStart(2, '0')}`
+          const pushPage = async (srcPathOrBuffer) => {
+            const stem = `page-${String(pageFiles.length + 1).padStart(2, '0')}`
             const fullName = `${stem}.jpg`
             const thumbName = `${stem}-thumb.jpg`
-            await processImage(src, join(itemOutDir, fullName), join(itemOutDir, thumbName))
+            await processImage(srcPathOrBuffer, join(itemOutDir, fullName), join(itemOutDir, thumbName))
             pageFiles.push(fullName)
             thumbFiles.push(thumbName)
+          }
+          if (imageFiles.length > 0) {
+            for (const f of imageFiles) {
+              await pushPage(join(leafDir, f))
+            }
+          } else {
+            for (const pf of pdfFiles) {
+              try {
+                const document = await pdf(join(leafDir, pf), { scale: PDF_SCALE })
+                for await (const pageBuf of document) {
+                  await pushPage(pageBuf)
+                }
+              } catch (err) {
+                console.warn(`[ingest] pdf render failed: ${relative(ROOT, join(leafDir, pf))} (${err.message})`)
+              }
+            }
+          }
+          if (pageFiles.length === 0) {
+            console.warn(`[ingest] no usable pages in: ${relative(ROOT, leafDir)} — skipping`)
+            continue
           }
           console.log(`[ingest] ${app}/${topicId}/${secId}/${subType}/${slug} (${pageFiles.length}p)`)
         }

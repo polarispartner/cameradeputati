@@ -5,17 +5,15 @@ import costituenteBg from '../assets/images/costituente-bg.jpg'
 import { TOPIC_ITEMS } from '../assets/images/contents/manifest'
 
 const SUB_ORDER = ['foto', 'giornale', 'documenti']
-const SUB_TITLE_BY_TOPIC = {
-  referendum: { foto: 'Foto/Video', giornale: 'Stampa', documenti: 'Documenti' },
-}
-const DEFAULT_SUB_TITLE = { foto: 'Foto/Video', giornale: 'Giornale', documenti: 'Documenti' }
+// "giornale" è l'id interno usato da ingest (mappa STAMPA → giornale); il titolo
+// mostrato è sempre "Stampa" per tutti i temi.
+const SUB_TITLE = { foto: 'Foto/Video', giornale: 'Stampa', documenti: 'Documenti' }
 
 const buildSubsections = (topicId, sectionId) => {
   const sec = TOPIC_ITEMS[topicId]?.[sectionId] || {}
-  const titles = SUB_TITLE_BY_TOPIC[topicId] || DEFAULT_SUB_TITLE
   return SUB_ORDER.filter((t) => sec[t]?.length).map((type) => ({
     type,
-    title: titles[type],
+    title: SUB_TITLE[type],
     items: sec[type],
   }))
 }
@@ -28,16 +26,6 @@ const section = (topicId, id, title) => ({
 
 export const TOPICS = [
   {
-    id: 'donne',
-    title: 'Il voto alle donne',
-    theme: '#1ed0c7',
-    bg: donneBg,
-    sections: [
-      section('donne', 'suffragio', "L'estensione del suffragio"),
-      section('donne', 'amministrative', 'Le elezioni amministrative'),
-    ],
-  },
-  {
     id: 'consulta',
     title: 'La Consulta nazionale',
     theme: '#ec1f81',
@@ -45,6 +33,16 @@ export const TOPICS = [
     sections: [
       section('consulta', 'composizione', 'La composizione'),
       section('consulta', 'lavoro', 'Il lavoro'),
+    ],
+  },
+  {
+    id: 'donne',
+    title: 'Il voto alle donne',
+    theme: '#1ed0c7',
+    bg: donneBg,
+    sections: [
+      section('donne', 'suffragio', "L'estensione del suffragio"),
+      section('donne', 'amministrative', 'Le elezioni amministrative'),
     ],
   },
   {
@@ -64,7 +62,7 @@ export const TOPICS = [
     theme: '#00715a',
     bg: costituenteBg,
     sections: [
-      section('costituente', 'composizione', 'La composizione'),
+      section('costituente', 'composizione', "L'elezione e la composizione"),
       section('costituente', 'lavoro', 'Il lavoro'),
     ],
   },
