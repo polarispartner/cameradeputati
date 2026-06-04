@@ -314,6 +314,9 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
         if (docxFile) {
           description = await extractDocxText(join(leafDir, docxFile))
         }
+        // Fallback: se non c'è didascalia utilizzabile (docx assente, vuoto o
+        // corrotto), mostriamo almeno il titolo dell'item al posto del nulla.
+        if (!description) description = title
 
         await writeCache(itemOutDir, { version: 2, inputs: inputHashes, pages: pageFiles, thumbs: thumbFiles, description })
 
