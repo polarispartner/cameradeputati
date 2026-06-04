@@ -669,10 +669,10 @@ import c198_12_la_tribuna_illust_p1 from './referendum/campagna/giornale/12-la-t
 import c198_12_la_tribuna_illust_t from './referendum/campagna/giornale/12-la-tribuna-illustrata-19-maggio-1946/page-01-thumb.jpg'
 import c199_13_la_voce_repubblic_p1 from './referendum/campagna/giornale/13-la-voce-repubblicana-30-maggio-1946/page-01.jpg'
 import c199_13_la_voce_repubblic_t from './referendum/campagna/giornale/13-la-voce-repubblicana-30-maggio-1946/page-01-thumb.jpg'
-import c200_14_unita_30_maggio_1_p1 from './referendum/campagna/giornale/14-unita-30-maggio-1946/page-01.jpg'
-import c200_14_unita_30_maggio_1_t from './referendum/campagna/giornale/14-unita-30-maggio-1946/page-01-thumb.jpg'
-import c201_15_unita_31_maggio_1_p1 from './referendum/campagna/giornale/15-unita-31-maggio-1946/page-01.jpg'
-import c201_15_unita_31_maggio_1_t from './referendum/campagna/giornale/15-unita-31-maggio-1946/page-01-thumb.jpg'
+import c200_14_lunita_30_maggio__p1 from './referendum/campagna/giornale/14-lunita-30-maggio-1946/page-01.jpg'
+import c200_14_lunita_30_maggio__t from './referendum/campagna/giornale/14-lunita-30-maggio-1946/page-01-thumb.jpg'
+import c201_15_lunita_31_maggio__p1 from './referendum/campagna/giornale/15-lunita-31-maggio-1946/page-01.jpg'
+import c201_15_lunita_31_maggio__t from './referendum/campagna/giornale/15-lunita-31-maggio-1946/page-01-thumb.jpg'
 import c202_16_il_tempo_1_giugno_p1 from './referendum/campagna/giornale/16-il-tempo-1-giugno-1946/page-01.jpg'
 import c202_16_il_tempo_1_giugno_p2 from './referendum/campagna/giornale/16-il-tempo-1-giugno-1946/page-02.jpg'
 import c202_16_il_tempo_1_giugno_p3 from './referendum/campagna/giornale/16-il-tempo-1-giugno-1946/page-03.jpg'
@@ -829,8 +829,8 @@ import c256_06_lunita_11_giugno__p1 from './referendum/risultati/giornale/06-lun
 import c256_06_lunita_11_giugno__t from './referendum/risultati/giornale/06-lunita-11-giugno-1946/page-01-thumb.jpg'
 import c257_07_avanti_12_giugno__p1 from './referendum/risultati/giornale/07-avanti-12-giugno-1946/page-01.jpg'
 import c257_07_avanti_12_giugno__t from './referendum/risultati/giornale/07-avanti-12-giugno-1946/page-01-thumb.jpg'
-import c258_08_lunita_12_giugno__p1 from './referendum/risultati/giornale/08-lunita-12-giugno-1946-ed-12/page-01.jpg'
-import c258_08_lunita_12_giugno__t from './referendum/risultati/giornale/08-lunita-12-giugno-1946-ed-12/page-01-thumb.jpg'
+import c258_08_lunita_12_giugno__p1 from './referendum/risultati/giornale/08-lunita-12-giugno-1946/page-01.jpg'
+import c258_08_lunita_12_giugno__t from './referendum/risultati/giornale/08-lunita-12-giugno-1946/page-01-thumb.jpg'
 import c259_09_avanti_13_giugno__p1 from './referendum/risultati/giornale/09-avanti-13-giugno-1946/page-01.jpg'
 import c259_09_avanti_13_giugno__t from './referendum/risultati/giornale/09-avanti-13-giugno-1946/page-01-thumb.jpg'
 import c260_10_la_voce_repubblic_p1 from './referendum/risultati/giornale/10-la-voce-repubblicana-13-giugno-1946/page-01.jpg'
@@ -1425,14 +1425,14 @@ export const TOPIC_ITEMS = {
         { id: "donne-amministrative-giornale-3-il-popolo-19-febbraio-1946", title: "Il Popolo, 19 febbraio 1946", description: "Il Popolo, 19 febbraio 1946", thumb: c61_3_il_popolo_19_febbr_t, pages: [c61_3_il_popolo_19_febbr_p1] },
         { id: "donne-amministrative-giornale-4-la-nuova-stampa-21-febbraio-1946", title: "La Nuova Stampa, 21 febbraio 1946", description: "La Nuova Stampa, 21 febbraio 1946", thumb: c62_4_la_nuova_stampa_21_t, pages: [c62_4_la_nuova_stampa_21_p1] },
         { id: "donne-amministrative-giornale-5-lunita-10-marzo-1946", title: "L'Unità, 10 marzo 1946", description: "L'Unità, 10 marzo 1946", thumb: c63_5_lunita_10_marzo_19_t, pages: [c63_5_lunita_10_marzo_19_p1] },
-        { id: "donne-amministrative-giornale-6-avanti-12-marzo-1946", title: "Avanti, 12 marzo 1946", description: "Avanti!, 12 marzo 1946", thumb: c64_6_avanti_12_marzo_19_t, pages: [c64_6_avanti_12_marzo_19_p1] },
+        { id: "donne-amministrative-giornale-6-avanti-12-marzo-1946", title: "Avanti!, 12 marzo 1946", description: "Avanti!, 12 marzo 1946", thumb: c64_6_avanti_12_marzo_19_t, pages: [c64_6_avanti_12_marzo_19_p1] },
         { id: "donne-amministrative-giornale-7-la-nuova-stampa-12-marzo-1946", title: "La Nuova Stampa, 12 marzo 1946", description: "La Nuova Stampa, 12 marzo 1946", thumb: c65_7_la_nuova_stampa_12_t, pages: [c65_7_la_nuova_stampa_12_p1] },
         { id: "donne-amministrative-giornale-8-il-popolo-12-marzo-1946", title: "Il Popolo, 12 marzo 1946", description: "Il Popolo, 12 marzo 1946", thumb: c66_8_il_popolo_12_marzo_t, pages: [c66_8_il_popolo_12_marzo_p1] },
         { id: "donne-amministrative-giornale-9-lunita-12-marzo-1946", title: "L'Unità, 12 marzo 1946", description: "L'Unità, 12 marzo 1946", thumb: c67_9_lunita_12_marzo_19_t, pages: [c67_9_lunita_12_marzo_19_p1] },
         { id: "donne-amministrative-giornale-10-lillustrazione-italiana-17-marzo-1946", title: "L'Illustrazione italiana, 17 marzo 1946", description: "L’Illustrazione italiana, 17 marzo 1946", thumb: c68_10_lillustrazione_it_t, pages: [c68_10_lillustrazione_it_p1] },
-        { id: "donne-amministrative-giornale-11-avanti-19-marzo-1946", title: "Avanti, 19 marzo 1946", description: "Avanti!, 19 marzo 1946", thumb: c69_11_avanti_19_marzo_1_t, pages: [c69_11_avanti_19_marzo_1_p1] },
+        { id: "donne-amministrative-giornale-11-avanti-19-marzo-1946", title: "Avanti!, 19 marzo 1946", description: "Avanti!, 19 marzo 1946", thumb: c69_11_avanti_19_marzo_1_t, pages: [c69_11_avanti_19_marzo_1_p1] },
         { id: "donne-amministrative-giornale-12-avanti-20-marzo-1946", title: "Avanti!, 20 marzo 1946", description: "Avanti!, 20 marzo 1946", thumb: c70_12_avanti_20_marzo_1_t, pages: [c70_12_avanti_20_marzo_1_p1] },
-        { id: "donne-amministrative-giornale-13-avanti-22-marzo-1946", title: "Avanti, 22 marzo 1946", description: "Avanti!, 22 marzo 1946", thumb: c71_13_avanti_22_marzo_1_t, pages: [c71_13_avanti_22_marzo_1_p1] },
+        { id: "donne-amministrative-giornale-13-avanti-22-marzo-1946", title: "Avanti!, 22 marzo 1946", description: "Avanti!, 22 marzo 1946", thumb: c71_13_avanti_22_marzo_1_t, pages: [c71_13_avanti_22_marzo_1_p1] },
         { id: "donne-amministrative-giornale-14-tempo-25-marzo-1946", title: "Tempo, 25 marzo 1946", description: "Tempo, 25 marzo 1946", thumb: c72_14_tempo_25_marzo_19_t, pages: [c72_14_tempo_25_marzo_19_p1, c72_14_tempo_25_marzo_19_p2] },
         { id: "donne-amministrative-giornale-15-italia-nuova-3-aprile-1946", title: "Italia Nuova, 3 aprile 1946", description: "Italia Nuova, 3 aprile 1946", thumb: c73_15_italia_nuova_3_ap_t, pages: [c73_15_italia_nuova_3_ap_p1] },
         { id: "donne-amministrative-giornale-16-la-domenica-del-corriere-14-aprile-1946", title: "La Domenica del Corriere, 14 aprile 1946", description: "La Domenica del Corriere, 14 aprile 1946", thumb: c74_16_la_domenica_del_c_t, pages: [c74_16_la_domenica_del_c_p1] },
@@ -1589,13 +1589,13 @@ export const TOPIC_ITEMS = {
         { id: "referendum-campagna-giornale-11-lillustrazione-italiana-19-maggio-1946", title: "L’Illustrazione italiana, 19 maggio 1946", description: "L’Illustrazione italiana, 19 maggio 1946.", thumb: c197_11_lillustrazione_it_t, pages: [c197_11_lillustrazione_it_p1] },
         { id: "referendum-campagna-giornale-12-la-tribuna-illustrata-19-maggio-1946", title: "La Tribuna illustrata, 19 maggio 1946", description: "La Tribuna illustrata, 19 maggio 1946.", thumb: c198_12_la_tribuna_illust_t, pages: [c198_12_la_tribuna_illust_p1] },
         { id: "referendum-campagna-giornale-13-la-voce-repubblicana-30-maggio-1946", title: "La Voce Repubblicana, 30 maggio 1946", description: "La Voce Repubblicana, 30 maggio 1946", thumb: c199_13_la_voce_repubblic_t, pages: [c199_13_la_voce_repubblic_p1] },
-        { id: "referendum-campagna-giornale-14-unita-30-maggio-1946", title: "Unità, 30 maggio 1946", description: "L’Unità, 30 maggio 1946", thumb: c200_14_unita_30_maggio_1_t, pages: [c200_14_unita_30_maggio_1_p1] },
-        { id: "referendum-campagna-giornale-15-unita-31-maggio-1946", title: "Unità, 31 maggio 1946", description: "L’Unità, 31 maggio 1946", thumb: c201_15_unita_31_maggio_1_t, pages: [c201_15_unita_31_maggio_1_p1] },
+        { id: "referendum-campagna-giornale-14-lunita-30-maggio-1946", title: "L'Unità, 30 maggio 1946", description: "L’Unità, 30 maggio 1946", thumb: c200_14_lunita_30_maggio__t, pages: [c200_14_lunita_30_maggio__p1] },
+        { id: "referendum-campagna-giornale-15-lunita-31-maggio-1946", title: "L'Unità, 31 maggio 1946", description: "L’Unità, 31 maggio 1946", thumb: c201_15_lunita_31_maggio__t, pages: [c201_15_lunita_31_maggio__p1] },
         { id: "referendum-campagna-giornale-16-il-tempo-1-giugno-1946", title: "Il Tempo, 1 giugno 1946", description: "Il Tempo, 25 marzo 1946, copertina e pp. 10, 11, 13, 17.", thumb: c202_16_il_tempo_1_giugno_t, pages: [c202_16_il_tempo_1_giugno_p1, c202_16_il_tempo_1_giugno_p2, c202_16_il_tempo_1_giugno_p3, c202_16_il_tempo_1_giugno_p4, c202_16_il_tempo_1_giugno_p5] },
         { id: "referendum-campagna-giornale-17-il-popolo-1-giugno-1946", title: "Il Popolo, 1 giugno 1946", description: "Il Popolo, 1° giugno 1946", thumb: c203_17_il_popolo_1_giugn_t, pages: [c203_17_il_popolo_1_giugn_p1] },
         { id: "referendum-campagna-giornale-18-la-voce-repubblicana-1-giugno-1946", title: "La Voce Repubblicana, 1 giugno 1946", description: "La Voce Repubblicana, 1° giugno 1946", thumb: c204_18_la_voce_repubblic_t, pages: [c204_18_la_voce_repubblic_p1] },
         { id: "referendum-campagna-giornale-19-risorgimento-liberale-1-giugno-1946", title: "Risorgimento liberale, 1 giugno 1946", description: "Risorgimento Liberale, 1° giugno 1946", thumb: c205_19_risorgimento_libe_t, pages: [c205_19_risorgimento_libe_p1] },
-        { id: "referendum-campagna-giornale-20-avanti-1-giugno-1946", title: "Avanti, 1 giugno 1946", description: "Avanti!, 1° giugno 1946", thumb: c206_20_avanti_1_giugno_1_t, pages: [c206_20_avanti_1_giugno_1_p1] },
+        { id: "referendum-campagna-giornale-20-avanti-1-giugno-1946", title: "Avanti!, 1 giugno 1946", description: "Avanti!, 1° giugno 1946", thumb: c206_20_avanti_1_giugno_1_t, pages: [c206_20_avanti_1_giugno_1_p1] },
         { id: "referendum-campagna-giornale-22-leuropeo-2-giugno-1946", title: "L'Europeo, 2 giugno 1946", description: "L'Europeo, 2 giugno 1946.", thumb: c207_22_leuropeo_2_giugno_t, pages: [c207_22_leuropeo_2_giugno_p1] },
       ],
     },
@@ -1663,7 +1663,7 @@ export const TOPIC_ITEMS = {
         { id: "referendum-risultati-giornale-05-il-popolo-11-giugno-1946", title: "Il Popolo, 11 giugno 1946", description: "Il Popolo, 11 giugno 1946", thumb: c255_05_il_popolo_11_giug_t, pages: [c255_05_il_popolo_11_giug_p1] },
         { id: "referendum-risultati-giornale-06-lunita-11-giugno-1946", title: "L'Unità, 11 giugno 1946", description: "L'Unità, 11 giugno 1946", thumb: c256_06_lunita_11_giugno__t, pages: [c256_06_lunita_11_giugno__p1] },
         { id: "referendum-risultati-giornale-07-avanti-12-giugno-1946", title: "Avanti!, 12 giugno 1946", description: "Avanti!, 12 giugno 1946", thumb: c257_07_avanti_12_giugno__t, pages: [c257_07_avanti_12_giugno__p1] },
-        { id: "referendum-risultati-giornale-08-lunita-12-giugno-1946-ed-12", title: "L'Unità, 12 giugno 1946_ed. 12", description: "L'Unità, 12 giugno 1946, ed. ore 12", thumb: c258_08_lunita_12_giugno__t, pages: [c258_08_lunita_12_giugno__p1] },
+        { id: "referendum-risultati-giornale-08-lunita-12-giugno-1946", title: "L'Unità, 12 giugno 1946", description: "L'Unità, 12 giugno 1946, ed. ore 12", thumb: c258_08_lunita_12_giugno__t, pages: [c258_08_lunita_12_giugno__p1] },
         { id: "referendum-risultati-giornale-09-avanti-13-giugno-1946", title: "Avanti!, 13 giugno 1946", description: "", thumb: c259_09_avanti_13_giugno__t, pages: [c259_09_avanti_13_giugno__p1] },
         { id: "referendum-risultati-giornale-10-la-voce-repubblicana-13-giugno-1946", title: "La Voce Repubblicana, 13 giugno 1946", description: "La Voce Repubblicana, 13 giugno 1946. La dichiarazione dei partiti repubblicani", thumb: c260_10_la_voce_repubblic_t, pages: [c260_10_la_voce_repubblic_p1] },
         { id: "referendum-risultati-giornale-11-tempo-15-22-giugno-1946", title: "Tempo, 15-22 giugno 1946", description: "Tempo, 15-22 giugno 1946", thumb: c261_11_tempo_15_22_giugn_t, pages: [c261_11_tempo_15_22_giugn_p1] },
