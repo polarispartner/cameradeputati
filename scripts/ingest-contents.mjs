@@ -133,7 +133,15 @@ async function writeCache(dir, data) {
 async function extractDocxText(path) {
   try {
     const { value } = await mammoth.extractRawText({ path })
-    return value.replace(/\s+/g, ' ').trim()
+    // mammoth separa i paragrafi con \n. Manteniamo la struttura per paragrafi
+    // (i docx di didascalia hanno corpo + fonte come paragrafi distinti):
+    // normalizziamo gli spazi interni e uniamo i paragrafi non-vuoti con riga
+    // bianca, così il render con `whitespace-pre-line` mostra un'interlinea.
+    return value
+      .split(/\r?\n/)
+      .map((p) => p.replace(/[ \t ]+/g, ' ').trim())
+      .filter(Boolean)
+      .join('\n\n')
   } catch (err) {
     console.warn(`[ingest] docx read failed: ${relative(ROOT, path)} (${err.message})`)
     return ''

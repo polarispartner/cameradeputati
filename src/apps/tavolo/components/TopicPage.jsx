@@ -60,16 +60,16 @@ function Submenu({ items, onPick }) {
 }
 
 // Pettine SVG parametrico: collega il titolo a N colonne equispaziate.
+// I denti devono cadere sotto il centro di ciascun titolo della sezione: con
+// la lista in `justify-between` e ogni <li> di larghezza 100/N%, il centro del
+// titolo i-esimo cade a (i + 0.5) / N della larghezza del contenitore.
 function Pettine({ count }) {
   if (count < 1) return null;
   const W = 1000;
   const H = 120;
-  const MARGIN = 125;
   const R = 12;
   const topY = 40;
-  const xs = Array.from({ length: count }, (_, i) =>
-    count === 1 ? W / 2 : MARGIN + (i * (W - 2 * MARGIN)) / (count - 1),
-  );
+  const xs = Array.from({ length: count }, (_, i) => (W * (i + 0.5)) / count);
   const leftX = xs[0];
   const rightX = xs[xs.length - 1];
   const innerXs = xs.slice(1, -1);

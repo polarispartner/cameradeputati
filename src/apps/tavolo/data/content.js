@@ -7,7 +7,7 @@ import { TOPIC_ITEMS } from '../assets/images/contents/manifest'
 const SUB_ORDER = ['foto', 'giornale', 'documenti']
 // "giornale" è l'id interno usato da ingest (mappa STAMPA → giornale); il titolo
 // mostrato è sempre "Stampa" per tutti i temi.
-const SUB_TITLE = { foto: 'Foto/Video', giornale: 'Stampa', documenti: 'Documenti' }
+const SUB_TITLE = { foto: 'Foto', giornale: 'Stampa', documenti: 'Documenti' }
 
 const buildSubsections = (topicId, sectionId) => {
   const sec = TOPIC_ITEMS[topicId]?.[sectionId] || {}

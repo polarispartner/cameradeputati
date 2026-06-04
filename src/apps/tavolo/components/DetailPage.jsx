@@ -82,7 +82,7 @@ export default function DetailPage() {
             </div>
 
             <div className="flex min-h-0 w-1/2 items-center">
-              <p className="max-h-full overflow-hidden text-[1.5rem] leading-[1.5] font-medium text-white">
+              <p className="max-h-full overflow-hidden whitespace-pre-line text-[1.5rem] leading-[1.5] font-medium text-white">
                 {item?.description ?? ""}
               </p>
             </div>
