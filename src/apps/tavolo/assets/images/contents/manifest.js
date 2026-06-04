@@ -854,414 +854,496 @@ import c267_17_illustrazione_ita_p2 from './referendum/risultati/giornale/17-ill
 import c267_17_illustrazione_ita_t from './referendum/risultati/giornale/17-illustrazione-italiana-23-giugno-1946/page-01-thumb.jpg'
 import c268_18_lillustrazione_it_p1 from './referendum/risultati/giornale/18-lillustrazione-italiana-30-giugno-1946/page-01.jpg'
 import c268_18_lillustrazione_it_t from './referendum/risultati/giornale/18-lillustrazione-italiana-30-giugno-1946/page-01-thumb.jpg'
-import c269_2_contrassegni_delle_p1 from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-01.jpg'
-import c269_2_contrassegni_delle_p2 from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-02.jpg'
-import c269_2_contrassegni_delle_t from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-01-thumb.jpg'
-import c270_4_manifesti_di_propa_p1 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-01.jpg'
-import c270_4_manifesti_di_propa_p2 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-02.jpg'
-import c270_4_manifesti_di_propa_p3 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-03.jpg'
-import c270_4_manifesti_di_propa_p4 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-04.jpg'
-import c270_4_manifesti_di_propa_p5 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-05.jpg'
-import c270_4_manifesti_di_propa_p6 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-06.jpg'
-import c270_4_manifesti_di_propa_p7 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-07.jpg'
-import c270_4_manifesti_di_propa_p8 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-08.jpg'
-import c270_4_manifesti_di_propa_p9 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-09.jpg'
-import c270_4_manifesti_di_propa_p10 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-10.jpg'
-import c270_4_manifesti_di_propa_t from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-01-thumb.jpg'
-import c271_5_carta_della_costit_p1 from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-01.jpg'
-import c271_5_carta_della_costit_p2 from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-02.jpg'
-import c271_5_carta_della_costit_t from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-01-thumb.jpg'
-import c272_9_elenco_dei_compone_p1 from './costituente/composizione/documenti/9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947/page-01.jpg'
-import c272_9_elenco_dei_compone_t from './costituente/composizione/documenti/9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947/page-01-thumb.jpg'
-import c273_10_i_presidenti_dell_p1 from './costituente/composizione/documenti/10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi/page-01.jpg'
-import c273_10_i_presidenti_dell_t from './costituente/composizione/documenti/10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi/page-01-thumb.jpg'
-import c274_11_i_risultati_conse_p1 from './costituente/composizione/documenti/11-i-risultati-conseguiti-dai-partiti/page-01.jpg'
-import c274_11_i_risultati_conse_t from './costituente/composizione/documenti/11-i-risultati-conseguiti-dai-partiti/page-01-thumb.jpg'
-import c275_12_caratteri_individ_p1 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-01.jpg'
-import c275_12_caratteri_individ_p2 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-02.jpg'
-import c275_12_caratteri_individ_p3 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-03.jpg'
-import c275_12_caratteri_individ_p4 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-04.jpg'
-import c275_12_caratteri_individ_p5 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-05.jpg'
-import c275_12_caratteri_individ_p6 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-06.jpg'
-import c275_12_caratteri_individ_p7 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-07.jpg'
-import c275_12_caratteri_individ_t from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-01-thumb.jpg'
-import c276_13_la_commissione_pe_p1 from './costituente/composizione/documenti/13-la-commissione-per-la-costituzione/page-01.jpg'
-import c276_13_la_commissione_pe_t from './costituente/composizione/documenti/13-la-commissione-per-la-costituzione/page-01-thumb.jpg'
-import c277_14_la_composizione_d_p1 from './costituente/composizione/documenti/14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori/page-01.jpg'
-import c277_14_la_composizione_d_t from './costituente/composizione/documenti/14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori/page-01-thumb.jpg'
-import c278_15_le_deputate_per_g_p1 from './costituente/composizione/documenti/15-le-deputate-per-gruppo-di-appartenenza/page-01.jpg'
-import c278_15_le_deputate_per_g_t from './costituente/composizione/documenti/15-le-deputate-per-gruppo-di-appartenenza/page-01-thumb.jpg'
-import c279_16_statistiche_elabo_p1 from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-01.jpg'
-import c279_16_statistiche_elabo_p2 from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-02.jpg'
-import c279_16_statistiche_elabo_t from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-01-thumb.jpg'
-import c280_1_comizio_elettorale_p1 from './costituente/composizione/foto/1-comizio-elettorale-a-milano-palmiro-togliatti/page-01.jpg'
-import c280_1_comizio_elettorale_t from './costituente/composizione/foto/1-comizio-elettorale-a-milano-palmiro-togliatti/page-01-thumb.jpg'
-import c281_2_comizio_elettorale_p1 from './costituente/composizione/foto/2-comizio-elettorale-a-milano-nenni/page-01.jpg'
-import c281_2_comizio_elettorale_t from './costituente/composizione/foto/2-comizio-elettorale-a-milano-nenni/page-01-thumb.jpg'
-import c282_3_propaganda_elettor_p1 from './costituente/composizione/foto/3-propaganda-elettorale-blocco-nazionale/page-01.jpg'
-import c282_3_propaganda_elettor_t from './costituente/composizione/foto/3-propaganda-elettorale-blocco-nazionale/page-01-thumb.jpg'
-import c283_4_comizi_elettorali__p1 from './costituente/composizione/foto/4-comizi-elettorali-nenni-e-sforza/page-01.jpg'
-import c283_4_comizi_elettorali__t from './costituente/composizione/foto/4-comizi-elettorali-nenni-e-sforza/page-01-thumb.jpg'
-import c284_5_propaganda_elettor_p1 from './costituente/composizione/foto/5-propaganda-elettorale-dc-il-popolo/page-01.jpg'
-import c284_5_propaganda_elettor_t from './costituente/composizione/foto/5-propaganda-elettorale-dc-il-popolo/page-01-thumb.jpg'
-import c285_6_comizio_elettorale_p1 from './costituente/composizione/foto/6-comizio-elettorale-a-milano-saragat/page-01.jpg'
-import c285_6_comizio_elettorale_t from './costituente/composizione/foto/6-comizio-elettorale-a-milano-saragat/page-01-thumb.jpg'
-import c286_7_propaganda_elettor_p1 from './costituente/composizione/foto/7-propaganda-elettorale-dc-donna-devi-votare/page-01.jpg'
-import c286_7_propaganda_elettor_t from './costituente/composizione/foto/7-propaganda-elettorale-dc-donna-devi-votare/page-01-thumb.jpg'
-import c287_8_comizio_elettorale_p1 from './costituente/composizione/foto/8-comizio-elettorale-a-milano-santi-e-mondolfo/page-01.jpg'
-import c287_8_comizio_elettorale_t from './costituente/composizione/foto/8-comizio-elettorale-a-milano-santi-e-mondolfo/page-01-thumb.jpg'
-import c288_9_comizio_a_milano_p_p1 from './costituente/composizione/foto/9-comizio-a-milano-pacciardi/page-01.jpg'
-import c288_9_comizio_a_milano_p_t from './costituente/composizione/foto/9-comizio-a-milano-pacciardi/page-01-thumb.jpg'
-import c289_10_propaganda_eletto_p1 from './costituente/composizione/foto/10-propaganda-elettorale-votate-pci/page-01.jpg'
-import c289_10_propaganda_eletto_t from './costituente/composizione/foto/10-propaganda-elettorale-votate-pci/page-01-thumb.jpg'
-import c290_11_comizio_elettoral_p1 from './costituente/composizione/foto/11-comizio-elettorale-a-milano-parri/page-01.jpg'
-import c290_11_comizio_elettoral_t from './costituente/composizione/foto/11-comizio-elettorale-a-milano-parri/page-01-thumb.jpg'
-import c291_12_primo_giorno_dell_p1 from './costituente/composizione/foto/12-primo-giorno-della-costituente/page-01.jpg'
-import c291_12_primo_giorno_dell_t from './costituente/composizione/foto/12-primo-giorno-della-costituente/page-01-thumb.jpg'
-import c292_13_discorso_di_apert_p1 from './costituente/composizione/foto/13-discorso-di-apertura-di-vittorio-emanuele-orlando/page-01.jpg'
-import c292_13_discorso_di_apert_t from './costituente/composizione/foto/13-discorso-di-apertura-di-vittorio-emanuele-orlando/page-01-thumb.jpg'
-import c293_17_le_deputate_iotti_p1 from './costituente/composizione/foto/17-le-deputate-iotti-montagnana-noce/page-01.jpg'
-import c293_17_le_deputate_iotti_t from './costituente/composizione/foto/17-le-deputate-iotti-montagnana-noce/page-01-thumb.jpg'
-import c294_1_il_popolo_4_giugno_p1 from './costituente/composizione/giornale/1-il-popolo-4-giugno-1946/page-01.jpg'
-import c294_1_il_popolo_4_giugno_t from './costituente/composizione/giornale/1-il-popolo-4-giugno-1946/page-01-thumb.jpg'
-import c295_2_la_voce_repubblica_p1 from './costituente/composizione/giornale/2-la-voce-repubblicana-5-giugno-1946/page-01.jpg'
-import c295_2_la_voce_repubblica_t from './costituente/composizione/giornale/2-la-voce-repubblicana-5-giugno-1946/page-01-thumb.jpg'
-import c296_3_risorgimento_liber_p1 from './costituente/composizione/giornale/3-risorgimento-liberale-5-giugno-1946/page-01.jpg'
-import c296_3_risorgimento_liber_t from './costituente/composizione/giornale/3-risorgimento-liberale-5-giugno-1946/page-01-thumb.jpg'
-import c297_4_la_nuova_stampa_7__p1 from './costituente/composizione/giornale/4-la-nuova-stampa-7-giugno-1946/page-01.jpg'
-import c297_4_la_nuova_stampa_7__t from './costituente/composizione/giornale/4-la-nuova-stampa-7-giugno-1946/page-01-thumb.jpg'
-import c298_5_lunita_8_giugno_19_p1 from './costituente/composizione/giornale/5-lunita-8-giugno-1946/page-01.jpg'
-import c298_5_lunita_8_giugno_19_t from './costituente/composizione/giornale/5-lunita-8-giugno-1946/page-01-thumb.jpg'
-import c299_6_il_popolo_8_giugno_p1 from './costituente/composizione/giornale/6-il-popolo-8-giugno-1946/page-01.jpg'
-import c299_6_il_popolo_8_giugno_t from './costituente/composizione/giornale/6-il-popolo-8-giugno-1946/page-01-thumb.jpg'
-import c300_7_lunita_9_giugno_19_p1 from './costituente/composizione/giornale/7-lunita-9-giugno-1946/page-01.jpg'
-import c300_7_lunita_9_giugno_19_t from './costituente/composizione/giornale/7-lunita-9-giugno-1946/page-01-thumb.jpg'
-import c301_8_lunita_14_giugno_1_p1 from './costituente/composizione/giornale/8-lunita-14-giugno-1946/page-01.jpg'
-import c301_8_lunita_14_giugno_1_t from './costituente/composizione/giornale/8-lunita-14-giugno-1946/page-01-thumb.jpg'
-import c302_9_risorgimento_liber_p1 from './costituente/composizione/giornale/9-risorgimento-liberale-16-giugno-1946/page-01.jpg'
-import c302_9_risorgimento_liber_t from './costituente/composizione/giornale/9-risorgimento-liberale-16-giugno-1946/page-01-thumb.jpg'
-import c303_10_il_popolo_16_giug_p1 from './costituente/composizione/giornale/10-il-popolo-16-giugno-1946/page-01.jpg'
-import c303_10_il_popolo_16_giug_t from './costituente/composizione/giornale/10-il-popolo-16-giugno-1946/page-01-thumb.jpg'
-import c304_11_la_voce_repubblic_p1 from './costituente/composizione/giornale/11-la-voce-repubblicana-19-giugno-1946/page-01.jpg'
-import c304_11_la_voce_repubblic_t from './costituente/composizione/giornale/11-la-voce-repubblicana-19-giugno-1946/page-01-thumb.jpg'
-import c305_12_lillustrazione_it_p1 from './costituente/composizione/giornale/12-lillustrazione-italiana-14-luglio-1946/page-01.jpg'
-import c305_12_lillustrazione_it_t from './costituente/composizione/giornale/12-lillustrazione-italiana-14-luglio-1946/page-01-thumb.jpg'
-import c306_13_domenica_del_corr_p1 from './costituente/composizione/giornale/13-domenica-del-corriere-4-agosto-1946/page-01.jpg'
-import c306_13_domenica_del_corr_t from './costituente/composizione/giornale/13-domenica-del-corriere-4-agosto-1946/page-01-thumb.jpg'
-import c307_14_i_deputati_alla_c_p1 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-01.jpg'
-import c307_14_i_deputati_alla_c_p2 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-02.jpg'
-import c307_14_i_deputati_alla_c_p3 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-03.jpg'
-import c307_14_i_deputati_alla_c_p4 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-04.jpg'
-import c307_14_i_deputati_alla_c_p5 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-05.jpg'
-import c307_14_i_deputati_alla_c_p6 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-06.jpg'
-import c307_14_i_deputati_alla_c_p7 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-07.jpg'
-import c307_14_i_deputati_alla_c_p8 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-08.jpg'
-import c307_14_i_deputati_alla_c_p9 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-09.jpg'
-import c307_14_i_deputati_alla_c_p10 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-10.jpg'
-import c307_14_i_deputati_alla_c_p11 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-11.jpg'
-import c307_14_i_deputati_alla_c_p12 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-12.jpg'
-import c307_14_i_deputati_alla_c_p13 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-13.jpg'
-import c307_14_i_deputati_alla_c_p14 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-14.jpg'
-import c307_14_i_deputati_alla_c_p15 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-15.jpg'
-import c307_14_i_deputati_alla_c_p16 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-16.jpg'
-import c307_14_i_deputati_alla_c_p17 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-17.jpg'
-import c307_14_i_deputati_alla_c_p18 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-18.jpg'
-import c307_14_i_deputati_alla_c_p19 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-19.jpg'
-import c307_14_i_deputati_alla_c_p20 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-20.jpg'
-import c307_14_i_deputati_alla_c_p21 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-21.jpg'
-import c307_14_i_deputati_alla_c_p22 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-22.jpg'
-import c307_14_i_deputati_alla_c_p23 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-23.jpg'
-import c307_14_i_deputati_alla_c_p24 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-24.jpg'
-import c307_14_i_deputati_alla_c_p25 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-25.jpg'
-import c307_14_i_deputati_alla_c_p26 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-26.jpg'
-import c307_14_i_deputati_alla_c_p27 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-27.jpg'
-import c307_14_i_deputati_alla_c_p28 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-28.jpg'
-import c307_14_i_deputati_alla_c_p29 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-29.jpg'
-import c307_14_i_deputati_alla_c_p30 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-30.jpg'
-import c307_14_i_deputati_alla_c_p31 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-31.jpg'
-import c307_14_i_deputati_alla_c_p32 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-32.jpg'
-import c307_14_i_deputati_alla_c_p33 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-33.jpg'
-import c307_14_i_deputati_alla_c_t from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-01-thumb.jpg'
-import c308_01_verbale_originale_p1 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-01.jpg'
-import c308_01_verbale_originale_p2 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-02.jpg'
-import c308_01_verbale_originale_p3 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-03.jpg'
-import c308_01_verbale_originale_p4 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-04.jpg'
-import c308_01_verbale_originale_p5 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-05.jpg'
-import c308_01_verbale_originale_p6 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-06.jpg'
-import c308_01_verbale_originale_t from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-01-thumb.jpg'
-import c309_02_discorso_del_pres_p1 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-01.jpg'
-import c309_02_discorso_del_pres_p2 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-02.jpg'
-import c309_02_discorso_del_pres_p3 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-03.jpg'
-import c309_02_discorso_del_pres_t from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-01-thumb.jpg'
-import c310_03_discorso_di_insed_p1 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-01.jpg'
-import c310_03_discorso_di_insed_p2 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-02.jpg'
-import c310_03_discorso_di_insed_p3 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-03.jpg'
-import c310_03_discorso_di_insed_p4 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-04.jpg'
-import c310_03_discorso_di_insed_t from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-01-thumb.jpg'
-import c311_04_verbale_dei_risul_p1 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-01.jpg'
-import c311_04_verbale_dei_risul_p2 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-02.jpg'
-import c311_04_verbale_dei_risul_p3 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-03.jpg'
-import c311_04_verbale_dei_risul_p4 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-04.jpg'
-import c311_04_verbale_dei_risul_p5 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-05.jpg'
-import c311_04_verbale_dei_risul_p6 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-06.jpg'
-import c311_04_verbale_dei_risul_p7 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-07.jpg'
-import c311_04_verbale_dei_risul_p8 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-08.jpg'
-import c311_04_verbale_dei_risul_p9 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-09.jpg'
-import c311_04_verbale_dei_risul_p10 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-10.jpg'
-import c311_04_verbale_dei_risul_p11 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-11.jpg'
-import c311_04_verbale_dei_risul_t from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-01-thumb.jpg'
-import c312_05_messaggio_autogra_p1 from './costituente/lavoro/documenti/05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946/page-01.jpg'
-import c312_05_messaggio_autogra_t from './costituente/lavoro/documenti/05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946/page-01-thumb.jpg'
-import c313_06_giuramento_e_disc_p1 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-01.jpg'
-import c313_06_giuramento_e_disc_p2 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-02.jpg'
-import c313_06_giuramento_e_disc_p3 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-03.jpg'
-import c313_06_giuramento_e_disc_p4 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-04.jpg'
-import c313_06_giuramento_e_disc_p5 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-05.jpg'
-import c313_06_giuramento_e_disc_p6 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-06.jpg'
-import c313_06_giuramento_e_disc_p7 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-07.jpg'
-import c313_06_giuramento_e_disc_t from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-01-thumb.jpg'
-import c314_07_nomina_della_comm_p1 from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-01.jpg'
-import c314_07_nomina_della_comm_p2 from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-02.jpg'
-import c314_07_nomina_della_comm_t from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-01-thumb.jpg'
-import c315_08_resoconto_della_p_p1 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-01.jpg'
-import c315_08_resoconto_della_p_p2 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-02.jpg'
-import c315_08_resoconto_della_p_p3 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-03.jpg'
-import c315_08_resoconto_della_p_t from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-01-thumb.jpg'
-import c316_09_originale_della_p_p1 from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-01.jpg'
-import c316_09_originale_della_p_p2 from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-02.jpg'
-import c316_09_originale_della_p_t from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-01-thumb.jpg'
-import c317_10_originale_della_c_p1 from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-01.jpg'
-import c317_10_originale_della_c_p2 from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-02.jpg'
-import c317_10_originale_della_c_t from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-01-thumb.jpg'
-import c318_11_richiesta_dei_gio_p1 from './costituente/lavoro/documenti/11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione/page-01.jpg'
-import c318_11_richiesta_dei_gio_t from './costituente/lavoro/documenti/11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione/page-01-thumb.jpg'
-import c319_12_progetto_di_costi_p1 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-01.jpg'
-import c319_12_progetto_di_costi_p2 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-02.jpg'
-import c319_12_progetto_di_costi_p3 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-03.jpg'
-import c319_12_progetto_di_costi_p4 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-04.jpg'
-import c319_12_progetto_di_costi_p5 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-05.jpg'
-import c319_12_progetto_di_costi_p6 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-06.jpg'
-import c319_12_progetto_di_costi_p7 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-07.jpg'
-import c319_12_progetto_di_costi_p8 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-08.jpg'
-import c319_12_progetto_di_costi_p9 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-09.jpg'
-import c319_12_progetto_di_costi_p10 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-10.jpg'
-import c319_12_progetto_di_costi_p11 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-11.jpg'
-import c319_12_progetto_di_costi_p12 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-12.jpg'
-import c319_12_progetto_di_costi_p13 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-13.jpg'
-import c319_12_progetto_di_costi_p14 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-14.jpg'
-import c319_12_progetto_di_costi_p15 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-15.jpg'
-import c319_12_progetto_di_costi_p16 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-16.jpg'
-import c319_12_progetto_di_costi_p17 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-17.jpg'
-import c319_12_progetto_di_costi_p18 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-18.jpg'
-import c319_12_progetto_di_costi_p19 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-19.jpg'
-import c319_12_progetto_di_costi_p20 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-20.jpg'
-import c319_12_progetto_di_costi_p21 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-21.jpg'
-import c319_12_progetto_di_costi_p22 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-22.jpg'
-import c319_12_progetto_di_costi_p23 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-23.jpg'
-import c319_12_progetto_di_costi_p24 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-24.jpg'
-import c319_12_progetto_di_costi_p25 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-25.jpg'
-import c319_12_progetto_di_costi_p26 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-26.jpg'
-import c319_12_progetto_di_costi_p27 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-27.jpg'
-import c319_12_progetto_di_costi_p28 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-28.jpg'
-import c319_12_progetto_di_costi_p29 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-29.jpg'
-import c319_12_progetto_di_costi_p30 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-30.jpg'
-import c319_12_progetto_di_costi_p31 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-31.jpg'
-import c319_12_progetto_di_costi_p32 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-32.jpg'
-import c319_12_progetto_di_costi_p33 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-33.jpg'
-import c319_12_progetto_di_costi_p34 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-34.jpg'
-import c319_12_progetto_di_costi_p35 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-35.jpg'
-import c319_12_progetto_di_costi_p36 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-36.jpg'
-import c319_12_progetto_di_costi_t from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-01-thumb.jpg'
-import c320_13_elezione_del_pres_p1 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-01.jpg'
-import c320_13_elezione_del_pres_p2 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-02.jpg'
-import c320_13_elezione_del_pres_p3 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-03.jpg'
-import c320_13_elezione_del_pres_p4 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-04.jpg'
-import c320_13_elezione_del_pres_p5 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-05.jpg'
-import c320_13_elezione_del_pres_p6 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-06.jpg'
-import c320_13_elezione_del_pres_p7 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-07.jpg'
-import c320_13_elezione_del_pres_p8 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-08.jpg'
-import c320_13_elezione_del_pres_p9 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-09.jpg'
-import c320_13_elezione_del_pres_p10 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-10.jpg'
-import c320_13_elezione_del_pres_p11 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-11.jpg'
-import c320_13_elezione_del_pres_p12 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-12.jpg'
-import c320_13_elezione_del_pres_p13 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-13.jpg'
-import c320_13_elezione_del_pres_p14 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-14.jpg'
-import c320_13_elezione_del_pres_p15 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-15.jpg'
-import c320_13_elezione_del_pres_p16 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-16.jpg'
-import c320_13_elezione_del_pres_p17 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-17.jpg'
-import c320_13_elezione_del_pres_p18 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-18.jpg'
-import c320_13_elezione_del_pres_p19 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-19.jpg'
-import c320_13_elezione_del_pres_p20 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-20.jpg'
-import c320_13_elezione_del_pres_p21 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-21.jpg'
-import c320_13_elezione_del_pres_p22 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-22.jpg'
-import c320_13_elezione_del_pres_p23 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-23.jpg'
-import c320_13_elezione_del_pres_p24 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-24.jpg'
-import c320_13_elezione_del_pres_p25 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-25.jpg'
-import c320_13_elezione_del_pres_t from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-01-thumb.jpg'
-import c321_14_replica_di_meucci_p1 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-01.jpg'
-import c321_14_replica_di_meucci_p2 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-02.jpg'
-import c321_14_replica_di_meucci_p3 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-03.jpg'
-import c321_14_replica_di_meucci_p4 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-04.jpg'
-import c321_14_replica_di_meucci_p5 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-05.jpg'
-import c321_14_replica_di_meucci_p6 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-06.jpg'
-import c321_14_replica_di_meucci_p7 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-07.jpg'
-import c321_14_replica_di_meucci_p8 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-08.jpg'
-import c321_14_replica_di_meucci_p9 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-09.jpg'
-import c321_14_replica_di_meucci_p10 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-10.jpg'
-import c321_14_replica_di_meucci_p11 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-11.jpg'
-import c321_14_replica_di_meucci_p12 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-12.jpg'
-import c321_14_replica_di_meucci_p13 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-13.jpg'
-import c321_14_replica_di_meucci_p14 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-14.jpg'
-import c321_14_replica_di_meucci_p15 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-15.jpg'
-import c321_14_replica_di_meucci_p16 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-16.jpg'
-import c321_14_replica_di_meucci_p17 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-17.jpg'
-import c321_14_replica_di_meucci_p18 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-18.jpg'
-import c321_14_replica_di_meucci_p19 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-19.jpg'
-import c321_14_replica_di_meucci_t from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-01-thumb.jpg'
-import c322_15_emendamenti_delle_p1 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-01.jpg'
-import c322_15_emendamenti_delle_p2 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-02.jpg'
-import c322_15_emendamenti_delle_p3 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-03.jpg'
-import c322_15_emendamenti_delle_p4 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-04.jpg'
-import c322_15_emendamenti_delle_p5 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-05.jpg'
-import c322_15_emendamenti_delle_p6 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-06.jpg'
-import c322_15_emendamenti_delle_p7 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-07.jpg'
-import c322_15_emendamenti_delle_p8 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-08.jpg'
-import c322_15_emendamenti_delle_p9 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-09.jpg'
-import c322_15_emendamenti_delle_p10 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-10.jpg'
-import c322_15_emendamenti_delle_t from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-01-thumb.jpg'
-import c323_16_intervento_di_meu_p1 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-01.jpg'
-import c323_16_intervento_di_meu_p2 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-02.jpg'
-import c323_16_intervento_di_meu_p3 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-03.jpg'
-import c323_16_intervento_di_meu_t from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-01-thumb.jpg'
-import c324_17_intervento_del_pr_p1 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-01.jpg'
-import c324_17_intervento_del_pr_p2 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-02.jpg'
-import c324_17_intervento_del_pr_p3 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-03.jpg'
-import c324_17_intervento_del_pr_p4 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-04.jpg'
-import c324_17_intervento_del_pr_p5 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-05.jpg'
-import c324_17_intervento_del_pr_t from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-01-thumb.jpg'
-import c325_18_messaggio_di_enri_p1 from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-01.jpg'
-import c325_18_messaggio_di_enri_p2 from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-02.jpg'
-import c325_18_messaggio_di_enri_t from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-01-thumb.jpg'
-import c326_1_prima_seduta_del_2_p1 from './costituente/lavoro/foto/1-prima-seduta-del-25-giugno-1946/page-01.jpg'
-import c326_1_prima_seduta_del_2_t from './costituente/lavoro/foto/1-prima-seduta-del-25-giugno-1946/page-01-thumb.jpg'
-import c327_2_prima_seduta_del_2_p1 from './costituente/lavoro/foto/2-prima-seduta-del-25-giugno-1946/page-01.jpg'
-import c327_2_prima_seduta_del_2_t from './costituente/lavoro/foto/2-prima-seduta-del-25-giugno-1946/page-01-thumb.jpg'
-import c328_3_dichiarazioni_di_d_p1 from './costituente/lavoro/foto/3-dichiarazioni-di-de-gasperi-sul-programma-di-governo/page-01.jpg'
-import c328_3_dichiarazioni_di_d_t from './costituente/lavoro/foto/3-dichiarazioni-di-de-gasperi-sul-programma-di-governo/page-01-thumb.jpg'
-import c329_4_inizio_di_una_sedu_p1 from './costituente/lavoro/foto/4-inizio-di-una-seduta-a-montecitorio/page-01.jpg'
-import c329_4_inizio_di_una_sedu_t from './costituente/lavoro/foto/4-inizio-di-una-seduta-a-montecitorio/page-01-thumb.jpg'
-import c330_5_enrico_de_nicola_c_p1 from './costituente/lavoro/foto/5-enrico-de-nicola-capo-provvisorio-dello-stato/page-01.jpg'
-import c330_5_enrico_de_nicola_c_t from './costituente/lavoro/foto/5-enrico-de-nicola-capo-provvisorio-dello-stato/page-01-thumb.jpg'
-import c331_6_salone_dei_passi_p_p1 from './costituente/lavoro/foto/6-salone-dei-passi-perduti/page-01.jpg'
-import c331_6_salone_dei_passi_p_t from './costituente/lavoro/foto/6-salone-dei-passi-perduti/page-01-thumb.jpg'
-import c332_7_una_seduta_della_p_p1 from './costituente/lavoro/foto/7-una-seduta-della-prima-sottocommissione/page-01.jpg'
-import c332_7_una_seduta_della_p_t from './costituente/lavoro/foto/7-una-seduta-della-prima-sottocommissione/page-01-thumb.jpg'
-import c333_8_una_seduta_della_s_p1 from './costituente/lavoro/foto/8-una-seduta-della-seconda-sottocommissione/page-01.jpg'
-import c333_8_una_seduta_della_s_t from './costituente/lavoro/foto/8-una-seduta-della-seconda-sottocommissione/page-01-thumb.jpg'
-import c334_9_approvazione_della_p1 from './costituente/lavoro/foto/9-approvazione-della-costituzione/page-01.jpg'
-import c334_9_approvazione_della_t from './costituente/lavoro/foto/9-approvazione-della-costituzione/page-01-thumb.jpg'
-import c335_10_presentazione_del_p1 from './costituente/lavoro/foto/10-presentazione-della-costituzione-a-de-nicola/page-01.jpg'
-import c335_10_presentazione_del_t from './costituente/lavoro/foto/10-presentazione-della-costituzione-a-de-nicola/page-01-thumb.jpg'
-import c336_11_il_presidente_de__p1 from './costituente/lavoro/foto/11-il-presidente-de-gasperi-firma-la-costituzione/page-01.jpg'
-import c336_11_il_presidente_de__t from './costituente/lavoro/foto/11-il-presidente-de-gasperi-firma-la-costituzione/page-01-thumb.jpg'
-import c337_12_il_presidente_de__p1 from './costituente/lavoro/foto/12-il-presidente-de-nicola-firma-la-costituzione/page-01.jpg'
-import c337_12_il_presidente_de__t from './costituente/lavoro/foto/12-il-presidente-de-nicola-firma-la-costituzione/page-01-thumb.jpg'
-import c338_13_il_presidente_ter_p1 from './costituente/lavoro/foto/13-il-presidente-terracini-firma-la-costituzione/page-01.jpg'
-import c338_13_il_presidente_ter_t from './costituente/lavoro/foto/13-il-presidente-terracini-firma-la-costituzione/page-01-thumb.jpg'
-import c339_1_avanti_25_giugno_1_p1 from './costituente/lavoro/giornale/1-avanti-25-giugno-1946/page-01.jpg'
-import c339_1_avanti_25_giugno_1_t from './costituente/lavoro/giornale/1-avanti-25-giugno-1946/page-01-thumb.jpg'
-import c340_2_lunita_25_giugno_1_p1 from './costituente/lavoro/giornale/2-lunita-25-giugno-1946/page-01.jpg'
-import c340_2_lunita_25_giugno_1_t from './costituente/lavoro/giornale/2-lunita-25-giugno-1946/page-01-thumb.jpg'
-import c341_3_il_messaggero_25_g_p1 from './costituente/lavoro/giornale/3-il-messaggero-25-giugno-1946/page-01.jpg'
-import c341_3_il_messaggero_25_g_t from './costituente/lavoro/giornale/3-il-messaggero-25-giugno-1946/page-01-thumb.jpg'
-import c342_4_la_voce_repubblica_p1 from './costituente/lavoro/giornale/4-la-voce-repubblicana-26-giugno-1946/page-01.jpg'
-import c342_4_la_voce_repubblica_t from './costituente/lavoro/giornale/4-la-voce-repubblicana-26-giugno-1946/page-01-thumb.jpg'
-import c343_5_gazzetta_ditalia_2_p1 from './costituente/lavoro/giornale/5-gazzetta-ditalia-26-giugno-1946/page-01.jpg'
-import c343_5_gazzetta_ditalia_2_t from './costituente/lavoro/giornale/5-gazzetta-ditalia-26-giugno-1946/page-01-thumb.jpg'
-import c344_6_avanti_26_giugno_1_p1 from './costituente/lavoro/giornale/6-avanti-26-giugno-1946/page-01.jpg'
-import c344_6_avanti_26_giugno_1_t from './costituente/lavoro/giornale/6-avanti-26-giugno-1946/page-01-thumb.jpg'
-import c345_7_il_popolo_26_giugn_p1 from './costituente/lavoro/giornale/7-il-popolo-26-giugno-1946/page-01.jpg'
-import c345_7_il_popolo_26_giugn_t from './costituente/lavoro/giornale/7-il-popolo-26-giugno-1946/page-01-thumb.jpg'
-import c346_8_lunita_26_giugno_1_p1 from './costituente/lavoro/giornale/8-lunita-26-giugno-1946/page-01.jpg'
-import c346_8_lunita_26_giugno_1_t from './costituente/lavoro/giornale/8-lunita-26-giugno-1946/page-01-thumb.jpg'
-import c347_9_il_messaggero_26_g_p1 from './costituente/lavoro/giornale/9-il-messaggero-26-giugno-1946/page-01.jpg'
-import c347_9_il_messaggero_26_g_t from './costituente/lavoro/giornale/9-il-messaggero-26-giugno-1946/page-01-thumb.jpg'
-import c348_10_lillustrazione_it_p1 from './costituente/lavoro/giornale/10-lillustrazione-italiana-7-luglio-1946/page-01.jpg'
-import c348_10_lillustrazione_it_t from './costituente/lavoro/giornale/10-lillustrazione-italiana-7-luglio-1946/page-01-thumb.jpg'
-import c349_11_la_voce_repubblic_p1 from './costituente/lavoro/giornale/11-la-voce-repubblicana-29-giugno-1946/page-01.jpg'
-import c349_11_la_voce_repubblic_t from './costituente/lavoro/giornale/11-la-voce-repubblicana-29-giugno-1946/page-01-thumb.jpg'
-import c350_12_lunita_29_giugno__p1 from './costituente/lavoro/giornale/12-lunita-29-giugno-1946/page-01.jpg'
-import c350_12_lunita_29_giugno__t from './costituente/lavoro/giornale/12-lunita-29-giugno-1946/page-01-thumb.jpg'
-import c351_13_il_messaggero_29__p1 from './costituente/lavoro/giornale/13-il-messaggero-29-giugno-1946/page-01.jpg'
-import c351_13_il_messaggero_29__t from './costituente/lavoro/giornale/13-il-messaggero-29-giugno-1946/page-01-thumb.jpg'
-import c352_14_il_popolo_29_giug_p1 from './costituente/lavoro/giornale/14-il-popolo-29-giugno-1946/page-01.jpg'
-import c352_14_il_popolo_29_giug_t from './costituente/lavoro/giornale/14-il-popolo-29-giugno-1946/page-01-thumb.jpg'
-import c353_15_lunita_30_giugno__p1 from './costituente/lavoro/giornale/15-lunita-30-giugno-1946/page-01.jpg'
-import c353_15_lunita_30_giugno__t from './costituente/lavoro/giornale/15-lunita-30-giugno-1946/page-01-thumb.jpg'
-import c354_16_il_popolo_16_genn_p1 from './costituente/lavoro/giornale/16-il-popolo-16-gennaio-1947/page-01.jpg'
-import c354_16_il_popolo_16_genn_t from './costituente/lavoro/giornale/16-il-popolo-16-gennaio-1947/page-01-thumb.jpg'
-import c355_17_il_popolo_9_febbr_p1 from './costituente/lavoro/giornale/17-il-popolo-9-febbraio-1947/page-01.jpg'
-import c355_17_il_popolo_9_febbr_t from './costituente/lavoro/giornale/17-il-popolo-9-febbraio-1947/page-01-thumb.jpg'
-import c356_18_avanti_9_febbraio_p1 from './costituente/lavoro/giornale/18-avanti-9-febbraio-1947/page-01.jpg'
-import c356_18_avanti_9_febbraio_t from './costituente/lavoro/giornale/18-avanti-9-febbraio-1947/page-01-thumb.jpg'
-import c357_19_lunita_9_febbraio_p1 from './costituente/lavoro/giornale/19-lunita-9-febbraio-1947/page-01.jpg'
-import c357_19_lunita_9_febbraio_t from './costituente/lavoro/giornale/19-lunita-9-febbraio-1947/page-01-thumb.jpg'
-import c358_20_avanti_4_marzo_19_p1 from './costituente/lavoro/giornale/20-avanti-4-marzo-1947/page-01.jpg'
-import c358_20_avanti_4_marzo_19_t from './costituente/lavoro/giornale/20-avanti-4-marzo-1947/page-01-thumb.jpg'
-import c359_21_corriere_della_se_p1 from './costituente/lavoro/giornale/21-corriere-della-sera-4-marzo-1947/page-01.jpg'
-import c359_21_corriere_della_se_t from './costituente/lavoro/giornale/21-corriere-della-sera-4-marzo-1947/page-01-thumb.jpg'
-import c360_22_risorgimento_libe_p1 from './costituente/lavoro/giornale/22-risorgimento-liberale-4-marzo-1947/page-01.jpg'
-import c360_22_risorgimento_libe_t from './costituente/lavoro/giornale/22-risorgimento-liberale-4-marzo-1947/page-01-thumb.jpg'
-import c361_23_il_popolo_4_marzo_p1 from './costituente/lavoro/giornale/23-il-popolo-4-marzo-1947/page-01.jpg'
-import c361_23_il_popolo_4_marzo_t from './costituente/lavoro/giornale/23-il-popolo-4-marzo-1947/page-01-thumb.jpg'
-import c362_24_lunita_4_marzo_19_p1 from './costituente/lavoro/giornale/24-lunita-4-marzo-1947/page-01.jpg'
-import c362_24_lunita_4_marzo_19_t from './costituente/lavoro/giornale/24-lunita-4-marzo-1947/page-01-thumb.jpg'
-import c363_25_avanti_23_dicembr_p1 from './costituente/lavoro/giornale/25-avanti-23-dicembre-1947/page-01.jpg'
-import c363_25_avanti_23_dicembr_t from './costituente/lavoro/giornale/25-avanti-23-dicembre-1947/page-01-thumb.jpg'
-import c364_26_corriere_della_se_p1 from './costituente/lavoro/giornale/26-corriere-della-sera-23-dicembre-1947/page-01.jpg'
-import c364_26_corriere_della_se_t from './costituente/lavoro/giornale/26-corriere-della-sera-23-dicembre-1947/page-01-thumb.jpg'
-import c365_27_giornale_ditalia__p1 from './costituente/lavoro/giornale/27-giornale-ditalia-23-dicembre-1947/page-01.jpg'
-import c365_27_giornale_ditalia__t from './costituente/lavoro/giornale/27-giornale-ditalia-23-dicembre-1947/page-01-thumb.jpg'
-import c366_28_il_popolo_23_dice_p1 from './costituente/lavoro/giornale/28-il-popolo-23-dicembre-1947/page-01.jpg'
-import c366_28_il_popolo_23_dice_t from './costituente/lavoro/giornale/28-il-popolo-23-dicembre-1947/page-01-thumb.jpg'
-import c367_29_il_tempo_23_dicem_p1 from './costituente/lavoro/giornale/29-il-tempo-23-dicembre-1947/page-01.jpg'
-import c367_29_il_tempo_23_dicem_t from './costituente/lavoro/giornale/29-il-tempo-23-dicembre-1947/page-01-thumb.jpg'
-import c368_30_la_voce_repubblic_p1 from './costituente/lavoro/giornale/30-la-voce-repubblicana-23-dicembre-1947/page-01.jpg'
-import c368_30_la_voce_repubblic_t from './costituente/lavoro/giornale/30-la-voce-repubblicana-23-dicembre-1947/page-01-thumb.jpg'
-import c369_31_lunita_23_dicembr_p1 from './costituente/lavoro/giornale/31-lunita-23-dicembre-1947/page-01.jpg'
-import c369_31_lunita_23_dicembr_t from './costituente/lavoro/giornale/31-lunita-23-dicembre-1947/page-01-thumb.jpg'
-import c370_32_il_tempo_24_dicem_p1 from './costituente/lavoro/giornale/32-il-tempo-24-dicembre-1947/page-01.jpg'
-import c370_32_il_tempo_24_dicem_t from './costituente/lavoro/giornale/32-il-tempo-24-dicembre-1947/page-01-thumb.jpg'
-import c371_33_il_popolo_24_dice_p1 from './costituente/lavoro/giornale/33-il-popolo-24-dicembre-1947/page-01.jpg'
-import c371_33_il_popolo_24_dice_t from './costituente/lavoro/giornale/33-il-popolo-24-dicembre-1947/page-01-thumb.jpg'
-import c372_34_avanti_24_dicembr_p1 from './costituente/lavoro/giornale/34-avanti-24-dicembre-1947/page-01.jpg'
-import c372_34_avanti_24_dicembr_t from './costituente/lavoro/giornale/34-avanti-24-dicembre-1947/page-01-thumb.jpg'
-import c373_35_la_stampa_28_dice_p1 from './costituente/lavoro/giornale/35-la-stampa-28-dicembre-1947/page-01.jpg'
-import c373_35_la_stampa_28_dice_t from './costituente/lavoro/giornale/35-la-stampa-28-dicembre-1947/page-01-thumb.jpg'
-import c374_36_corriere_della_se_p1 from './costituente/lavoro/giornale/36-corriere-della-sera-28-dicembre-1947/page-01.jpg'
-import c374_36_corriere_della_se_t from './costituente/lavoro/giornale/36-corriere-della-sera-28-dicembre-1947/page-01-thumb.jpg'
-import c375_37_il_giornale_dital_p1 from './costituente/lavoro/giornale/37-il-giornale-ditalia-28-dicembre-1947/page-01.jpg'
-import c375_37_il_giornale_dital_t from './costituente/lavoro/giornale/37-il-giornale-ditalia-28-dicembre-1947/page-01-thumb.jpg'
-import c376_38_lunita_28_dicembr_p1 from './costituente/lavoro/giornale/38-lunita-28-dicembre-1947/page-01.jpg'
-import c376_38_lunita_28_dicembr_t from './costituente/lavoro/giornale/38-lunita-28-dicembre-1947/page-01-thumb.jpg'
-import c377_39_il_popolo_28_dice_p1 from './costituente/lavoro/giornale/39-il-popolo-28-dicembre-1947/page-01.jpg'
-import c377_39_il_popolo_28_dice_t from './costituente/lavoro/giornale/39-il-popolo-28-dicembre-1947/page-01-thumb.jpg'
-import c378_40_avanti_28_dicembr_p1 from './costituente/lavoro/giornale/40-avanti-28-dicembre-1947/page-01.jpg'
-import c378_40_avanti_28_dicembr_t from './costituente/lavoro/giornale/40-avanti-28-dicembre-1947/page-01-thumb.jpg'
-import c379_41_la_voce_repubblic_p1 from './costituente/lavoro/giornale/41-la-voce-repubblicana-28-dicembre-1947/page-01.jpg'
-import c379_41_la_voce_repubblic_t from './costituente/lavoro/giornale/41-la-voce-repubblicana-28-dicembre-1947/page-01-thumb.jpg'
-import c380_42_avanti_1_gennaio__p1 from './costituente/lavoro/giornale/42-avanti-1-gennaio-1948/page-01.jpg'
-import c380_42_avanti_1_gennaio__t from './costituente/lavoro/giornale/42-avanti-1-gennaio-1948/page-01-thumb.jpg'
-import c381_43_il_corriere_della_p1 from './costituente/lavoro/giornale/43-il-corriere-della-sera-1-gennaio-1948/page-01.jpg'
-import c381_43_il_corriere_della_t from './costituente/lavoro/giornale/43-il-corriere-della-sera-1-gennaio-1948/page-01-thumb.jpg'
-import c382_44_la_nazione_1_genn_p1 from './costituente/lavoro/giornale/44-la-nazione-1-gennaio-1948/page-01.jpg'
-import c382_44_la_nazione_1_genn_t from './costituente/lavoro/giornale/44-la-nazione-1-gennaio-1948/page-01-thumb.jpg'
-import c383_45_avanti_2_gennaio__p1 from './costituente/lavoro/giornale/45-avanti-2-gennaio-1948/page-01.jpg'
-import c383_45_avanti_2_gennaio__t from './costituente/lavoro/giornale/45-avanti-2-gennaio-1948/page-01-thumb.jpg'
-import c384_46_corriere_della_se_p1 from './costituente/lavoro/giornale/46-corriere-della-sera-2-gennaio-1948/page-01.jpg'
-import c384_46_corriere_della_se_t from './costituente/lavoro/giornale/46-corriere-della-sera-2-gennaio-1948/page-01-thumb.jpg'
-import c385_47_la_voce_repubblic_p1 from './costituente/lavoro/giornale/47-la-voce-repubblicana-2-gennaio-1948/page-01.jpg'
-import c385_47_la_voce_repubblic_t from './costituente/lavoro/giornale/47-la-voce-repubblicana-2-gennaio-1948/page-01-thumb.jpg'
+import c269_1_decreto_legislativ_p1 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-01.jpg'
+import c269_1_decreto_legislativ_p2 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-02.jpg'
+import c269_1_decreto_legislativ_p3 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-03.jpg'
+import c269_1_decreto_legislativ_p4 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-04.jpg'
+import c269_1_decreto_legislativ_p5 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-05.jpg'
+import c269_1_decreto_legislativ_p6 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-06.jpg'
+import c269_1_decreto_legislativ_p7 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-07.jpg'
+import c269_1_decreto_legislativ_p8 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-08.jpg'
+import c269_1_decreto_legislativ_p9 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-09.jpg'
+import c269_1_decreto_legislativ_p10 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-10.jpg'
+import c269_1_decreto_legislativ_p11 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-11.jpg'
+import c269_1_decreto_legislativ_p12 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-12.jpg'
+import c269_1_decreto_legislativ_p13 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-13.jpg'
+import c269_1_decreto_legislativ_p14 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-14.jpg'
+import c269_1_decreto_legislativ_p15 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-15.jpg'
+import c269_1_decreto_legislativ_p16 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-16.jpg'
+import c269_1_decreto_legislativ_p17 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-17.jpg'
+import c269_1_decreto_legislativ_p18 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-18.jpg'
+import c269_1_decreto_legislativ_p19 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-19.jpg'
+import c269_1_decreto_legislativ_p20 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-20.jpg'
+import c269_1_decreto_legislativ_p21 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-21.jpg'
+import c269_1_decreto_legislativ_p22 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-22.jpg'
+import c269_1_decreto_legislativ_p23 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-23.jpg'
+import c269_1_decreto_legislativ_p24 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-24.jpg'
+import c269_1_decreto_legislativ_p25 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-25.jpg'
+import c269_1_decreto_legislativ_p26 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-26.jpg'
+import c269_1_decreto_legislativ_p27 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-27.jpg'
+import c269_1_decreto_legislativ_p28 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-28.jpg'
+import c269_1_decreto_legislativ_p29 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-29.jpg'
+import c269_1_decreto_legislativ_p30 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-30.jpg'
+import c269_1_decreto_legislativ_p31 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-31.jpg'
+import c269_1_decreto_legislativ_p32 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-32.jpg'
+import c269_1_decreto_legislativ_p33 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-33.jpg'
+import c269_1_decreto_legislativ_p34 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-34.jpg'
+import c269_1_decreto_legislativ_p35 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-35.jpg'
+import c269_1_decreto_legislativ_p36 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-36.jpg'
+import c269_1_decreto_legislativ_p37 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-37.jpg'
+import c269_1_decreto_legislativ_p38 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-38.jpg'
+import c269_1_decreto_legislativ_p39 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-39.jpg'
+import c269_1_decreto_legislativ_p40 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-40.jpg'
+import c269_1_decreto_legislativ_p41 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-41.jpg'
+import c269_1_decreto_legislativ_p42 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-42.jpg'
+import c269_1_decreto_legislativ_p43 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-43.jpg'
+import c269_1_decreto_legislativ_p44 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-44.jpg'
+import c269_1_decreto_legislativ_p45 from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-45.jpg'
+import c269_1_decreto_legislativ_t from './costituente/composizione/documenti/1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74/page-01-thumb.jpg'
+import c270_2_contrassegni_delle_p1 from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-01.jpg'
+import c270_2_contrassegni_delle_p2 from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-02.jpg'
+import c270_2_contrassegni_delle_t from './costituente/composizione/documenti/2-contrassegni-delle-liste/page-01-thumb.jpg'
+import c271_3_la_voce_repubblica_p1 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-01.jpg'
+import c271_3_la_voce_repubblica_p2 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-02.jpg'
+import c271_3_la_voce_repubblica_p3 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-03.jpg'
+import c271_3_la_voce_repubblica_p4 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-04.jpg'
+import c271_3_la_voce_repubblica_p5 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-05.jpg'
+import c271_3_la_voce_repubblica_p6 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-06.jpg'
+import c271_3_la_voce_repubblica_p7 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-07.jpg'
+import c271_3_la_voce_repubblica_p8 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-08.jpg'
+import c271_3_la_voce_repubblica_p9 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-09.jpg'
+import c271_3_la_voce_repubblica_p10 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-10.jpg'
+import c271_3_la_voce_repubblica_p11 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-11.jpg'
+import c271_3_la_voce_repubblica_p12 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-12.jpg'
+import c271_3_la_voce_repubblica_p13 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-13.jpg'
+import c271_3_la_voce_repubblica_p14 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-14.jpg'
+import c271_3_la_voce_repubblica_p15 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-15.jpg'
+import c271_3_la_voce_repubblica_p16 from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-16.jpg'
+import c271_3_la_voce_repubblica_t from './costituente/composizione/documenti/3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente/page-01-thumb.jpg'
+import c272_4_manifesti_di_propa_p1 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-01.jpg'
+import c272_4_manifesti_di_propa_p2 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-02.jpg'
+import c272_4_manifesti_di_propa_p3 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-03.jpg'
+import c272_4_manifesti_di_propa_p4 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-04.jpg'
+import c272_4_manifesti_di_propa_p5 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-05.jpg'
+import c272_4_manifesti_di_propa_p6 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-06.jpg'
+import c272_4_manifesti_di_propa_p7 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-07.jpg'
+import c272_4_manifesti_di_propa_p8 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-08.jpg'
+import c272_4_manifesti_di_propa_p9 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-09.jpg'
+import c272_4_manifesti_di_propa_p10 from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-10.jpg'
+import c272_4_manifesti_di_propa_t from './costituente/composizione/documenti/4-manifesti-di-propaganda-elettorale/page-01-thumb.jpg'
+import c273_5_carta_della_costit_p1 from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-01.jpg'
+import c273_5_carta_della_costit_p2 from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-02.jpg'
+import c273_5_carta_della_costit_t from './costituente/composizione/documenti/5-carta-della-costituente-maggio-1946/page-01-thumb.jpg'
+import c274_6_manifesti_di_alcun_p1 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-01.jpg'
+import c274_6_manifesti_di_alcun_p2 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-02.jpg'
+import c274_6_manifesti_di_alcun_p3 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-03.jpg'
+import c274_6_manifesti_di_alcun_p4 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-04.jpg'
+import c274_6_manifesti_di_alcun_p5 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-05.jpg'
+import c274_6_manifesti_di_alcun_p6 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-06.jpg'
+import c274_6_manifesti_di_alcun_p7 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-07.jpg'
+import c274_6_manifesti_di_alcun_p8 from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-08.jpg'
+import c274_6_manifesti_di_alcun_t from './costituente/composizione/documenti/6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti/page-01-thumb.jpg'
+import c275_7_elenco_manoscritto_p1 from './costituente/composizione/documenti/7-elenco-manoscritto-dei-componenti-della-commissione-per-la-costituzione-luglio/page-01.jpg'
+import c275_7_elenco_manoscritto_t from './costituente/composizione/documenti/7-elenco-manoscritto-dei-componenti-della-commissione-per-la-costituzione-luglio/page-01-thumb.jpg'
+import c276_8_elenco_dei_compone_p1 from './costituente/composizione/documenti/8-elenco-dei-componenti-della-commissione-per-la-costituzione-28-novembre-1946/page-01.jpg'
+import c276_8_elenco_dei_compone_t from './costituente/composizione/documenti/8-elenco-dei-componenti-della-commissione-per-la-costituzione-28-novembre-1946/page-01-thumb.jpg'
+import c277_9_elenco_dei_compone_p1 from './costituente/composizione/documenti/9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947/page-01.jpg'
+import c277_9_elenco_dei_compone_t from './costituente/composizione/documenti/9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947/page-01-thumb.jpg'
+import c278_10_i_presidenti_dell_p1 from './costituente/composizione/documenti/10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi/page-01.jpg'
+import c278_10_i_presidenti_dell_t from './costituente/composizione/documenti/10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi/page-01-thumb.jpg'
+import c279_11_distribuzione_ter_p1 from './costituente/composizione/documenti/11-distribuzione-territoriale-dei-voti-conseguiti-dai-maggiori-partiti/page-01.jpg'
+import c279_11_distribuzione_ter_t from './costituente/composizione/documenti/11-distribuzione-territoriale-dei-voti-conseguiti-dai-maggiori-partiti/page-01-thumb.jpg'
+import c280_12_caratteri_individ_p1 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-01.jpg'
+import c280_12_caratteri_individ_p2 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-02.jpg'
+import c280_12_caratteri_individ_p3 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-03.jpg'
+import c280_12_caratteri_individ_p4 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-04.jpg'
+import c280_12_caratteri_individ_p5 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-05.jpg'
+import c280_12_caratteri_individ_p6 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-06.jpg'
+import c280_12_caratteri_individ_p7 from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-07.jpg'
+import c280_12_caratteri_individ_t from './costituente/composizione/documenti/12-caratteri-individuali-dei-deputati/page-01-thumb.jpg'
+import c281_13_la_commissione_pe_p1 from './costituente/composizione/documenti/13-la-commissione-per-la-costituzione/page-01.jpg'
+import c281_13_la_commissione_pe_t from './costituente/composizione/documenti/13-la-commissione-per-la-costituzione/page-01-thumb.jpg'
+import c282_14_la_composizione_d_p1 from './costituente/composizione/documenti/14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori/page-01.jpg'
+import c282_14_la_composizione_d_t from './costituente/composizione/documenti/14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori/page-01-thumb.jpg'
+import c283_15_le_deputate_per_g_p1 from './costituente/composizione/documenti/15-le-deputate-per-gruppo-di-appartenenza/page-01.jpg'
+import c283_15_le_deputate_per_g_t from './costituente/composizione/documenti/15-le-deputate-per-gruppo-di-appartenenza/page-01-thumb.jpg'
+import c284_16_statistiche_elabo_p1 from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-01.jpg'
+import c284_16_statistiche_elabo_p2 from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-02.jpg'
+import c284_16_statistiche_elabo_t from './costituente/composizione/documenti/16-statistiche-elaborate-dagli-uffici-della-camera/page-01-thumb.jpg'
+import c285_1_comizio_elettorale_p1 from './costituente/composizione/foto/1-comizio-elettorale-a-milano-palmiro-togliatti/page-01.jpg'
+import c285_1_comizio_elettorale_t from './costituente/composizione/foto/1-comizio-elettorale-a-milano-palmiro-togliatti/page-01-thumb.jpg'
+import c286_2_comizio_elettorale_p1 from './costituente/composizione/foto/2-comizio-elettorale-a-milano-nenni/page-01.jpg'
+import c286_2_comizio_elettorale_t from './costituente/composizione/foto/2-comizio-elettorale-a-milano-nenni/page-01-thumb.jpg'
+import c287_3_propaganda_elettor_p1 from './costituente/composizione/foto/3-propaganda-elettorale-blocco-nazionale/page-01.jpg'
+import c287_3_propaganda_elettor_t from './costituente/composizione/foto/3-propaganda-elettorale-blocco-nazionale/page-01-thumb.jpg'
+import c288_4_comizi_elettorali__p1 from './costituente/composizione/foto/4-comizi-elettorali-nenni-e-sforza/page-01.jpg'
+import c288_4_comizi_elettorali__t from './costituente/composizione/foto/4-comizi-elettorali-nenni-e-sforza/page-01-thumb.jpg'
+import c289_5_propaganda_elettor_p1 from './costituente/composizione/foto/5-propaganda-elettorale-dc-il-popolo/page-01.jpg'
+import c289_5_propaganda_elettor_t from './costituente/composizione/foto/5-propaganda-elettorale-dc-il-popolo/page-01-thumb.jpg'
+import c290_6_comizio_elettorale_p1 from './costituente/composizione/foto/6-comizio-elettorale-a-milano-saragat/page-01.jpg'
+import c290_6_comizio_elettorale_t from './costituente/composizione/foto/6-comizio-elettorale-a-milano-saragat/page-01-thumb.jpg'
+import c291_7_propaganda_elettor_p1 from './costituente/composizione/foto/7-propaganda-elettorale-dc-donna-devi-votare/page-01.jpg'
+import c291_7_propaganda_elettor_t from './costituente/composizione/foto/7-propaganda-elettorale-dc-donna-devi-votare/page-01-thumb.jpg'
+import c292_8_comizio_elettorale_p1 from './costituente/composizione/foto/8-comizio-elettorale-a-milano-santi-e-mondolfo/page-01.jpg'
+import c292_8_comizio_elettorale_t from './costituente/composizione/foto/8-comizio-elettorale-a-milano-santi-e-mondolfo/page-01-thumb.jpg'
+import c293_9_comizio_a_milano_p_p1 from './costituente/composizione/foto/9-comizio-a-milano-pacciardi/page-01.jpg'
+import c293_9_comizio_a_milano_p_t from './costituente/composizione/foto/9-comizio-a-milano-pacciardi/page-01-thumb.jpg'
+import c294_10_propaganda_eletto_p1 from './costituente/composizione/foto/10-propaganda-elettorale-votate-pci/page-01.jpg'
+import c294_10_propaganda_eletto_t from './costituente/composizione/foto/10-propaganda-elettorale-votate-pci/page-01-thumb.jpg'
+import c295_11_comizio_elettoral_p1 from './costituente/composizione/foto/11-comizio-elettorale-a-milano-parri/page-01.jpg'
+import c295_11_comizio_elettoral_t from './costituente/composizione/foto/11-comizio-elettorale-a-milano-parri/page-01-thumb.jpg'
+import c296_12_primo_giorno_dell_p1 from './costituente/composizione/foto/12-primo-giorno-della-costituente/page-01.jpg'
+import c296_12_primo_giorno_dell_t from './costituente/composizione/foto/12-primo-giorno-della-costituente/page-01-thumb.jpg'
+import c297_13_discorso_di_apert_p1 from './costituente/composizione/foto/13-discorso-di-apertura-di-vittorio-emanuele-orlando/page-01.jpg'
+import c297_13_discorso_di_apert_t from './costituente/composizione/foto/13-discorso-di-apertura-di-vittorio-emanuele-orlando/page-01-thumb.jpg'
+import c298_14_il_neoeletto_pres_p1 from './costituente/composizione/foto/14-il-neoeletto-presidente-giuseppe-saragat-tiene-il-suo-discorso-alla-costituen/page-01.jpg'
+import c298_14_il_neoeletto_pres_t from './costituente/composizione/foto/14-il-neoeletto-presidente-giuseppe-saragat-tiene-il-suo-discorso-alla-costituen/page-01-thumb.jpg'
+import c299_15_deputati_costitue_p1 from './costituente/composizione/foto/15-deputati-costituenti-conversano-davanti-a-montecitorio/page-01.jpg'
+import c299_15_deputati_costitue_t from './costituente/composizione/foto/15-deputati-costituenti-conversano-davanti-a-montecitorio/page-01-thumb.jpg'
+import c300_16_gasparotto_e_sfor_p1 from './costituente/composizione/foto/16-gasparotto-e-sforza-allingresso-di-montecitorio/page-01.jpg'
+import c300_16_gasparotto_e_sfor_t from './costituente/composizione/foto/16-gasparotto-e-sforza-allingresso-di-montecitorio/page-01-thumb.jpg'
+import c301_17_le_deputate_iotti_p1 from './costituente/composizione/foto/17-le-deputate-iotti-montagnana-noce/page-01.jpg'
+import c301_17_le_deputate_iotti_t from './costituente/composizione/foto/17-le-deputate-iotti-montagnana-noce/page-01-thumb.jpg'
+import c302_1_il_popolo_4_giugno_p1 from './costituente/composizione/giornale/1-il-popolo-4-giugno-1946/page-01.jpg'
+import c302_1_il_popolo_4_giugno_t from './costituente/composizione/giornale/1-il-popolo-4-giugno-1946/page-01-thumb.jpg'
+import c303_2_la_voce_repubblica_p1 from './costituente/composizione/giornale/2-la-voce-repubblicana-5-giugno-1946/page-01.jpg'
+import c303_2_la_voce_repubblica_t from './costituente/composizione/giornale/2-la-voce-repubblicana-5-giugno-1946/page-01-thumb.jpg'
+import c304_3_risorgimento_liber_p1 from './costituente/composizione/giornale/3-risorgimento-liberale-5-giugno-1946/page-01.jpg'
+import c304_3_risorgimento_liber_t from './costituente/composizione/giornale/3-risorgimento-liberale-5-giugno-1946/page-01-thumb.jpg'
+import c305_4_la_nuova_stampa_7__p1 from './costituente/composizione/giornale/4-la-nuova-stampa-7-giugno-1946/page-01.jpg'
+import c305_4_la_nuova_stampa_7__t from './costituente/composizione/giornale/4-la-nuova-stampa-7-giugno-1946/page-01-thumb.jpg'
+import c306_5_lunita_8_giugno_19_p1 from './costituente/composizione/giornale/5-lunita-8-giugno-1946/page-01.jpg'
+import c306_5_lunita_8_giugno_19_t from './costituente/composizione/giornale/5-lunita-8-giugno-1946/page-01-thumb.jpg'
+import c307_6_il_popolo_8_giugno_p1 from './costituente/composizione/giornale/6-il-popolo-8-giugno-1946/page-01.jpg'
+import c307_6_il_popolo_8_giugno_t from './costituente/composizione/giornale/6-il-popolo-8-giugno-1946/page-01-thumb.jpg'
+import c308_7_lunita_9_giugno_19_p1 from './costituente/composizione/giornale/7-lunita-9-giugno-1946/page-01.jpg'
+import c308_7_lunita_9_giugno_19_t from './costituente/composizione/giornale/7-lunita-9-giugno-1946/page-01-thumb.jpg'
+import c309_8_lunita_14_giugno_1_p1 from './costituente/composizione/giornale/8-lunita-14-giugno-1946/page-01.jpg'
+import c309_8_lunita_14_giugno_1_t from './costituente/composizione/giornale/8-lunita-14-giugno-1946/page-01-thumb.jpg'
+import c310_9_risorgimento_liber_p1 from './costituente/composizione/giornale/9-risorgimento-liberale-16-giugno-1946/page-01.jpg'
+import c310_9_risorgimento_liber_t from './costituente/composizione/giornale/9-risorgimento-liberale-16-giugno-1946/page-01-thumb.jpg'
+import c311_10_il_popolo_16_giug_p1 from './costituente/composizione/giornale/10-il-popolo-16-giugno-1946/page-01.jpg'
+import c311_10_il_popolo_16_giug_t from './costituente/composizione/giornale/10-il-popolo-16-giugno-1946/page-01-thumb.jpg'
+import c312_11_la_voce_repubblic_p1 from './costituente/composizione/giornale/11-la-voce-repubblicana-19-giugno-1946/page-01.jpg'
+import c312_11_la_voce_repubblic_t from './costituente/composizione/giornale/11-la-voce-repubblicana-19-giugno-1946/page-01-thumb.jpg'
+import c313_12_lillustrazione_it_p1 from './costituente/composizione/giornale/12-lillustrazione-italiana-14-luglio-1946/page-01.jpg'
+import c313_12_lillustrazione_it_t from './costituente/composizione/giornale/12-lillustrazione-italiana-14-luglio-1946/page-01-thumb.jpg'
+import c314_13_domenica_del_corr_p1 from './costituente/composizione/giornale/13-domenica-del-corriere-4-agosto-1946/page-01.jpg'
+import c314_13_domenica_del_corr_t from './costituente/composizione/giornale/13-domenica-del-corriere-4-agosto-1946/page-01-thumb.jpg'
+import c315_14_i_deputati_alla_c_p1 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-01.jpg'
+import c315_14_i_deputati_alla_c_p2 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-02.jpg'
+import c315_14_i_deputati_alla_c_p3 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-03.jpg'
+import c315_14_i_deputati_alla_c_p4 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-04.jpg'
+import c315_14_i_deputati_alla_c_p5 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-05.jpg'
+import c315_14_i_deputati_alla_c_p6 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-06.jpg'
+import c315_14_i_deputati_alla_c_p7 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-07.jpg'
+import c315_14_i_deputati_alla_c_p8 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-08.jpg'
+import c315_14_i_deputati_alla_c_p9 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-09.jpg'
+import c315_14_i_deputati_alla_c_p10 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-10.jpg'
+import c315_14_i_deputati_alla_c_p11 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-11.jpg'
+import c315_14_i_deputati_alla_c_p12 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-12.jpg'
+import c315_14_i_deputati_alla_c_p13 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-13.jpg'
+import c315_14_i_deputati_alla_c_p14 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-14.jpg'
+import c315_14_i_deputati_alla_c_p15 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-15.jpg'
+import c315_14_i_deputati_alla_c_p16 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-16.jpg'
+import c315_14_i_deputati_alla_c_p17 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-17.jpg'
+import c315_14_i_deputati_alla_c_p18 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-18.jpg'
+import c315_14_i_deputati_alla_c_p19 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-19.jpg'
+import c315_14_i_deputati_alla_c_p20 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-20.jpg'
+import c315_14_i_deputati_alla_c_p21 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-21.jpg'
+import c315_14_i_deputati_alla_c_p22 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-22.jpg'
+import c315_14_i_deputati_alla_c_p23 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-23.jpg'
+import c315_14_i_deputati_alla_c_p24 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-24.jpg'
+import c315_14_i_deputati_alla_c_p25 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-25.jpg'
+import c315_14_i_deputati_alla_c_p26 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-26.jpg'
+import c315_14_i_deputati_alla_c_p27 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-27.jpg'
+import c315_14_i_deputati_alla_c_p28 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-28.jpg'
+import c315_14_i_deputati_alla_c_p29 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-29.jpg'
+import c315_14_i_deputati_alla_c_p30 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-30.jpg'
+import c315_14_i_deputati_alla_c_p31 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-31.jpg'
+import c315_14_i_deputati_alla_c_p32 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-32.jpg'
+import c315_14_i_deputati_alla_c_p33 from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-33.jpg'
+import c315_14_i_deputati_alla_c_t from './costituente/composizione/giornale/14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio/page-01-thumb.jpg'
+import c316_01_verbale_originale_p1 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-01.jpg'
+import c316_01_verbale_originale_p2 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-02.jpg'
+import c316_01_verbale_originale_p3 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-03.jpg'
+import c316_01_verbale_originale_p4 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-04.jpg'
+import c316_01_verbale_originale_p5 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-05.jpg'
+import c316_01_verbale_originale_p6 from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-06.jpg'
+import c316_01_verbale_originale_t from './costituente/lavoro/documenti/01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946/page-01-thumb.jpg'
+import c317_02_discorso_del_pres_p1 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-01.jpg'
+import c317_02_discorso_del_pres_p2 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-02.jpg'
+import c317_02_discorso_del_pres_p3 from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-03.jpg'
+import c317_02_discorso_del_pres_t from './costituente/lavoro/documenti/02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946/page-01-thumb.jpg'
+import c318_03_discorso_di_insed_p1 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-01.jpg'
+import c318_03_discorso_di_insed_p2 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-02.jpg'
+import c318_03_discorso_di_insed_p3 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-03.jpg'
+import c318_03_discorso_di_insed_p4 from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-04.jpg'
+import c318_03_discorso_di_insed_t from './costituente/lavoro/documenti/03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946/page-01-thumb.jpg'
+import c319_04_verbale_dei_risul_p1 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-01.jpg'
+import c319_04_verbale_dei_risul_p2 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-02.jpg'
+import c319_04_verbale_dei_risul_p3 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-03.jpg'
+import c319_04_verbale_dei_risul_p4 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-04.jpg'
+import c319_04_verbale_dei_risul_p5 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-05.jpg'
+import c319_04_verbale_dei_risul_p6 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-06.jpg'
+import c319_04_verbale_dei_risul_p7 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-07.jpg'
+import c319_04_verbale_dei_risul_p8 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-08.jpg'
+import c319_04_verbale_dei_risul_p9 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-09.jpg'
+import c319_04_verbale_dei_risul_p10 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-10.jpg'
+import c319_04_verbale_dei_risul_p11 from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-11.jpg'
+import c319_04_verbale_dei_risul_t from './costituente/lavoro/documenti/04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola/page-01-thumb.jpg'
+import c320_05_messaggio_autogra_p1 from './costituente/lavoro/documenti/05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946/page-01.jpg'
+import c320_05_messaggio_autogra_t from './costituente/lavoro/documenti/05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946/page-01-thumb.jpg'
+import c321_06_giuramento_e_disc_p1 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-01.jpg'
+import c321_06_giuramento_e_disc_p2 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-02.jpg'
+import c321_06_giuramento_e_disc_p3 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-03.jpg'
+import c321_06_giuramento_e_disc_p4 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-04.jpg'
+import c321_06_giuramento_e_disc_p5 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-05.jpg'
+import c321_06_giuramento_e_disc_p6 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-06.jpg'
+import c321_06_giuramento_e_disc_p7 from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-07.jpg'
+import c321_06_giuramento_e_disc_t from './costituente/lavoro/documenti/06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946/page-01-thumb.jpg'
+import c322_07_nomina_della_comm_p1 from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-01.jpg'
+import c322_07_nomina_della_comm_p2 from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-02.jpg'
+import c322_07_nomina_della_comm_t from './costituente/lavoro/documenti/07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946/page-01-thumb.jpg'
+import c323_08_resoconto_della_p_p1 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-01.jpg'
+import c323_08_resoconto_della_p_p2 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-02.jpg'
+import c323_08_resoconto_della_p_p3 from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-03.jpg'
+import c323_08_resoconto_della_p_t from './costituente/lavoro/documenti/08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-/page-01-thumb.jpg'
+import c324_09_originale_della_p_p1 from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-01.jpg'
+import c324_09_originale_della_p_p2 from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-02.jpg'
+import c324_09_originale_della_p_t from './costituente/lavoro/documenti/09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost/page-01-thumb.jpg'
+import c325_10_originale_della_c_p1 from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-01.jpg'
+import c325_10_originale_della_c_p2 from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-02.jpg'
+import c325_10_originale_della_c_t from './costituente/lavoro/documenti/10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot/page-01-thumb.jpg'
+import c326_11_richiesta_dei_gio_p1 from './costituente/lavoro/documenti/11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione/page-01.jpg'
+import c326_11_richiesta_dei_gio_t from './costituente/lavoro/documenti/11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione/page-01-thumb.jpg'
+import c327_12_progetto_di_costi_p1 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-01.jpg'
+import c327_12_progetto_di_costi_p2 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-02.jpg'
+import c327_12_progetto_di_costi_p3 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-03.jpg'
+import c327_12_progetto_di_costi_p4 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-04.jpg'
+import c327_12_progetto_di_costi_p5 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-05.jpg'
+import c327_12_progetto_di_costi_p6 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-06.jpg'
+import c327_12_progetto_di_costi_p7 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-07.jpg'
+import c327_12_progetto_di_costi_p8 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-08.jpg'
+import c327_12_progetto_di_costi_p9 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-09.jpg'
+import c327_12_progetto_di_costi_p10 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-10.jpg'
+import c327_12_progetto_di_costi_p11 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-11.jpg'
+import c327_12_progetto_di_costi_p12 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-12.jpg'
+import c327_12_progetto_di_costi_p13 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-13.jpg'
+import c327_12_progetto_di_costi_p14 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-14.jpg'
+import c327_12_progetto_di_costi_p15 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-15.jpg'
+import c327_12_progetto_di_costi_p16 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-16.jpg'
+import c327_12_progetto_di_costi_p17 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-17.jpg'
+import c327_12_progetto_di_costi_p18 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-18.jpg'
+import c327_12_progetto_di_costi_p19 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-19.jpg'
+import c327_12_progetto_di_costi_p20 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-20.jpg'
+import c327_12_progetto_di_costi_p21 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-21.jpg'
+import c327_12_progetto_di_costi_p22 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-22.jpg'
+import c327_12_progetto_di_costi_p23 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-23.jpg'
+import c327_12_progetto_di_costi_p24 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-24.jpg'
+import c327_12_progetto_di_costi_p25 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-25.jpg'
+import c327_12_progetto_di_costi_p26 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-26.jpg'
+import c327_12_progetto_di_costi_p27 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-27.jpg'
+import c327_12_progetto_di_costi_p28 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-28.jpg'
+import c327_12_progetto_di_costi_p29 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-29.jpg'
+import c327_12_progetto_di_costi_p30 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-30.jpg'
+import c327_12_progetto_di_costi_p31 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-31.jpg'
+import c327_12_progetto_di_costi_p32 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-32.jpg'
+import c327_12_progetto_di_costi_p33 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-33.jpg'
+import c327_12_progetto_di_costi_p34 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-34.jpg'
+import c327_12_progetto_di_costi_p35 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-35.jpg'
+import c327_12_progetto_di_costi_p36 from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-36.jpg'
+import c327_12_progetto_di_costi_t from './costituente/lavoro/documenti/12-progetto-di-costituzione-31-gennaio-1947/page-01-thumb.jpg'
+import c328_13_elezione_del_pres_p1 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-01.jpg'
+import c328_13_elezione_del_pres_p2 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-02.jpg'
+import c328_13_elezione_del_pres_p3 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-03.jpg'
+import c328_13_elezione_del_pres_p4 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-04.jpg'
+import c328_13_elezione_del_pres_p5 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-05.jpg'
+import c328_13_elezione_del_pres_p6 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-06.jpg'
+import c328_13_elezione_del_pres_p7 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-07.jpg'
+import c328_13_elezione_del_pres_p8 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-08.jpg'
+import c328_13_elezione_del_pres_p9 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-09.jpg'
+import c328_13_elezione_del_pres_p10 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-10.jpg'
+import c328_13_elezione_del_pres_p11 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-11.jpg'
+import c328_13_elezione_del_pres_p12 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-12.jpg'
+import c328_13_elezione_del_pres_p13 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-13.jpg'
+import c328_13_elezione_del_pres_p14 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-14.jpg'
+import c328_13_elezione_del_pres_p15 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-15.jpg'
+import c328_13_elezione_del_pres_p16 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-16.jpg'
+import c328_13_elezione_del_pres_p17 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-17.jpg'
+import c328_13_elezione_del_pres_p18 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-18.jpg'
+import c328_13_elezione_del_pres_p19 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-19.jpg'
+import c328_13_elezione_del_pres_p20 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-20.jpg'
+import c328_13_elezione_del_pres_p21 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-21.jpg'
+import c328_13_elezione_del_pres_p22 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-22.jpg'
+import c328_13_elezione_del_pres_p23 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-23.jpg'
+import c328_13_elezione_del_pres_p24 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-24.jpg'
+import c328_13_elezione_del_pres_p25 from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-25.jpg'
+import c328_13_elezione_del_pres_t from './costituente/lavoro/documenti/13-elezione-del-presidente-terracini-8-febbraio-1947/page-01-thumb.jpg'
+import c329_14_replica_di_meucci_p1 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-01.jpg'
+import c329_14_replica_di_meucci_p2 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-02.jpg'
+import c329_14_replica_di_meucci_p3 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-03.jpg'
+import c329_14_replica_di_meucci_p4 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-04.jpg'
+import c329_14_replica_di_meucci_p5 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-05.jpg'
+import c329_14_replica_di_meucci_p6 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-06.jpg'
+import c329_14_replica_di_meucci_p7 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-07.jpg'
+import c329_14_replica_di_meucci_p8 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-08.jpg'
+import c329_14_replica_di_meucci_p9 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-09.jpg'
+import c329_14_replica_di_meucci_p10 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-10.jpg'
+import c329_14_replica_di_meucci_p11 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-11.jpg'
+import c329_14_replica_di_meucci_p12 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-12.jpg'
+import c329_14_replica_di_meucci_p13 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-13.jpg'
+import c329_14_replica_di_meucci_p14 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-14.jpg'
+import c329_14_replica_di_meucci_p15 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-15.jpg'
+import c329_14_replica_di_meucci_p16 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-16.jpg'
+import c329_14_replica_di_meucci_p17 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-17.jpg'
+import c329_14_replica_di_meucci_p18 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-18.jpg'
+import c329_14_replica_di_meucci_p19 from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-19.jpg'
+import c329_14_replica_di_meucci_t from './costituente/lavoro/documenti/14-replica-di-meuccio-ruini-12-marzo-1947/page-01-thumb.jpg'
+import c330_15_emendamenti_delle_p1 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-01.jpg'
+import c330_15_emendamenti_delle_p2 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-02.jpg'
+import c330_15_emendamenti_delle_p3 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-03.jpg'
+import c330_15_emendamenti_delle_p4 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-04.jpg'
+import c330_15_emendamenti_delle_p5 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-05.jpg'
+import c330_15_emendamenti_delle_p6 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-06.jpg'
+import c330_15_emendamenti_delle_p7 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-07.jpg'
+import c330_15_emendamenti_delle_p8 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-08.jpg'
+import c330_15_emendamenti_delle_p9 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-09.jpg'
+import c330_15_emendamenti_delle_p10 from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-10.jpg'
+import c330_15_emendamenti_delle_t from './costituente/lavoro/documenti/15-emendamenti-delle-deputate/page-01-thumb.jpg'
+import c331_16_intervento_di_meu_p1 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-01.jpg'
+import c331_16_intervento_di_meu_p2 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-02.jpg'
+import c331_16_intervento_di_meu_p3 from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-03.jpg'
+import c331_16_intervento_di_meu_t from './costituente/lavoro/documenti/16-intervento-di-meuccio-ruini-22-dicembre-1947/page-01-thumb.jpg'
+import c332_17_intervento_del_pr_p1 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-01.jpg'
+import c332_17_intervento_del_pr_p2 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-02.jpg'
+import c332_17_intervento_del_pr_p3 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-03.jpg'
+import c332_17_intervento_del_pr_p4 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-04.jpg'
+import c332_17_intervento_del_pr_p5 from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-05.jpg'
+import c332_17_intervento_del_pr_t from './costituente/lavoro/documenti/17-intervento-del-presidente-terracini-22-dicembre-1947/page-01-thumb.jpg'
+import c333_18_messaggio_di_enri_p1 from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-01.jpg'
+import c333_18_messaggio_di_enri_p2 from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-02.jpg'
+import c333_18_messaggio_di_enri_t from './costituente/lavoro/documenti/18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947/page-01-thumb.jpg'
+import c334_1_prima_seduta_del_2_p1 from './costituente/lavoro/foto/1-prima-seduta-del-25-giugno-1946/page-01.jpg'
+import c334_1_prima_seduta_del_2_t from './costituente/lavoro/foto/1-prima-seduta-del-25-giugno-1946/page-01-thumb.jpg'
+import c335_2_prima_seduta_del_2_p1 from './costituente/lavoro/foto/2-prima-seduta-del-25-giugno-1946/page-01.jpg'
+import c335_2_prima_seduta_del_2_t from './costituente/lavoro/foto/2-prima-seduta-del-25-giugno-1946/page-01-thumb.jpg'
+import c336_3_dichiarazioni_di_d_p1 from './costituente/lavoro/foto/3-dichiarazioni-di-de-gasperi-sul-programma-di-governo/page-01.jpg'
+import c336_3_dichiarazioni_di_d_t from './costituente/lavoro/foto/3-dichiarazioni-di-de-gasperi-sul-programma-di-governo/page-01-thumb.jpg'
+import c337_4_inizio_di_una_sedu_p1 from './costituente/lavoro/foto/4-inizio-di-una-seduta-a-montecitorio/page-01.jpg'
+import c337_4_inizio_di_una_sedu_t from './costituente/lavoro/foto/4-inizio-di-una-seduta-a-montecitorio/page-01-thumb.jpg'
+import c338_5_enrico_de_nicola_c_p1 from './costituente/lavoro/foto/5-enrico-de-nicola-capo-provvisorio-dello-stato/page-01.jpg'
+import c338_5_enrico_de_nicola_c_t from './costituente/lavoro/foto/5-enrico-de-nicola-capo-provvisorio-dello-stato/page-01-thumb.jpg'
+import c339_6_salone_dei_passi_p_p1 from './costituente/lavoro/foto/6-salone-dei-passi-perduti/page-01.jpg'
+import c339_6_salone_dei_passi_p_t from './costituente/lavoro/foto/6-salone-dei-passi-perduti/page-01-thumb.jpg'
+import c340_7_una_seduta_della_p_p1 from './costituente/lavoro/foto/7-una-seduta-della-prima-sottocommissione/page-01.jpg'
+import c340_7_una_seduta_della_p_t from './costituente/lavoro/foto/7-una-seduta-della-prima-sottocommissione/page-01-thumb.jpg'
+import c341_8_una_seduta_della_s_p1 from './costituente/lavoro/foto/8-una-seduta-della-seconda-sottocommissione/page-01.jpg'
+import c341_8_una_seduta_della_s_t from './costituente/lavoro/foto/8-una-seduta-della-seconda-sottocommissione/page-01-thumb.jpg'
+import c342_9_approvazione_della_p1 from './costituente/lavoro/foto/9-approvazione-della-costituzione/page-01.jpg'
+import c342_9_approvazione_della_t from './costituente/lavoro/foto/9-approvazione-della-costituzione/page-01-thumb.jpg'
+import c343_10_presentazione_del_p1 from './costituente/lavoro/foto/10-presentazione-della-costituzione-a-de-nicola/page-01.jpg'
+import c343_10_presentazione_del_t from './costituente/lavoro/foto/10-presentazione-della-costituzione-a-de-nicola/page-01-thumb.jpg'
+import c344_11_il_presidente_de__p1 from './costituente/lavoro/foto/11-il-presidente-de-gasperi-firma-la-costituzione/page-01.jpg'
+import c344_11_il_presidente_de__t from './costituente/lavoro/foto/11-il-presidente-de-gasperi-firma-la-costituzione/page-01-thumb.jpg'
+import c345_12_il_presidente_de__p1 from './costituente/lavoro/foto/12-il-presidente-de-nicola-firma-la-costituzione/page-01.jpg'
+import c345_12_il_presidente_de__t from './costituente/lavoro/foto/12-il-presidente-de-nicola-firma-la-costituzione/page-01-thumb.jpg'
+import c346_13_il_presidente_ter_p1 from './costituente/lavoro/foto/13-il-presidente-terracini-firma-la-costituzione/page-01.jpg'
+import c346_13_il_presidente_ter_t from './costituente/lavoro/foto/13-il-presidente-terracini-firma-la-costituzione/page-01-thumb.jpg'
+import c347_1_avanti_25_giugno_1_p1 from './costituente/lavoro/giornale/1-avanti-25-giugno-1946/page-01.jpg'
+import c347_1_avanti_25_giugno_1_t from './costituente/lavoro/giornale/1-avanti-25-giugno-1946/page-01-thumb.jpg'
+import c348_2_lunita_25_giugno_1_p1 from './costituente/lavoro/giornale/2-lunita-25-giugno-1946/page-01.jpg'
+import c348_2_lunita_25_giugno_1_t from './costituente/lavoro/giornale/2-lunita-25-giugno-1946/page-01-thumb.jpg'
+import c349_3_il_messaggero_25_g_p1 from './costituente/lavoro/giornale/3-il-messaggero-25-giugno-1946/page-01.jpg'
+import c349_3_il_messaggero_25_g_t from './costituente/lavoro/giornale/3-il-messaggero-25-giugno-1946/page-01-thumb.jpg'
+import c350_4_la_voce_repubblica_p1 from './costituente/lavoro/giornale/4-la-voce-repubblicana-26-giugno-1946/page-01.jpg'
+import c350_4_la_voce_repubblica_t from './costituente/lavoro/giornale/4-la-voce-repubblicana-26-giugno-1946/page-01-thumb.jpg'
+import c351_5_gazzetta_ditalia_2_p1 from './costituente/lavoro/giornale/5-gazzetta-ditalia-26-giugno-1946/page-01.jpg'
+import c351_5_gazzetta_ditalia_2_t from './costituente/lavoro/giornale/5-gazzetta-ditalia-26-giugno-1946/page-01-thumb.jpg'
+import c352_6_avanti_26_giugno_1_p1 from './costituente/lavoro/giornale/6-avanti-26-giugno-1946/page-01.jpg'
+import c352_6_avanti_26_giugno_1_t from './costituente/lavoro/giornale/6-avanti-26-giugno-1946/page-01-thumb.jpg'
+import c353_7_il_popolo_26_giugn_p1 from './costituente/lavoro/giornale/7-il-popolo-26-giugno-1946/page-01.jpg'
+import c353_7_il_popolo_26_giugn_t from './costituente/lavoro/giornale/7-il-popolo-26-giugno-1946/page-01-thumb.jpg'
+import c354_8_lunita_26_giugno_1_p1 from './costituente/lavoro/giornale/8-lunita-26-giugno-1946/page-01.jpg'
+import c354_8_lunita_26_giugno_1_t from './costituente/lavoro/giornale/8-lunita-26-giugno-1946/page-01-thumb.jpg'
+import c355_9_il_messaggero_26_g_p1 from './costituente/lavoro/giornale/9-il-messaggero-26-giugno-1946/page-01.jpg'
+import c355_9_il_messaggero_26_g_t from './costituente/lavoro/giornale/9-il-messaggero-26-giugno-1946/page-01-thumb.jpg'
+import c356_10_lillustrazione_it_p1 from './costituente/lavoro/giornale/10-lillustrazione-italiana-7-luglio-1946/page-01.jpg'
+import c356_10_lillustrazione_it_t from './costituente/lavoro/giornale/10-lillustrazione-italiana-7-luglio-1946/page-01-thumb.jpg'
+import c357_11_la_voce_repubblic_p1 from './costituente/lavoro/giornale/11-la-voce-repubblicana-29-giugno-1946/page-01.jpg'
+import c357_11_la_voce_repubblic_t from './costituente/lavoro/giornale/11-la-voce-repubblicana-29-giugno-1946/page-01-thumb.jpg'
+import c358_12_lunita_29_giugno__p1 from './costituente/lavoro/giornale/12-lunita-29-giugno-1946/page-01.jpg'
+import c358_12_lunita_29_giugno__t from './costituente/lavoro/giornale/12-lunita-29-giugno-1946/page-01-thumb.jpg'
+import c359_13_il_messaggero_29__p1 from './costituente/lavoro/giornale/13-il-messaggero-29-giugno-1946/page-01.jpg'
+import c359_13_il_messaggero_29__t from './costituente/lavoro/giornale/13-il-messaggero-29-giugno-1946/page-01-thumb.jpg'
+import c360_14_il_popolo_29_giug_p1 from './costituente/lavoro/giornale/14-il-popolo-29-giugno-1946/page-01.jpg'
+import c360_14_il_popolo_29_giug_t from './costituente/lavoro/giornale/14-il-popolo-29-giugno-1946/page-01-thumb.jpg'
+import c361_15_lunita_30_giugno__p1 from './costituente/lavoro/giornale/15-lunita-30-giugno-1946/page-01.jpg'
+import c361_15_lunita_30_giugno__t from './costituente/lavoro/giornale/15-lunita-30-giugno-1946/page-01-thumb.jpg'
+import c362_16_il_popolo_16_genn_p1 from './costituente/lavoro/giornale/16-il-popolo-16-gennaio-1947/page-01.jpg'
+import c362_16_il_popolo_16_genn_t from './costituente/lavoro/giornale/16-il-popolo-16-gennaio-1947/page-01-thumb.jpg'
+import c363_17_il_popolo_9_febbr_p1 from './costituente/lavoro/giornale/17-il-popolo-9-febbraio-1947/page-01.jpg'
+import c363_17_il_popolo_9_febbr_t from './costituente/lavoro/giornale/17-il-popolo-9-febbraio-1947/page-01-thumb.jpg'
+import c364_18_avanti_9_febbraio_p1 from './costituente/lavoro/giornale/18-avanti-9-febbraio-1947/page-01.jpg'
+import c364_18_avanti_9_febbraio_t from './costituente/lavoro/giornale/18-avanti-9-febbraio-1947/page-01-thumb.jpg'
+import c365_19_lunita_9_febbraio_p1 from './costituente/lavoro/giornale/19-lunita-9-febbraio-1947/page-01.jpg'
+import c365_19_lunita_9_febbraio_t from './costituente/lavoro/giornale/19-lunita-9-febbraio-1947/page-01-thumb.jpg'
+import c366_20_avanti_4_marzo_19_p1 from './costituente/lavoro/giornale/20-avanti-4-marzo-1947/page-01.jpg'
+import c366_20_avanti_4_marzo_19_t from './costituente/lavoro/giornale/20-avanti-4-marzo-1947/page-01-thumb.jpg'
+import c367_21_corriere_della_se_p1 from './costituente/lavoro/giornale/21-corriere-della-sera-4-marzo-1947/page-01.jpg'
+import c367_21_corriere_della_se_t from './costituente/lavoro/giornale/21-corriere-della-sera-4-marzo-1947/page-01-thumb.jpg'
+import c368_22_risorgimento_libe_p1 from './costituente/lavoro/giornale/22-risorgimento-liberale-4-marzo-1947/page-01.jpg'
+import c368_22_risorgimento_libe_t from './costituente/lavoro/giornale/22-risorgimento-liberale-4-marzo-1947/page-01-thumb.jpg'
+import c369_23_il_popolo_4_marzo_p1 from './costituente/lavoro/giornale/23-il-popolo-4-marzo-1947/page-01.jpg'
+import c369_23_il_popolo_4_marzo_t from './costituente/lavoro/giornale/23-il-popolo-4-marzo-1947/page-01-thumb.jpg'
+import c370_24_lunita_4_marzo_19_p1 from './costituente/lavoro/giornale/24-lunita-4-marzo-1947/page-01.jpg'
+import c370_24_lunita_4_marzo_19_t from './costituente/lavoro/giornale/24-lunita-4-marzo-1947/page-01-thumb.jpg'
+import c371_25_avanti_23_dicembr_p1 from './costituente/lavoro/giornale/25-avanti-23-dicembre-1947/page-01.jpg'
+import c371_25_avanti_23_dicembr_t from './costituente/lavoro/giornale/25-avanti-23-dicembre-1947/page-01-thumb.jpg'
+import c372_26_corriere_della_se_p1 from './costituente/lavoro/giornale/26-corriere-della-sera-23-dicembre-1947/page-01.jpg'
+import c372_26_corriere_della_se_t from './costituente/lavoro/giornale/26-corriere-della-sera-23-dicembre-1947/page-01-thumb.jpg'
+import c373_27_giornale_ditalia__p1 from './costituente/lavoro/giornale/27-giornale-ditalia-23-dicembre-1947/page-01.jpg'
+import c373_27_giornale_ditalia__t from './costituente/lavoro/giornale/27-giornale-ditalia-23-dicembre-1947/page-01-thumb.jpg'
+import c374_28_il_popolo_23_dice_p1 from './costituente/lavoro/giornale/28-il-popolo-23-dicembre-1947/page-01.jpg'
+import c374_28_il_popolo_23_dice_t from './costituente/lavoro/giornale/28-il-popolo-23-dicembre-1947/page-01-thumb.jpg'
+import c375_29_il_tempo_23_dicem_p1 from './costituente/lavoro/giornale/29-il-tempo-23-dicembre-1947/page-01.jpg'
+import c375_29_il_tempo_23_dicem_t from './costituente/lavoro/giornale/29-il-tempo-23-dicembre-1947/page-01-thumb.jpg'
+import c376_30_la_voce_repubblic_p1 from './costituente/lavoro/giornale/30-la-voce-repubblicana-23-dicembre-1947/page-01.jpg'
+import c376_30_la_voce_repubblic_t from './costituente/lavoro/giornale/30-la-voce-repubblicana-23-dicembre-1947/page-01-thumb.jpg'
+import c377_31_lunita_23_dicembr_p1 from './costituente/lavoro/giornale/31-lunita-23-dicembre-1947/page-01.jpg'
+import c377_31_lunita_23_dicembr_t from './costituente/lavoro/giornale/31-lunita-23-dicembre-1947/page-01-thumb.jpg'
+import c378_32_il_tempo_24_dicem_p1 from './costituente/lavoro/giornale/32-il-tempo-24-dicembre-1947/page-01.jpg'
+import c378_32_il_tempo_24_dicem_t from './costituente/lavoro/giornale/32-il-tempo-24-dicembre-1947/page-01-thumb.jpg'
+import c379_33_il_popolo_24_dice_p1 from './costituente/lavoro/giornale/33-il-popolo-24-dicembre-1947/page-01.jpg'
+import c379_33_il_popolo_24_dice_t from './costituente/lavoro/giornale/33-il-popolo-24-dicembre-1947/page-01-thumb.jpg'
+import c380_34_avanti_24_dicembr_p1 from './costituente/lavoro/giornale/34-avanti-24-dicembre-1947/page-01.jpg'
+import c380_34_avanti_24_dicembr_t from './costituente/lavoro/giornale/34-avanti-24-dicembre-1947/page-01-thumb.jpg'
+import c381_35_la_stampa_28_dice_p1 from './costituente/lavoro/giornale/35-la-stampa-28-dicembre-1947/page-01.jpg'
+import c381_35_la_stampa_28_dice_t from './costituente/lavoro/giornale/35-la-stampa-28-dicembre-1947/page-01-thumb.jpg'
+import c382_36_corriere_della_se_p1 from './costituente/lavoro/giornale/36-corriere-della-sera-28-dicembre-1947/page-01.jpg'
+import c382_36_corriere_della_se_t from './costituente/lavoro/giornale/36-corriere-della-sera-28-dicembre-1947/page-01-thumb.jpg'
+import c383_37_il_giornale_dital_p1 from './costituente/lavoro/giornale/37-il-giornale-ditalia-28-dicembre-1947/page-01.jpg'
+import c383_37_il_giornale_dital_t from './costituente/lavoro/giornale/37-il-giornale-ditalia-28-dicembre-1947/page-01-thumb.jpg'
+import c384_38_lunita_28_dicembr_p1 from './costituente/lavoro/giornale/38-lunita-28-dicembre-1947/page-01.jpg'
+import c384_38_lunita_28_dicembr_t from './costituente/lavoro/giornale/38-lunita-28-dicembre-1947/page-01-thumb.jpg'
+import c385_39_il_popolo_28_dice_p1 from './costituente/lavoro/giornale/39-il-popolo-28-dicembre-1947/page-01.jpg'
+import c385_39_il_popolo_28_dice_t from './costituente/lavoro/giornale/39-il-popolo-28-dicembre-1947/page-01-thumb.jpg'
+import c386_40_avanti_28_dicembr_p1 from './costituente/lavoro/giornale/40-avanti-28-dicembre-1947/page-01.jpg'
+import c386_40_avanti_28_dicembr_t from './costituente/lavoro/giornale/40-avanti-28-dicembre-1947/page-01-thumb.jpg'
+import c387_41_la_voce_repubblic_p1 from './costituente/lavoro/giornale/41-la-voce-repubblicana-28-dicembre-1947/page-01.jpg'
+import c387_41_la_voce_repubblic_t from './costituente/lavoro/giornale/41-la-voce-repubblicana-28-dicembre-1947/page-01-thumb.jpg'
+import c388_42_avanti_1_gennaio__p1 from './costituente/lavoro/giornale/42-avanti-1-gennaio-1948/page-01.jpg'
+import c388_42_avanti_1_gennaio__t from './costituente/lavoro/giornale/42-avanti-1-gennaio-1948/page-01-thumb.jpg'
+import c389_43_il_corriere_della_p1 from './costituente/lavoro/giornale/43-il-corriere-della-sera-1-gennaio-1948/page-01.jpg'
+import c389_43_il_corriere_della_t from './costituente/lavoro/giornale/43-il-corriere-della-sera-1-gennaio-1948/page-01-thumb.jpg'
+import c390_44_la_nazione_1_genn_p1 from './costituente/lavoro/giornale/44-la-nazione-1-gennaio-1948/page-01.jpg'
+import c390_44_la_nazione_1_genn_t from './costituente/lavoro/giornale/44-la-nazione-1-gennaio-1948/page-01-thumb.jpg'
+import c391_45_avanti_2_gennaio__p1 from './costituente/lavoro/giornale/45-avanti-2-gennaio-1948/page-01.jpg'
+import c391_45_avanti_2_gennaio__t from './costituente/lavoro/giornale/45-avanti-2-gennaio-1948/page-01-thumb.jpg'
+import c392_46_corriere_della_se_p1 from './costituente/lavoro/giornale/46-corriere-della-sera-2-gennaio-1948/page-01.jpg'
+import c392_46_corriere_della_se_t from './costituente/lavoro/giornale/46-corriere-della-sera-2-gennaio-1948/page-01-thumb.jpg'
+import c393_47_la_voce_repubblic_p1 from './costituente/lavoro/giornale/47-la-voce-repubblicana-2-gennaio-1948/page-01.jpg'
+import c393_47_la_voce_repubblic_t from './costituente/lavoro/giornale/47-la-voce-repubblicana-2-gennaio-1948/page-01-thumb.jpg'
 
 export const TOPIC_ITEMS = {
   donne: {
@@ -1598,135 +1680,143 @@ export const TOPIC_ITEMS = {
   costituente: {
     composizione: {
       documenti: [
-        { id: "costituente-composizione-documenti-2-contrassegni-delle-liste", title: "Contrassegni delle liste", description: "Contrassegni delle liste collegate e non collegate con il Collegio Unico Nazionale. Istituto centrale di statistica e Ministero dell’interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948 Biblioteca della Camera dei deputati", thumb: c269_2_contrassegni_delle_t, pages: [c269_2_contrassegni_delle_p1, c269_2_contrassegni_delle_p2] },
-        { id: "costituente-composizione-documenti-4-manifesti-di-propaganda-elettorale", title: "Manifesti di propaganda elettorale", description: "Manifesti di propaganda elettorale. Archivio storico della Camera dei deputati", thumb: c270_4_manifesti_di_propa_t, pages: [c270_4_manifesti_di_propa_p1, c270_4_manifesti_di_propa_p2, c270_4_manifesti_di_propa_p3, c270_4_manifesti_di_propa_p4, c270_4_manifesti_di_propa_p5, c270_4_manifesti_di_propa_p6, c270_4_manifesti_di_propa_p7, c270_4_manifesti_di_propa_p8, c270_4_manifesti_di_propa_p9, c270_4_manifesti_di_propa_p10] },
-        { id: "costituente-composizione-documenti-5-carta-della-costituente-maggio-1946", title: "Carta della Costituente, maggio 1946", description: "Carta della Costituente, Istituto geografico Visceglia, Roma-Milano, maggio 1946 Mappa pubblicata dall’Istituto cartografico Visceglia nel maggio 1946 con i simboli dei partiti presenti nelle 32 circoscrizioni elettorali in occasione dell’elezione dell’Assemblea Costituente, allo scopo di rendere visivamente più comprensibili agli elettori le liste presenti nel proprio territorio. Biblioteca della Camera dei deputati", thumb: c271_5_carta_della_costit_t, pages: [c271_5_carta_della_costit_p1, c271_5_carta_della_costit_p2] },
-        { id: "costituente-composizione-documenti-9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947", title: "Elenco dei componenti delle Sottocommissioni, febbraio-marzo 1947", description: "Elenco dei componenti della Commissione per la Costituzione suddivisi nelle tre Sottocommissioni, con l’elenco dei componenti del Comitato di redazione e di coordinamento, aggiornato al febbraio-marzo 1947. Archivio Storico della Camera dei deputati", thumb: c272_9_elenco_dei_compone_t, pages: [c272_9_elenco_dei_compone_p1] },
-        { id: "costituente-composizione-documenti-10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi", title: "I Presidenti dell'Assemblea Costituente e dei principali organi", description: "I Presidenti dell’Assemblea Costituente e dei principali organi. Elaborazione a cura della Camera dei deputati", thumb: c273_10_i_presidenti_dell_t, pages: [c273_10_i_presidenti_dell_p1] },
-        { id: "costituente-composizione-documenti-11-i-risultati-conseguiti-dai-partiti", title: "I risultati conseguiti dai partiti", description: "Distribuzione territoriale dei voti conseguiti dai quattro principali partiti. Istituto centrale di statistica e Ministero dell'interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948", thumb: c274_11_i_risultati_conse_t, pages: [c274_11_i_risultati_conse_p1] },
-        { id: "costituente-composizione-documenti-12-caratteri-individuali-dei-deputati", title: "Caratteri individuali dei deputati", description: "Alcuni caratteri individuali dei deputati. Istituto centrale di statistica e Ministero dell'interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948", thumb: c275_12_caratteri_individ_t, pages: [c275_12_caratteri_individ_p1, c275_12_caratteri_individ_p2, c275_12_caratteri_individ_p3, c275_12_caratteri_individ_p4, c275_12_caratteri_individ_p5, c275_12_caratteri_individ_p6, c275_12_caratteri_individ_p7] },
-        { id: "costituente-composizione-documenti-13-la-commissione-per-la-costituzione", title: "La Commissione per la Costituzione", description: "La Commissione per la Costituzione: l’Ufficio di Presidenza e le Sottocommissioni. Elaborazione a cura della Camera dei deputati", thumb: c276_13_la_commissione_pe_t, pages: [c276_13_la_commissione_pe_p1] },
-        { id: "costituente-composizione-documenti-14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori", title: "La composizione dei Gruppi da inizio a fine lavori", description: "Variazione della composizione dei Gruppi parlamentari dell’Assemblea Costituente da inizio a fine lavori. Elaborazione a cura della Camera dei deputati", thumb: c277_14_la_composizione_d_t, pages: [c277_14_la_composizione_d_p1] },
-        { id: "costituente-composizione-documenti-15-le-deputate-per-gruppo-di-appartenenza", title: "Le deputate per gruppo di appartenenza", description: "Le deputate per gruppo di appartenenza. Elaborazione a cura della Camera dei deputati", thumb: c278_15_le_deputate_per_g_t, pages: [c278_15_le_deputate_per_g_p1] },
-        { id: "costituente-composizione-documenti-16-statistiche-elaborate-dagli-uffici-della-camera", title: "Statistiche elaborate dagli uffici della Camera", description: "Statistiche sul profilo sociale e professionale dei deputati e delle deputate della Costituente elaborate dagli uffici della Camera. Agricoltori, operai ed artigiani insieme ai sindacalisti sono 57, 205 sono avvocati, notai e magistrati; gli appartenenti alle professioni del ceto medio sono 69. Tra le donne prevalgono le insegnanti, due sono operaie e due impiegate. Archivio storico della Camera dei deputati", thumb: c279_16_statistiche_elabo_t, pages: [c279_16_statistiche_elabo_p1, c279_16_statistiche_elabo_p2] },
+        { id: "costituente-composizione-documenti-1-decreto-legislativo-luogotenenziale-del-10-marzo-1946-n-74", title: "Decreto legislativo luogotenenziale del 10 marzo 1946, n. 74", description: "Decreto legislativo luogotenenziale del 10 marzo 1946, n. 74, che reca le norme di dettaglio per lo svolgimento delle elezioni dei deputati per l’Assemblea Costituente. Supplemento ordinario alla Gazzetta Ufficiale del 12 marzo 1946, n.60 Biblioteca della Camera dei deputati", thumb: c269_1_decreto_legislativ_t, pages: [c269_1_decreto_legislativ_p1, c269_1_decreto_legislativ_p2, c269_1_decreto_legislativ_p3, c269_1_decreto_legislativ_p4, c269_1_decreto_legislativ_p5, c269_1_decreto_legislativ_p6, c269_1_decreto_legislativ_p7, c269_1_decreto_legislativ_p8, c269_1_decreto_legislativ_p9, c269_1_decreto_legislativ_p10, c269_1_decreto_legislativ_p11, c269_1_decreto_legislativ_p12, c269_1_decreto_legislativ_p13, c269_1_decreto_legislativ_p14, c269_1_decreto_legislativ_p15, c269_1_decreto_legislativ_p16, c269_1_decreto_legislativ_p17, c269_1_decreto_legislativ_p18, c269_1_decreto_legislativ_p19, c269_1_decreto_legislativ_p20, c269_1_decreto_legislativ_p21, c269_1_decreto_legislativ_p22, c269_1_decreto_legislativ_p23, c269_1_decreto_legislativ_p24, c269_1_decreto_legislativ_p25, c269_1_decreto_legislativ_p26, c269_1_decreto_legislativ_p27, c269_1_decreto_legislativ_p28, c269_1_decreto_legislativ_p29, c269_1_decreto_legislativ_p30, c269_1_decreto_legislativ_p31, c269_1_decreto_legislativ_p32, c269_1_decreto_legislativ_p33, c269_1_decreto_legislativ_p34, c269_1_decreto_legislativ_p35, c269_1_decreto_legislativ_p36, c269_1_decreto_legislativ_p37, c269_1_decreto_legislativ_p38, c269_1_decreto_legislativ_p39, c269_1_decreto_legislativ_p40, c269_1_decreto_legislativ_p41, c269_1_decreto_legislativ_p42, c269_1_decreto_legislativ_p43, c269_1_decreto_legislativ_p44, c269_1_decreto_legislativ_p45] },
+        { id: "costituente-composizione-documenti-2-contrassegni-delle-liste", title: "Contrassegni delle liste", description: "Contrassegni delle liste collegate e non collegate con il Collegio Unico Nazionale. Istituto centrale di statistica e Ministero dell’interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948 Biblioteca della Camera dei deputati", thumb: c270_2_contrassegni_delle_t, pages: [c270_2_contrassegni_delle_p1, c270_2_contrassegni_delle_p2] },
+        { id: "costituente-composizione-documenti-3-la-voce-repubblicana-fascicolo-illustrativo-sulla-costituente", title: "La Voce repubblicana, Fascicolo illustrativo sulla Costituente", description: "Fascicolo illustrativo sul significato e il funzionamento dell’Assemblea Costituente. Supplemento de La Voce Repubblicana, 1944 Biblioteca della Camera dei deputati", thumb: c271_3_la_voce_repubblica_t, pages: [c271_3_la_voce_repubblica_p1, c271_3_la_voce_repubblica_p2, c271_3_la_voce_repubblica_p3, c271_3_la_voce_repubblica_p4, c271_3_la_voce_repubblica_p5, c271_3_la_voce_repubblica_p6, c271_3_la_voce_repubblica_p7, c271_3_la_voce_repubblica_p8, c271_3_la_voce_repubblica_p9, c271_3_la_voce_repubblica_p10, c271_3_la_voce_repubblica_p11, c271_3_la_voce_repubblica_p12, c271_3_la_voce_repubblica_p13, c271_3_la_voce_repubblica_p14, c271_3_la_voce_repubblica_p15, c271_3_la_voce_repubblica_p16] },
+        { id: "costituente-composizione-documenti-4-manifesti-di-propaganda-elettorale", title: "Manifesti di propaganda elettorale", description: "Manifesti di propaganda elettorale. Archivio storico della Camera dei deputati", thumb: c272_4_manifesti_di_propa_t, pages: [c272_4_manifesti_di_propa_p1, c272_4_manifesti_di_propa_p2, c272_4_manifesti_di_propa_p3, c272_4_manifesti_di_propa_p4, c272_4_manifesti_di_propa_p5, c272_4_manifesti_di_propa_p6, c272_4_manifesti_di_propa_p7, c272_4_manifesti_di_propa_p8, c272_4_manifesti_di_propa_p9, c272_4_manifesti_di_propa_p10] },
+        { id: "costituente-composizione-documenti-5-carta-della-costituente-maggio-1946", title: "Carta della Costituente, maggio 1946", description: "Carta della Costituente, Istituto geografico Visceglia, Roma-Milano, maggio 1946 Mappa pubblicata dall’Istituto cartografico Visceglia nel maggio 1946 con i simboli dei partiti presenti nelle 32 circoscrizioni elettorali in occasione dell’elezione dell’Assemblea Costituente, allo scopo di rendere visivamente più comprensibili agli elettori le liste presenti nel proprio territorio. Biblioteca della Camera dei deputati", thumb: c273_5_carta_della_costit_t, pages: [c273_5_carta_della_costit_p1, c273_5_carta_della_costit_p2] },
+        { id: "costituente-composizione-documenti-6-manifesti-di-alcune-prefetture-con-i-nomi-degli-eletti", title: "Manifesti di alcune Prefetture con i nomi degli eletti", description: "Manifesti pubblicati dalle Prefetture con i quali si rendono noti i nomi delle candidate e dei candidati all’Assemblea costituente eletti in diversi collegi elettorali. Archivio storico della Camera dei deputati", thumb: c274_6_manifesti_di_alcun_t, pages: [c274_6_manifesti_di_alcun_p1, c274_6_manifesti_di_alcun_p2, c274_6_manifesti_di_alcun_p3, c274_6_manifesti_di_alcun_p4, c274_6_manifesti_di_alcun_p5, c274_6_manifesti_di_alcun_p6, c274_6_manifesti_di_alcun_p7, c274_6_manifesti_di_alcun_p8] },
+        { id: "costituente-composizione-documenti-7-elenco-manoscritto-dei-componenti-della-commissione-per-la-costituzione-luglio", title: "Elenco manoscritto dei componenti della Commissione per la Costituzione, luglio 1946", description: "Elenco manoscritto dei componenti della Commissione per la Costituzione suddivisi per appartenenza ai singoli Gruppi parlamentari, luglio 1946. Archivio Storico della Camera dei deputati", thumb: c275_7_elenco_manoscritto_t, pages: [c275_7_elenco_manoscritto_p1] },
+        { id: "costituente-composizione-documenti-8-elenco-dei-componenti-della-commissione-per-la-costituzione-28-novembre-1946", title: "Elenco dei componenti della Commissione per la Costituzione, 28 novembre 1946", description: "Elenco dei componenti della Commissione per la Costituzione recante la composizione dell’Ufficio di Presidenza e l’annotazione dell’assegnazione dei singoli componenti alle tre Sottocommissioni nelle quali si articolò il lavoro della Commissione, aggiornato al 28 novembre 1946. Archivio Storico della Camera dei deputati", thumb: c276_8_elenco_dei_compone_t, pages: [c276_8_elenco_dei_compone_p1] },
+        { id: "costituente-composizione-documenti-9-elenco-dei-componenti-delle-sottocommissioni-febbraio-marzo-1947", title: "Elenco dei componenti delle Sottocommissioni, febbraio-marzo 1947", description: "Elenco dei componenti della Commissione per la Costituzione suddivisi nelle tre Sottocommissioni, con l’elenco dei componenti del Comitato di redazione e di coordinamento, aggiornato al febbraio-marzo 1947. Archivio Storico della Camera dei deputati", thumb: c277_9_elenco_dei_compone_t, pages: [c277_9_elenco_dei_compone_p1] },
+        { id: "costituente-composizione-documenti-10-i-presidenti-dellassemblea-costituente-e-dei-principali-organi", title: "I Presidenti dell'Assemblea Costituente e dei principali organi", description: "I Presidenti dell’Assemblea Costituente e dei principali organi. Elaborazione a cura della Camera dei deputati", thumb: c278_10_i_presidenti_dell_t, pages: [c278_10_i_presidenti_dell_p1] },
+        { id: "costituente-composizione-documenti-11-distribuzione-territoriale-dei-voti-conseguiti-dai-maggiori-partiti", title: "Distribuzione territoriale dei voti conseguiti dai maggiori partiti", description: "Distribuzione territoriale dei voti conseguiti dai quattro principali partiti. Istituto centrale di statistica e Ministero dell'interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948", thumb: c279_11_distribuzione_ter_t, pages: [c279_11_distribuzione_ter_p1] },
+        { id: "costituente-composizione-documenti-12-caratteri-individuali-dei-deputati", title: "Caratteri individuali dei deputati", description: "Alcuni caratteri individuali dei deputati. Istituto centrale di statistica e Ministero dell'interno, Elezioni per l'assemblea costituente e referendum istituzionale: 2 giugno 1946: note illustrative e documentazione statistica, Roma, Istituto poligrafico dello Stato, 1948", thumb: c280_12_caratteri_individ_t, pages: [c280_12_caratteri_individ_p1, c280_12_caratteri_individ_p2, c280_12_caratteri_individ_p3, c280_12_caratteri_individ_p4, c280_12_caratteri_individ_p5, c280_12_caratteri_individ_p6, c280_12_caratteri_individ_p7] },
+        { id: "costituente-composizione-documenti-13-la-commissione-per-la-costituzione", title: "La Commissione per la Costituzione", description: "La Commissione per la Costituzione: l’Ufficio di Presidenza e le Sottocommissioni. Elaborazione a cura della Camera dei deputati", thumb: c281_13_la_commissione_pe_t, pages: [c281_13_la_commissione_pe_p1] },
+        { id: "costituente-composizione-documenti-14-la-composizione-dei-gruppi-da-inizio-a-fine-lavori", title: "La composizione dei Gruppi da inizio a fine lavori", description: "Variazione della composizione dei Gruppi parlamentari dell’Assemblea Costituente da inizio a fine lavori. Elaborazione a cura della Camera dei deputati", thumb: c282_14_la_composizione_d_t, pages: [c282_14_la_composizione_d_p1] },
+        { id: "costituente-composizione-documenti-15-le-deputate-per-gruppo-di-appartenenza", title: "Le deputate per gruppo di appartenenza", description: "Le deputate per gruppo di appartenenza. Elaborazione a cura della Camera dei deputati", thumb: c283_15_le_deputate_per_g_t, pages: [c283_15_le_deputate_per_g_p1] },
+        { id: "costituente-composizione-documenti-16-statistiche-elaborate-dagli-uffici-della-camera", title: "Statistiche elaborate dagli uffici della Camera", description: "Statistiche sul profilo sociale e professionale dei deputati e delle deputate della Costituente elaborate dagli uffici della Camera. Agricoltori, operai ed artigiani insieme ai sindacalisti sono 57, 205 sono avvocati, notai e magistrati; gli appartenenti alle professioni del ceto medio sono 69. Tra le donne prevalgono le insegnanti, due sono operaie e due impiegate. Archivio storico della Camera dei deputati", thumb: c284_16_statistiche_elabo_t, pages: [c284_16_statistiche_elabo_p1, c284_16_statistiche_elabo_p2] },
       ],
       foto: [
-        { id: "costituente-composizione-foto-1-comizio-elettorale-a-milano-palmiro-togliatti", title: "Comizio elettorale a Milano. Palmiro Togliatti", description: "La Piazza del Duomo di Milano durante il discorso tenuto il 31 marzo 1946 da Palmiro Togliatti, leader del Partito comunista italiano. L’Illustrazione italiana, 7 aprile 1946 Biblioteca della Camera dei deputati", thumb: c280_1_comizio_elettorale_t, pages: [c280_1_comizio_elettorale_p1] },
-        { id: "costituente-composizione-foto-2-comizio-elettorale-a-milano-nenni", title: "Comizio elettorale a Milano. Nenni", description: "Comizio elettorale al Castello Sforzesco di Milano. Pietro Nenni, segretario del Partito socialista italiano, parla ai lavoratori milanesi. L'Illustrazione italiana, 14 aprile 1946 Biblioteca della Camera dei deputati", thumb: c281_2_comizio_elettorale_t, pages: [c281_2_comizio_elettorale_p1] },
-        { id: "costituente-composizione-foto-3-propaganda-elettorale-blocco-nazionale", title: "Propaganda elettorale. Blocco Nazionale", description: "Propaganda elettorale a mezzo stampa. “Il 2 giugno votate Monarchia - Blocco Nazionale delle Libertà”. Italia Nuova, 8 maggio 1946 Biblioteca della Camera dei deputati", thumb: c282_3_propaganda_elettor_t, pages: [c282_3_propaganda_elettor_p1] },
-        { id: "costituente-composizione-foto-4-comizi-elettorali-nenni-e-sforza", title: "Comizi elettorali. Nenni e Sforza", description: "Il conte Sforza parla al Teatro lirico di Milano nella prima giornata dei grandi comizi per l’Assemblea Costituente. L’11 maggio Pietro Nenni espone, nel suo discorso, il programma socialista. L'Illustrazione italiana, 19 maggio 1946 Biblioteca della Camera dei deputati", thumb: c283_4_comizi_elettorali__t, pages: [c283_4_comizi_elettorali__p1] },
-        { id: "costituente-composizione-foto-5-propaganda-elettorale-dc-il-popolo", title: "Propaganda elettorale DC. Il popolo", description: "Propaganda elettorale a mezzo stampa. “Un popolo libero. Pane. Pace. Lavoro. Democrazia cristiana”. Il Popolo, 24 maggio 1946 Biblioteca della Camera dei deputati", thumb: c284_5_propaganda_elettor_t, pages: [c284_5_propaganda_elettor_p1] },
-        { id: "costituente-composizione-foto-6-comizio-elettorale-a-milano-saragat", title: "Comizio elettorale a Milano. Saragat", description: "Giuseppe Saragat parla nel corso di un comizio del Partito socialista nel cortile del Castello Sforzesco di Milano. L'Illustrazione italiana, 26 maggio 1946 Biblioteca della Camera dei deputati", thumb: c285_6_comizio_elettorale_t, pages: [c285_6_comizio_elettorale_p1] },
-        { id: "costituente-composizione-foto-7-propaganda-elettorale-dc-donna-devi-votare", title: "Propaganda elettorale DC. Donna devi votare", description: "Propaganda elettorale a mezzo stampa. Il Popolo, 30 maggio 1946 Biblioteca della Camera dei deputati", thumb: c286_7_propaganda_elettor_t, pages: [c286_7_propaganda_elettor_p1] },
-        { id: "costituente-composizione-foto-8-comizio-elettorale-a-milano-santi-e-mondolfo", title: "Comizio elettorale a Milano. Santi e Mondolfo", description: "Un comizio a Milano. Sul ponte levatoio del Castello Sforzesco due oratori socialisti, Fernando Santi e Ugo Guido Mondolfo, attendono di prendere la parola. Ultimo a sinistra un cronista che riordina frettolosamente i suoi appunti. Tempo, 1-8 giugno 1946 Biblioteca della Camera dei deputati", thumb: c287_8_comizio_elettorale_t, pages: [c287_8_comizio_elettorale_p1] },
-        { id: "costituente-composizione-foto-9-comizio-a-milano-pacciardi", title: "Comizio a Milano. Pacciardi", description: "Comizio elettorale a Milano. In piazza Duomo, parla Randolfo Pacciardi, leader del Partito repubblicano. La Voce Repubblicana, 2 giugno 1946 Biblioteca della Camera dei deputati", thumb: c288_9_comizio_a_milano_p_t, pages: [c288_9_comizio_a_milano_p_p1] },
-        { id: "costituente-composizione-foto-10-propaganda-elettorale-votate-pci", title: "Propaganda elettorale. Votate PCI", description: "Propaganda elettorale a mezzo stampa. “Per l’avvenire d’Italia votate il Partito comunista”. L'Unità, 2 giugno 1946 Biblioteca della Camera dei deputati", thumb: c289_10_propaganda_eletto_t, pages: [c289_10_propaganda_eletto_p1] },
-        { id: "costituente-composizione-foto-11-comizio-elettorale-a-milano-parri", title: "Comizio elettorale a Milano. Parri", description: "Comizio elettorale a Milano. Parri chiude il dibattito per il referendum e la Costituente. L’Illustrazione italiana, 9 giugno 1946 Biblioteca della Camera dei deputati", thumb: c290_11_comizio_elettoral_t, pages: [c290_11_comizio_elettoral_p1] },
-        { id: "costituente-composizione-foto-12-primo-giorno-della-costituente", title: "Primo giorno della Costituente", description: "Il primo giorno alla Costituente. L’Illustrazione italiana, 14 luglio 1946 Biblioteca della Camera dei deputati", thumb: c291_12_primo_giorno_dell_t, pages: [c291_12_primo_giorno_dell_p1] },
-        { id: "costituente-composizione-foto-13-discorso-di-apertura-di-vittorio-emanuele-orlando", title: "Discorso di apertura di Vittorio Emanuele Orlando", description: "25 giugno 1946, inaugurazione della Costituente a Montecitorio. L’Assemblea, in piedi, applaude il discorso di apertura di Vittorio Emanuele Orlando, che ha salutato la nascita della Repubblica con alte parole, auspicando la concordia fra tutti gli italiani. L’Illustrazione italiana, 7 luglio 1946 Biblioteca della Camera dei deputati", thumb: c292_13_discorso_di_apert_t, pages: [c292_13_discorso_di_apert_p1] },
-        { id: "costituente-composizione-foto-17-le-deputate-iotti-montagnana-noce", title: "Le deputate Iotti Montagnana Noce", description: "Deputate comuniste alla Costituente, sedute nel medesimo banco: da sinistra si riconoscono Nilde Iotti, Teresa Noce e Rita Montagnana. Tempo 27 giugno-3 agosto 1946 Biblioteca della Camera dei deputati", thumb: c293_17_le_deputate_iotti_t, pages: [c293_17_le_deputate_iotti_p1] },
+        { id: "costituente-composizione-foto-1-comizio-elettorale-a-milano-palmiro-togliatti", title: "Comizio elettorale a Milano. Palmiro Togliatti", description: "La Piazza del Duomo di Milano durante il discorso tenuto il 31 marzo 1946 da Palmiro Togliatti, leader del Partito comunista italiano. L’Illustrazione italiana, 7 aprile 1946 Biblioteca della Camera dei deputati", thumb: c285_1_comizio_elettorale_t, pages: [c285_1_comizio_elettorale_p1] },
+        { id: "costituente-composizione-foto-2-comizio-elettorale-a-milano-nenni", title: "Comizio elettorale a Milano. Nenni", description: "Comizio elettorale al Castello Sforzesco di Milano. Pietro Nenni, segretario del Partito socialista italiano, parla ai lavoratori milanesi. L'Illustrazione italiana, 14 aprile 1946 Biblioteca della Camera dei deputati", thumb: c286_2_comizio_elettorale_t, pages: [c286_2_comizio_elettorale_p1] },
+        { id: "costituente-composizione-foto-3-propaganda-elettorale-blocco-nazionale", title: "Propaganda elettorale. Blocco Nazionale", description: "Propaganda elettorale a mezzo stampa. “Il 2 giugno votate Monarchia - Blocco Nazionale delle Libertà”. Italia Nuova, 8 maggio 1946 Biblioteca della Camera dei deputati", thumb: c287_3_propaganda_elettor_t, pages: [c287_3_propaganda_elettor_p1] },
+        { id: "costituente-composizione-foto-4-comizi-elettorali-nenni-e-sforza", title: "Comizi elettorali. Nenni e Sforza", description: "Il conte Sforza parla al Teatro lirico di Milano nella prima giornata dei grandi comizi per l’Assemblea Costituente. L’11 maggio Pietro Nenni espone, nel suo discorso, il programma socialista. L'Illustrazione italiana, 19 maggio 1946 Biblioteca della Camera dei deputati", thumb: c288_4_comizi_elettorali__t, pages: [c288_4_comizi_elettorali__p1] },
+        { id: "costituente-composizione-foto-5-propaganda-elettorale-dc-il-popolo", title: "Propaganda elettorale DC. Il popolo", description: "Propaganda elettorale a mezzo stampa. “Un popolo libero. Pane. Pace. Lavoro. Democrazia cristiana”. Il Popolo, 24 maggio 1946 Biblioteca della Camera dei deputati", thumb: c289_5_propaganda_elettor_t, pages: [c289_5_propaganda_elettor_p1] },
+        { id: "costituente-composizione-foto-6-comizio-elettorale-a-milano-saragat", title: "Comizio elettorale a Milano. Saragat", description: "Giuseppe Saragat parla nel corso di un comizio del Partito socialista nel cortile del Castello Sforzesco di Milano. L'Illustrazione italiana, 26 maggio 1946 Biblioteca della Camera dei deputati", thumb: c290_6_comizio_elettorale_t, pages: [c290_6_comizio_elettorale_p1] },
+        { id: "costituente-composizione-foto-7-propaganda-elettorale-dc-donna-devi-votare", title: "Propaganda elettorale DC. Donna devi votare", description: "Propaganda elettorale a mezzo stampa. Il Popolo, 30 maggio 1946 Biblioteca della Camera dei deputati", thumb: c291_7_propaganda_elettor_t, pages: [c291_7_propaganda_elettor_p1] },
+        { id: "costituente-composizione-foto-8-comizio-elettorale-a-milano-santi-e-mondolfo", title: "Comizio elettorale a Milano. Santi e Mondolfo", description: "Un comizio a Milano. Sul ponte levatoio del Castello Sforzesco due oratori socialisti, Fernando Santi e Ugo Guido Mondolfo, attendono di prendere la parola. Ultimo a sinistra un cronista che riordina frettolosamente i suoi appunti. Tempo, 1-8 giugno 1946 Biblioteca della Camera dei deputati", thumb: c292_8_comizio_elettorale_t, pages: [c292_8_comizio_elettorale_p1] },
+        { id: "costituente-composizione-foto-9-comizio-a-milano-pacciardi", title: "Comizio a Milano. Pacciardi", description: "Comizio elettorale a Milano. In piazza Duomo, parla Randolfo Pacciardi, leader del Partito repubblicano. La Voce Repubblicana, 2 giugno 1946 Biblioteca della Camera dei deputati", thumb: c293_9_comizio_a_milano_p_t, pages: [c293_9_comizio_a_milano_p_p1] },
+        { id: "costituente-composizione-foto-10-propaganda-elettorale-votate-pci", title: "Propaganda elettorale. Votate PCI", description: "Propaganda elettorale a mezzo stampa. “Per l’avvenire d’Italia votate il Partito comunista”. L'Unità, 2 giugno 1946 Biblioteca della Camera dei deputati", thumb: c294_10_propaganda_eletto_t, pages: [c294_10_propaganda_eletto_p1] },
+        { id: "costituente-composizione-foto-11-comizio-elettorale-a-milano-parri", title: "Comizio elettorale a Milano. Parri", description: "Comizio elettorale a Milano. Parri chiude il dibattito per il referendum e la Costituente. L’Illustrazione italiana, 9 giugno 1946 Biblioteca della Camera dei deputati", thumb: c295_11_comizio_elettoral_t, pages: [c295_11_comizio_elettoral_p1] },
+        { id: "costituente-composizione-foto-12-primo-giorno-della-costituente", title: "Primo giorno della Costituente", description: "Il primo giorno alla Costituente. L’Illustrazione italiana, 14 luglio 1946 Biblioteca della Camera dei deputati", thumb: c296_12_primo_giorno_dell_t, pages: [c296_12_primo_giorno_dell_p1] },
+        { id: "costituente-composizione-foto-13-discorso-di-apertura-di-vittorio-emanuele-orlando", title: "Discorso di apertura di Vittorio Emanuele Orlando", description: "25 giugno 1946, inaugurazione della Costituente a Montecitorio. L’Assemblea, in piedi, applaude il discorso di apertura di Vittorio Emanuele Orlando, che ha salutato la nascita della Repubblica con alte parole, auspicando la concordia fra tutti gli italiani. L’Illustrazione italiana, 7 luglio 1946 Biblioteca della Camera dei deputati", thumb: c297_13_discorso_di_apert_t, pages: [c297_13_discorso_di_apert_p1] },
+        { id: "costituente-composizione-foto-14-il-neoeletto-presidente-giuseppe-saragat-tiene-il-suo-discorso-alla-costituen", title: "Il neoeletto presidente Giuseppe Saragat tiene il suo discorso alla Costituente", description: "Eletto Presidente dell’Assemblea costituente, nella seduta del 26 giugno 1946 Giuseppe Saragat tiene un discorso e invita alla concordia. Alla sua sinistra la deputata Teresa Mattei. L’Europeo, 7 luglio 1946 Biblioteca della Camera dei deputati", thumb: c298_14_il_neoeletto_pres_t, pages: [c298_14_il_neoeletto_pres_p1] },
+        { id: "costituente-composizione-foto-15-deputati-costituenti-conversano-davanti-a-montecitorio", title: "Deputati costituenti conversano davanti a Montecitorio", description: "Alcuni deputati conversano davanti a Montecitorio. L’Europeo, 7 luglio 1946 Biblioteca della Camera dei deputati", thumb: c299_15_deputati_costitue_t, pages: [c299_15_deputati_costitue_p1] },
+        { id: "costituente-composizione-foto-16-gasparotto-e-sforza-allingresso-di-montecitorio", title: "Gasparotto e Sforza all'ingresso di Montecitorio", description: "Il Ministro Gasparotto e il conte Sforza davanti a Montecitorio nel giorno dell’elezione presidenziale. L’Europeo, 7 luglio 1946 Biblioteca della Camera dei deputati", thumb: c300_16_gasparotto_e_sfor_t, pages: [c300_16_gasparotto_e_sfor_p1] },
+        { id: "costituente-composizione-foto-17-le-deputate-iotti-montagnana-noce", title: "Le deputate Iotti Montagnana Noce", description: "Deputate comuniste alla Costituente, sedute nel medesimo banco: da sinistra si riconoscono Nilde Iotti, Teresa Noce e Rita Montagnana. Tempo 27 giugno-3 agosto 1946 Biblioteca della Camera dei deputati", thumb: c301_17_le_deputate_iotti_t, pages: [c301_17_le_deputate_iotti_p1] },
       ],
       giornale: [
-        { id: "costituente-composizione-giornale-1-il-popolo-4-giugno-1946", title: "Il Popolo, 4 giugno 1946", description: "Il Popolo, 4 giugno 1946", thumb: c294_1_il_popolo_4_giugno_t, pages: [c294_1_il_popolo_4_giugno_p1] },
-        { id: "costituente-composizione-giornale-2-la-voce-repubblicana-5-giugno-1946", title: "La Voce Repubblicana, 5 giugno 1946", description: "La Voce Repubblicana, 5 giugno 1946", thumb: c295_2_la_voce_repubblica_t, pages: [c295_2_la_voce_repubblica_p1] },
-        { id: "costituente-composizione-giornale-3-risorgimento-liberale-5-giugno-1946", title: "Risorgimento Liberale, 5 giugno 1946", description: "Risorgimento liberale, 5 giugno 1946", thumb: c296_3_risorgimento_liber_t, pages: [c296_3_risorgimento_liber_p1] },
-        { id: "costituente-composizione-giornale-4-la-nuova-stampa-7-giugno-1946", title: "La Nuova Stampa, 7 giugno 1946", description: "La Nuova Stampa, 7 giugno 1946", thumb: c297_4_la_nuova_stampa_7__t, pages: [c297_4_la_nuova_stampa_7__p1] },
-        { id: "costituente-composizione-giornale-5-lunita-8-giugno-1946", title: "L'Unità, 8 giugno 1946", description: "L'Unità, 8 giugno 1946", thumb: c298_5_lunita_8_giugno_19_t, pages: [c298_5_lunita_8_giugno_19_p1] },
-        { id: "costituente-composizione-giornale-6-il-popolo-8-giugno-1946", title: "Il Popolo, 8 giugno 1946", description: "Il Popolo, 8 giugno 1946", thumb: c299_6_il_popolo_8_giugno_t, pages: [c299_6_il_popolo_8_giugno_p1] },
-        { id: "costituente-composizione-giornale-7-lunita-9-giugno-1946", title: "L'Unità, 9 giugno 1946", description: "L'Unità, 9 giugno 1946", thumb: c300_7_lunita_9_giugno_19_t, pages: [c300_7_lunita_9_giugno_19_p1] },
-        { id: "costituente-composizione-giornale-8-lunita-14-giugno-1946", title: "L'Unità, 14 giugno 1946", description: "L'Unità, 14 giugno 1946", thumb: c301_8_lunita_14_giugno_1_t, pages: [c301_8_lunita_14_giugno_1_p1] },
-        { id: "costituente-composizione-giornale-9-risorgimento-liberale-16-giugno-1946", title: "Risorgimento liberale, 16 giugno 1946", description: "Risorgimento liberale, 16 giugno 1946", thumb: c302_9_risorgimento_liber_t, pages: [c302_9_risorgimento_liber_p1] },
-        { id: "costituente-composizione-giornale-10-il-popolo-16-giugno-1946", title: "Il Popolo, 16 giugno 1946", description: "Il Popolo, 16 giugno 1946", thumb: c303_10_il_popolo_16_giug_t, pages: [c303_10_il_popolo_16_giug_p1] },
-        { id: "costituente-composizione-giornale-11-la-voce-repubblicana-19-giugno-1946", title: "La Voce Repubblicana, 19 giugno 1946", description: "La Voce Repubblicana, 19 giugno 1946", thumb: c304_11_la_voce_repubblic_t, pages: [c304_11_la_voce_repubblic_p1] },
-        { id: "costituente-composizione-giornale-12-lillustrazione-italiana-14-luglio-1946", title: "L'Illustrazione italiana, 14 luglio 1946", description: "L'Illustrazione italiana, 14 luglio 1946", thumb: c305_12_lillustrazione_it_t, pages: [c305_12_lillustrazione_it_p1] },
-        { id: "costituente-composizione-giornale-13-domenica-del-corriere-4-agosto-1946", title: "Domenica del Corriere, 4 agosto 1946", description: "Domenica del Corriere, 4 agosto 1946", thumb: c306_13_domenica_del_corr_t, pages: [c306_13_domenica_del_corr_p1] },
-        { id: "costituente-composizione-giornale-14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio", title: "I deputati alla Costituente, L'illustrazione italiana, 9 febbraio", description: "L'Illustrazione Italiana, 9 febbraio 1947, fascicolo speciale dedicato all’Assemblea Costituente", thumb: c307_14_i_deputati_alla_c_t, pages: [c307_14_i_deputati_alla_c_p1, c307_14_i_deputati_alla_c_p2, c307_14_i_deputati_alla_c_p3, c307_14_i_deputati_alla_c_p4, c307_14_i_deputati_alla_c_p5, c307_14_i_deputati_alla_c_p6, c307_14_i_deputati_alla_c_p7, c307_14_i_deputati_alla_c_p8, c307_14_i_deputati_alla_c_p9, c307_14_i_deputati_alla_c_p10, c307_14_i_deputati_alla_c_p11, c307_14_i_deputati_alla_c_p12, c307_14_i_deputati_alla_c_p13, c307_14_i_deputati_alla_c_p14, c307_14_i_deputati_alla_c_p15, c307_14_i_deputati_alla_c_p16, c307_14_i_deputati_alla_c_p17, c307_14_i_deputati_alla_c_p18, c307_14_i_deputati_alla_c_p19, c307_14_i_deputati_alla_c_p20, c307_14_i_deputati_alla_c_p21, c307_14_i_deputati_alla_c_p22, c307_14_i_deputati_alla_c_p23, c307_14_i_deputati_alla_c_p24, c307_14_i_deputati_alla_c_p25, c307_14_i_deputati_alla_c_p26, c307_14_i_deputati_alla_c_p27, c307_14_i_deputati_alla_c_p28, c307_14_i_deputati_alla_c_p29, c307_14_i_deputati_alla_c_p30, c307_14_i_deputati_alla_c_p31, c307_14_i_deputati_alla_c_p32, c307_14_i_deputati_alla_c_p33] },
+        { id: "costituente-composizione-giornale-1-il-popolo-4-giugno-1946", title: "Il Popolo, 4 giugno 1946", description: "Il Popolo, 4 giugno 1946", thumb: c302_1_il_popolo_4_giugno_t, pages: [c302_1_il_popolo_4_giugno_p1] },
+        { id: "costituente-composizione-giornale-2-la-voce-repubblicana-5-giugno-1946", title: "La Voce Repubblicana, 5 giugno 1946", description: "La Voce Repubblicana, 5 giugno 1946", thumb: c303_2_la_voce_repubblica_t, pages: [c303_2_la_voce_repubblica_p1] },
+        { id: "costituente-composizione-giornale-3-risorgimento-liberale-5-giugno-1946", title: "Risorgimento Liberale, 5 giugno 1946", description: "Risorgimento liberale, 5 giugno 1946", thumb: c304_3_risorgimento_liber_t, pages: [c304_3_risorgimento_liber_p1] },
+        { id: "costituente-composizione-giornale-4-la-nuova-stampa-7-giugno-1946", title: "La Nuova Stampa, 7 giugno 1946", description: "La Nuova Stampa, 7 giugno 1946", thumb: c305_4_la_nuova_stampa_7__t, pages: [c305_4_la_nuova_stampa_7__p1] },
+        { id: "costituente-composizione-giornale-5-lunita-8-giugno-1946", title: "L'Unità, 8 giugno 1946", description: "L'Unità, 8 giugno 1946", thumb: c306_5_lunita_8_giugno_19_t, pages: [c306_5_lunita_8_giugno_19_p1] },
+        { id: "costituente-composizione-giornale-6-il-popolo-8-giugno-1946", title: "Il Popolo, 8 giugno 1946", description: "Il Popolo, 8 giugno 1946", thumb: c307_6_il_popolo_8_giugno_t, pages: [c307_6_il_popolo_8_giugno_p1] },
+        { id: "costituente-composizione-giornale-7-lunita-9-giugno-1946", title: "L'Unità, 9 giugno 1946", description: "L'Unità, 9 giugno 1946", thumb: c308_7_lunita_9_giugno_19_t, pages: [c308_7_lunita_9_giugno_19_p1] },
+        { id: "costituente-composizione-giornale-8-lunita-14-giugno-1946", title: "L'Unità, 14 giugno 1946", description: "L'Unità, 14 giugno 1946", thumb: c309_8_lunita_14_giugno_1_t, pages: [c309_8_lunita_14_giugno_1_p1] },
+        { id: "costituente-composizione-giornale-9-risorgimento-liberale-16-giugno-1946", title: "Risorgimento liberale, 16 giugno 1946", description: "Risorgimento liberale, 16 giugno 1946", thumb: c310_9_risorgimento_liber_t, pages: [c310_9_risorgimento_liber_p1] },
+        { id: "costituente-composizione-giornale-10-il-popolo-16-giugno-1946", title: "Il Popolo, 16 giugno 1946", description: "Il Popolo, 16 giugno 1946", thumb: c311_10_il_popolo_16_giug_t, pages: [c311_10_il_popolo_16_giug_p1] },
+        { id: "costituente-composizione-giornale-11-la-voce-repubblicana-19-giugno-1946", title: "La Voce Repubblicana, 19 giugno 1946", description: "La Voce Repubblicana, 19 giugno 1946", thumb: c312_11_la_voce_repubblic_t, pages: [c312_11_la_voce_repubblic_p1] },
+        { id: "costituente-composizione-giornale-12-lillustrazione-italiana-14-luglio-1946", title: "L'Illustrazione italiana, 14 luglio 1946", description: "L'Illustrazione italiana, 14 luglio 1946", thumb: c313_12_lillustrazione_it_t, pages: [c313_12_lillustrazione_it_p1] },
+        { id: "costituente-composizione-giornale-13-domenica-del-corriere-4-agosto-1946", title: "Domenica del Corriere, 4 agosto 1946", description: "Domenica del Corriere, 4 agosto 1946", thumb: c314_13_domenica_del_corr_t, pages: [c314_13_domenica_del_corr_p1] },
+        { id: "costituente-composizione-giornale-14-i-deputati-alla-costituente-lillustrazione-italiana-9-febbraio", title: "I deputati alla Costituente, L'illustrazione italiana, 9 febbraio", description: "L'Illustrazione Italiana, 9 febbraio 1947, fascicolo speciale dedicato all’Assemblea Costituente", thumb: c315_14_i_deputati_alla_c_t, pages: [c315_14_i_deputati_alla_c_p1, c315_14_i_deputati_alla_c_p2, c315_14_i_deputati_alla_c_p3, c315_14_i_deputati_alla_c_p4, c315_14_i_deputati_alla_c_p5, c315_14_i_deputati_alla_c_p6, c315_14_i_deputati_alla_c_p7, c315_14_i_deputati_alla_c_p8, c315_14_i_deputati_alla_c_p9, c315_14_i_deputati_alla_c_p10, c315_14_i_deputati_alla_c_p11, c315_14_i_deputati_alla_c_p12, c315_14_i_deputati_alla_c_p13, c315_14_i_deputati_alla_c_p14, c315_14_i_deputati_alla_c_p15, c315_14_i_deputati_alla_c_p16, c315_14_i_deputati_alla_c_p17, c315_14_i_deputati_alla_c_p18, c315_14_i_deputati_alla_c_p19, c315_14_i_deputati_alla_c_p20, c315_14_i_deputati_alla_c_p21, c315_14_i_deputati_alla_c_p22, c315_14_i_deputati_alla_c_p23, c315_14_i_deputati_alla_c_p24, c315_14_i_deputati_alla_c_p25, c315_14_i_deputati_alla_c_p26, c315_14_i_deputati_alla_c_p27, c315_14_i_deputati_alla_c_p28, c315_14_i_deputati_alla_c_p29, c315_14_i_deputati_alla_c_p30, c315_14_i_deputati_alla_c_p31, c315_14_i_deputati_alla_c_p32, c315_14_i_deputati_alla_c_p33] },
       ],
     },
     lavoro: {
       documenti: [
-        { id: "costituente-lavoro-documenti-01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946", title: "Verbale originale della prima seduta dell'Assemblea Costituente, 25 giugno 1946", description: "Verbale originale della prima seduta dell’Assemblea Costituente, 25 giugno 1946. Archivio storico della Camera dei deputati", thumb: c308_01_verbale_originale_t, pages: [c308_01_verbale_originale_p1, c308_01_verbale_originale_p2, c308_01_verbale_originale_p3, c308_01_verbale_originale_p4, c308_01_verbale_originale_p5, c308_01_verbale_originale_p6] },
-        { id: "costituente-lavoro-documenti-02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946", title: "Discorso del Presidente provvisorio Orlando, 25 giugno 1946", description: "Discorso di Vittorio Emanuele Orlando, 25 giugno 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 25 giugno 1946 Biblioteca della Camera dei deputati", thumb: c309_02_discorso_del_pres_t, pages: [c309_02_discorso_del_pres_p1, c309_02_discorso_del_pres_p2, c309_02_discorso_del_pres_p3] },
-        { id: "costituente-lavoro-documenti-03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946", title: "Discorso di insediamento del Presidente Saragat, 26 giugno 1946", description: "Discorso di insediamento del Presidente dell’Assemblea Costituente Giuseppe Saragat, 26 giugno 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 26 giugno 1946 Biblioteca della Camera dei deputati", thumb: c310_03_discorso_di_insed_t, pages: [c310_03_discorso_di_insed_p1, c310_03_discorso_di_insed_p2, c310_03_discorso_di_insed_p3, c310_03_discorso_di_insed_p4] },
-        { id: "costituente-lavoro-documenti-04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola", title: "Verbale dei risultati dell'elezione del Capo provvisorio dello Stato De Nicola, 28 giugno 1946", description: "Assemblea Costituente, verbale n. 3, seduta del 28 giugno 1946. Archivio storico della Camera dei deputati", thumb: c311_04_verbale_dei_risul_t, pages: [c311_04_verbale_dei_risul_p1, c311_04_verbale_dei_risul_p2, c311_04_verbale_dei_risul_p3, c311_04_verbale_dei_risul_p4, c311_04_verbale_dei_risul_p5, c311_04_verbale_dei_risul_p6, c311_04_verbale_dei_risul_p7, c311_04_verbale_dei_risul_p8, c311_04_verbale_dei_risul_p9, c311_04_verbale_dei_risul_p10, c311_04_verbale_dei_risul_p11] },
-        { id: "costituente-lavoro-documenti-05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946", title: "Messaggio autografo del Capo provvisorio dello Stato, 29 giugno 1946", description: "Testo autografo del messaggio del Capo provvisorio dello Stato, Enrico De Nicola, 29 giugno 1946. Archivio storico della Camera dei deputati", thumb: c312_05_messaggio_autogra_t, pages: [c312_05_messaggio_autogra_p1] },
-        { id: "costituente-lavoro-documenti-06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946", title: "Giuramento e discorso del Capo provvisorio dello Stato, 15 luglio 1946", description: "Testo autografo del giuramento e del discorso pronunciato dal Capo provvisorio dello Stato, Enrico De Nicola, all’Assemblea Costituente, 15 luglio 1946. Archivio storico della Camera dei deputati", thumb: c313_06_giuramento_e_disc_t, pages: [c313_06_giuramento_e_disc_p1, c313_06_giuramento_e_disc_p2, c313_06_giuramento_e_disc_p3, c313_06_giuramento_e_disc_p4, c313_06_giuramento_e_disc_p5, c313_06_giuramento_e_disc_p6, c313_06_giuramento_e_disc_p7] },
-        { id: "costituente-lavoro-documenti-07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946", title: "Nomina della Commissione dei 75, seduta del 19 luglio 1946", description: "Costituzione e convocazione della Commissione per la Costituzione, 19 luglio 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 19 luglio 1946 Biblioteca della Camera dei deputati", thumb: c314_07_nomina_della_comm_t, pages: [c314_07_nomina_della_comm_p1, c314_07_nomina_della_comm_p2] },
-        { id: "costituente-lavoro-documenti-08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-", title: "Resoconto della prima seduta della Commissione per la Costituzione, 20 luglio 1946", description: "Resoconto sommario della prima seduta della Commissione per la Costituzione del 20 luglio 1946. Biblioteca della Camera dei deputati", thumb: c315_08_resoconto_della_p_t, pages: [c315_08_resoconto_della_p_p1, c315_08_resoconto_della_p_p2, c315_08_resoconto_della_p_p3] },
-        { id: "costituente-lavoro-documenti-09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost", title: "Originale della proposta di regolamento interno della Commissione per la Costituzione, 25 luglio 1946", description: "Proposta di regolamento interno della Commissione per la Costituzione approvata dalla Commissione nella seduta del 25 luglio 1946. Archivio storico della Camera dei deputati", thumb: c316_09_originale_della_p_t, pages: [c316_09_originale_della_p_p1, c316_09_originale_della_p_p2] },
-        { id: "costituente-lavoro-documenti-10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot", title: "Originale della circolare di Meuccio Ruini a tutti i componenti delle tre Sottocommissioni, 20 settembre 1946", description: "Circolare del Presidente della Commissione per la Costituzione, Meuccio Ruini, a tutti i componenti delle Sottocommissioni. Li si invita a partecipare, “come è loro dovere ed interesse”, ai lavori “anche perché le idee delle loro correnti siano rappresentate”; si chiede inoltre di intensificare il lavoro di ciascuna Sottocommissione che dovrà riunirsi “per più ore e, possibilmente, con più sedute al giorno”, 20 settembre 1946. Archivio storico della Camera dei deputati", thumb: c317_10_originale_della_c_t, pages: [c317_10_originale_della_c_p1, c317_10_originale_della_c_p2] },
-        { id: "costituente-lavoro-documenti-11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione", title: "Richiesta dei giornalisti al Presidente della Commissione per la Costituzione, 6 dicembre 1946", description: "Richiesta manoscritta dei giornalisti parlamentari al Presidente Ruini di poter assistere alle sedute della Commissione dei 75, 6 dicembre 1946. Archivio storico della Camera dei deputati", thumb: c318_11_richiesta_dei_gio_t, pages: [c318_11_richiesta_dei_gio_p1] },
-        { id: "costituente-lavoro-documenti-12-progetto-di-costituzione-31-gennaio-1947", title: "Progetto di Costituzione, 31 gennaio 1947", description: "Testo dello stampato parlamentare del Progetto di Costituzione approvato dalla Commissione dei 75 e sottoposto all’esame dell’Assemblea a partire dal 4 marzo 1947. Biblioteca della Camera dei deputati", thumb: c319_12_progetto_di_costi_t, pages: [c319_12_progetto_di_costi_p1, c319_12_progetto_di_costi_p2, c319_12_progetto_di_costi_p3, c319_12_progetto_di_costi_p4, c319_12_progetto_di_costi_p5, c319_12_progetto_di_costi_p6, c319_12_progetto_di_costi_p7, c319_12_progetto_di_costi_p8, c319_12_progetto_di_costi_p9, c319_12_progetto_di_costi_p10, c319_12_progetto_di_costi_p11, c319_12_progetto_di_costi_p12, c319_12_progetto_di_costi_p13, c319_12_progetto_di_costi_p14, c319_12_progetto_di_costi_p15, c319_12_progetto_di_costi_p16, c319_12_progetto_di_costi_p17, c319_12_progetto_di_costi_p18, c319_12_progetto_di_costi_p19, c319_12_progetto_di_costi_p20, c319_12_progetto_di_costi_p21, c319_12_progetto_di_costi_p22, c319_12_progetto_di_costi_p23, c319_12_progetto_di_costi_p24, c319_12_progetto_di_costi_p25, c319_12_progetto_di_costi_p26, c319_12_progetto_di_costi_p27, c319_12_progetto_di_costi_p28, c319_12_progetto_di_costi_p29, c319_12_progetto_di_costi_p30, c319_12_progetto_di_costi_p31, c319_12_progetto_di_costi_p32, c319_12_progetto_di_costi_p33, c319_12_progetto_di_costi_p34, c319_12_progetto_di_costi_p35, c319_12_progetto_di_costi_p36] },
-        { id: "costituente-lavoro-documenti-13-elezione-del-presidente-terracini-8-febbraio-1947", title: "Elezione del Presidente Terracini, 8 febbraio 1947", description: "Elezione di Umberto Terracini a Presidente dell’Assemblea Costituente e suo insediamento, 8 febbraio 1947. Resoconto stenografico della seduta dell’Assemblea Costituente dell’8 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c320_13_elezione_del_pres_t, pages: [c320_13_elezione_del_pres_p1, c320_13_elezione_del_pres_p2, c320_13_elezione_del_pres_p3, c320_13_elezione_del_pres_p4, c320_13_elezione_del_pres_p5, c320_13_elezione_del_pres_p6, c320_13_elezione_del_pres_p7, c320_13_elezione_del_pres_p8, c320_13_elezione_del_pres_p9, c320_13_elezione_del_pres_p10, c320_13_elezione_del_pres_p11, c320_13_elezione_del_pres_p12, c320_13_elezione_del_pres_p13, c320_13_elezione_del_pres_p14, c320_13_elezione_del_pres_p15, c320_13_elezione_del_pres_p16, c320_13_elezione_del_pres_p17, c320_13_elezione_del_pres_p18, c320_13_elezione_del_pres_p19, c320_13_elezione_del_pres_p20, c320_13_elezione_del_pres_p21, c320_13_elezione_del_pres_p22, c320_13_elezione_del_pres_p23, c320_13_elezione_del_pres_p24, c320_13_elezione_del_pres_p25] },
-        { id: "costituente-lavoro-documenti-14-replica-di-meuccio-ruini-12-marzo-1947", title: "Replica di Meuccio Ruini, 12 marzo 1947", description: "Replica del Presidente della Commissione per la Costituzione Meuccio Ruini in conclusione della discussione sul Progetto di Costituzione. Resoconto stenografico della seduta dell’Assemblea Costituente del 12 marzo 1947 Biblioteca della Camera dei deputati", thumb: c321_14_replica_di_meucci_t, pages: [c321_14_replica_di_meucci_p1, c321_14_replica_di_meucci_p2, c321_14_replica_di_meucci_p3, c321_14_replica_di_meucci_p4, c321_14_replica_di_meucci_p5, c321_14_replica_di_meucci_p6, c321_14_replica_di_meucci_p7, c321_14_replica_di_meucci_p8, c321_14_replica_di_meucci_p9, c321_14_replica_di_meucci_p10, c321_14_replica_di_meucci_p11, c321_14_replica_di_meucci_p12, c321_14_replica_di_meucci_p13, c321_14_replica_di_meucci_p14, c321_14_replica_di_meucci_p15, c321_14_replica_di_meucci_p16, c321_14_replica_di_meucci_p17, c321_14_replica_di_meucci_p18, c321_14_replica_di_meucci_p19] },
-        { id: "costituente-lavoro-documenti-15-emendamenti-delle-deputate", title: "Emendamenti delle deputate", description: "Emendamenti presentati da deputate Costituenti ad articoli del Progetto di Costituzione. Archivio Storico della Camera dei deputati", thumb: c322_15_emendamenti_delle_t, pages: [c322_15_emendamenti_delle_p1, c322_15_emendamenti_delle_p2, c322_15_emendamenti_delle_p3, c322_15_emendamenti_delle_p4, c322_15_emendamenti_delle_p5, c322_15_emendamenti_delle_p6, c322_15_emendamenti_delle_p7, c322_15_emendamenti_delle_p8, c322_15_emendamenti_delle_p9, c322_15_emendamenti_delle_p10] },
-        { id: "costituente-lavoro-documenti-16-intervento-di-meuccio-ruini-22-dicembre-1947", title: "Intervento di Meuccio Ruini, 22 dicembre 1947", description: "Intervento del Presidente della Commissione per la Costituzione Meuccio Ruini del 22 dicembre 1947. Resoconto stenografico della seduta pomeridiana dell’Assemblea Costituente del 22 dicembre 1947 Biblioteca della Camera dei deputati", thumb: c323_16_intervento_di_meu_t, pages: [c323_16_intervento_di_meu_p1, c323_16_intervento_di_meu_p2, c323_16_intervento_di_meu_p3] },
-        { id: "costituente-lavoro-documenti-17-intervento-del-presidente-terracini-22-dicembre-1947", title: "Intervento del Presidente Terracini, 22 dicembre 1947", description: "Intervento del Presidente Umberto Terracini durante la seduta pomeridiana del 22 dicembre 1947. Resoconto stenografico della seduta pomeridiana dell’Assemblea Costituente del 22 dicembre 1947 Biblioteca della Camera dei deputati", thumb: c324_17_intervento_del_pr_t, pages: [c324_17_intervento_del_pr_p1, c324_17_intervento_del_pr_p2, c324_17_intervento_del_pr_p3, c324_17_intervento_del_pr_p4, c324_17_intervento_del_pr_p5] },
-        { id: "costituente-lavoro-documenti-18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947", title: "Messaggio di Enrico De Nicola alla Assemblea Costituente, 22 dicembre 1947", description: "Messaggio di Enrico De Nicola all’Assemblea Costituente, 22 dicembre 1947, ore 18,30. Archivio storico della Camera dei deputati", thumb: c325_18_messaggio_di_enri_t, pages: [c325_18_messaggio_di_enri_p1, c325_18_messaggio_di_enri_p2] },
+        { id: "costituente-lavoro-documenti-01-verbale-originale-della-prima-seduta-dellassemblea-costituente-25-giugno-1946", title: "Verbale originale della prima seduta dell'Assemblea Costituente, 25 giugno 1946", description: "Verbale originale della prima seduta dell’Assemblea Costituente, 25 giugno 1946. Archivio storico della Camera dei deputati", thumb: c316_01_verbale_originale_t, pages: [c316_01_verbale_originale_p1, c316_01_verbale_originale_p2, c316_01_verbale_originale_p3, c316_01_verbale_originale_p4, c316_01_verbale_originale_p5, c316_01_verbale_originale_p6] },
+        { id: "costituente-lavoro-documenti-02-discorso-del-presidente-provvisorio-orlando-25-giugno-1946", title: "Discorso del Presidente provvisorio Orlando, 25 giugno 1946", description: "Discorso di Vittorio Emanuele Orlando, 25 giugno 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 25 giugno 1946 Biblioteca della Camera dei deputati", thumb: c317_02_discorso_del_pres_t, pages: [c317_02_discorso_del_pres_p1, c317_02_discorso_del_pres_p2, c317_02_discorso_del_pres_p3] },
+        { id: "costituente-lavoro-documenti-03-discorso-di-insediamento-del-presidente-saragat-26-giugno-1946", title: "Discorso di insediamento del Presidente Saragat, 26 giugno 1946", description: "Discorso di insediamento del Presidente dell’Assemblea Costituente Giuseppe Saragat, 26 giugno 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 26 giugno 1946 Biblioteca della Camera dei deputati", thumb: c318_03_discorso_di_insed_t, pages: [c318_03_discorso_di_insed_p1, c318_03_discorso_di_insed_p2, c318_03_discorso_di_insed_p3, c318_03_discorso_di_insed_p4] },
+        { id: "costituente-lavoro-documenti-04-verbale-dei-risultati-dellelezione-del-capo-provvisorio-dello-stato-de-nicola", title: "Verbale dei risultati dell'elezione del Capo provvisorio dello Stato De Nicola, 28 giugno 1946", description: "Assemblea Costituente, verbale n. 3, seduta del 28 giugno 1946. Archivio storico della Camera dei deputati", thumb: c319_04_verbale_dei_risul_t, pages: [c319_04_verbale_dei_risul_p1, c319_04_verbale_dei_risul_p2, c319_04_verbale_dei_risul_p3, c319_04_verbale_dei_risul_p4, c319_04_verbale_dei_risul_p5, c319_04_verbale_dei_risul_p6, c319_04_verbale_dei_risul_p7, c319_04_verbale_dei_risul_p8, c319_04_verbale_dei_risul_p9, c319_04_verbale_dei_risul_p10, c319_04_verbale_dei_risul_p11] },
+        { id: "costituente-lavoro-documenti-05-messaggio-autografo-del-capo-provvisorio-dello-stato-29-giugno-1946", title: "Messaggio autografo del Capo provvisorio dello Stato, 29 giugno 1946", description: "Testo autografo del messaggio del Capo provvisorio dello Stato, Enrico De Nicola, 29 giugno 1946. Archivio storico della Camera dei deputati", thumb: c320_05_messaggio_autogra_t, pages: [c320_05_messaggio_autogra_p1] },
+        { id: "costituente-lavoro-documenti-06-giuramento-e-discorso-del-capo-provvisorio-dello-stato-15-luglio-1946", title: "Giuramento e discorso del Capo provvisorio dello Stato, 15 luglio 1946", description: "Testo autografo del giuramento e del discorso pronunciato dal Capo provvisorio dello Stato, Enrico De Nicola, all’Assemblea Costituente, 15 luglio 1946. Archivio storico della Camera dei deputati", thumb: c321_06_giuramento_e_disc_t, pages: [c321_06_giuramento_e_disc_p1, c321_06_giuramento_e_disc_p2, c321_06_giuramento_e_disc_p3, c321_06_giuramento_e_disc_p4, c321_06_giuramento_e_disc_p5, c321_06_giuramento_e_disc_p6, c321_06_giuramento_e_disc_p7] },
+        { id: "costituente-lavoro-documenti-07-nomina-della-commissione-dei-75-seduta-del-19-luglio-1946", title: "Nomina della Commissione dei 75, seduta del 19 luglio 1946", description: "Costituzione e convocazione della Commissione per la Costituzione, 19 luglio 1946. Resoconto stenografico della seduta dell’Assemblea Costituente del 19 luglio 1946 Biblioteca della Camera dei deputati", thumb: c322_07_nomina_della_comm_t, pages: [c322_07_nomina_della_comm_p1, c322_07_nomina_della_comm_p2] },
+        { id: "costituente-lavoro-documenti-08-resoconto-della-prima-seduta-della-commissione-per-la-costituzione-20-luglio-", title: "Resoconto della prima seduta della Commissione per la Costituzione, 20 luglio 1946", description: "Resoconto sommario della prima seduta della Commissione per la Costituzione del 20 luglio 1946. Biblioteca della Camera dei deputati", thumb: c323_08_resoconto_della_p_t, pages: [c323_08_resoconto_della_p_p1, c323_08_resoconto_della_p_p2, c323_08_resoconto_della_p_p3] },
+        { id: "costituente-lavoro-documenti-09-originale-della-proposta-di-regolamento-interno-della-commissione-per-la-cost", title: "Originale della proposta di regolamento interno della Commissione per la Costituzione, 25 luglio 1946", description: "Proposta di regolamento interno della Commissione per la Costituzione approvata dalla Commissione nella seduta del 25 luglio 1946. Archivio storico della Camera dei deputati", thumb: c324_09_originale_della_p_t, pages: [c324_09_originale_della_p_p1, c324_09_originale_della_p_p2] },
+        { id: "costituente-lavoro-documenti-10-originale-della-circolare-di-meuccio-ruini-a-tutti-i-componenti-delle-tre-sot", title: "Originale della circolare di Meuccio Ruini a tutti i componenti delle tre Sottocommissioni, 20 settembre 1946", description: "Circolare del Presidente della Commissione per la Costituzione, Meuccio Ruini, a tutti i componenti delle Sottocommissioni. Li si invita a partecipare, “come è loro dovere ed interesse”, ai lavori “anche perché le idee delle loro correnti siano rappresentate”; si chiede inoltre di intensificare il lavoro di ciascuna Sottocommissione che dovrà riunirsi “per più ore e, possibilmente, con più sedute al giorno”, 20 settembre 1946. Archivio storico della Camera dei deputati", thumb: c325_10_originale_della_c_t, pages: [c325_10_originale_della_c_p1, c325_10_originale_della_c_p2] },
+        { id: "costituente-lavoro-documenti-11-richiesta-dei-giornalisti-al-presidente-della-commissione-per-la-costituzione", title: "Richiesta dei giornalisti al Presidente della Commissione per la Costituzione, 6 dicembre 1946", description: "Richiesta manoscritta dei giornalisti parlamentari al Presidente Ruini di poter assistere alle sedute della Commissione dei 75, 6 dicembre 1946. Archivio storico della Camera dei deputati", thumb: c326_11_richiesta_dei_gio_t, pages: [c326_11_richiesta_dei_gio_p1] },
+        { id: "costituente-lavoro-documenti-12-progetto-di-costituzione-31-gennaio-1947", title: "Progetto di Costituzione, 31 gennaio 1947", description: "Testo dello stampato parlamentare del Progetto di Costituzione approvato dalla Commissione dei 75 e sottoposto all’esame dell’Assemblea a partire dal 4 marzo 1947. Biblioteca della Camera dei deputati", thumb: c327_12_progetto_di_costi_t, pages: [c327_12_progetto_di_costi_p1, c327_12_progetto_di_costi_p2, c327_12_progetto_di_costi_p3, c327_12_progetto_di_costi_p4, c327_12_progetto_di_costi_p5, c327_12_progetto_di_costi_p6, c327_12_progetto_di_costi_p7, c327_12_progetto_di_costi_p8, c327_12_progetto_di_costi_p9, c327_12_progetto_di_costi_p10, c327_12_progetto_di_costi_p11, c327_12_progetto_di_costi_p12, c327_12_progetto_di_costi_p13, c327_12_progetto_di_costi_p14, c327_12_progetto_di_costi_p15, c327_12_progetto_di_costi_p16, c327_12_progetto_di_costi_p17, c327_12_progetto_di_costi_p18, c327_12_progetto_di_costi_p19, c327_12_progetto_di_costi_p20, c327_12_progetto_di_costi_p21, c327_12_progetto_di_costi_p22, c327_12_progetto_di_costi_p23, c327_12_progetto_di_costi_p24, c327_12_progetto_di_costi_p25, c327_12_progetto_di_costi_p26, c327_12_progetto_di_costi_p27, c327_12_progetto_di_costi_p28, c327_12_progetto_di_costi_p29, c327_12_progetto_di_costi_p30, c327_12_progetto_di_costi_p31, c327_12_progetto_di_costi_p32, c327_12_progetto_di_costi_p33, c327_12_progetto_di_costi_p34, c327_12_progetto_di_costi_p35, c327_12_progetto_di_costi_p36] },
+        { id: "costituente-lavoro-documenti-13-elezione-del-presidente-terracini-8-febbraio-1947", title: "Elezione del Presidente Terracini, 8 febbraio 1947", description: "Elezione di Umberto Terracini a Presidente dell’Assemblea Costituente e suo insediamento, 8 febbraio 1947. Resoconto stenografico della seduta dell’Assemblea Costituente dell’8 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c328_13_elezione_del_pres_t, pages: [c328_13_elezione_del_pres_p1, c328_13_elezione_del_pres_p2, c328_13_elezione_del_pres_p3, c328_13_elezione_del_pres_p4, c328_13_elezione_del_pres_p5, c328_13_elezione_del_pres_p6, c328_13_elezione_del_pres_p7, c328_13_elezione_del_pres_p8, c328_13_elezione_del_pres_p9, c328_13_elezione_del_pres_p10, c328_13_elezione_del_pres_p11, c328_13_elezione_del_pres_p12, c328_13_elezione_del_pres_p13, c328_13_elezione_del_pres_p14, c328_13_elezione_del_pres_p15, c328_13_elezione_del_pres_p16, c328_13_elezione_del_pres_p17, c328_13_elezione_del_pres_p18, c328_13_elezione_del_pres_p19, c328_13_elezione_del_pres_p20, c328_13_elezione_del_pres_p21, c328_13_elezione_del_pres_p22, c328_13_elezione_del_pres_p23, c328_13_elezione_del_pres_p24, c328_13_elezione_del_pres_p25] },
+        { id: "costituente-lavoro-documenti-14-replica-di-meuccio-ruini-12-marzo-1947", title: "Replica di Meuccio Ruini, 12 marzo 1947", description: "Replica del Presidente della Commissione per la Costituzione Meuccio Ruini in conclusione della discussione sul Progetto di Costituzione. Resoconto stenografico della seduta dell’Assemblea Costituente del 12 marzo 1947 Biblioteca della Camera dei deputati", thumb: c329_14_replica_di_meucci_t, pages: [c329_14_replica_di_meucci_p1, c329_14_replica_di_meucci_p2, c329_14_replica_di_meucci_p3, c329_14_replica_di_meucci_p4, c329_14_replica_di_meucci_p5, c329_14_replica_di_meucci_p6, c329_14_replica_di_meucci_p7, c329_14_replica_di_meucci_p8, c329_14_replica_di_meucci_p9, c329_14_replica_di_meucci_p10, c329_14_replica_di_meucci_p11, c329_14_replica_di_meucci_p12, c329_14_replica_di_meucci_p13, c329_14_replica_di_meucci_p14, c329_14_replica_di_meucci_p15, c329_14_replica_di_meucci_p16, c329_14_replica_di_meucci_p17, c329_14_replica_di_meucci_p18, c329_14_replica_di_meucci_p19] },
+        { id: "costituente-lavoro-documenti-15-emendamenti-delle-deputate", title: "Emendamenti delle deputate", description: "Emendamenti presentati da deputate Costituenti ad articoli del Progetto di Costituzione. Archivio Storico della Camera dei deputati", thumb: c330_15_emendamenti_delle_t, pages: [c330_15_emendamenti_delle_p1, c330_15_emendamenti_delle_p2, c330_15_emendamenti_delle_p3, c330_15_emendamenti_delle_p4, c330_15_emendamenti_delle_p5, c330_15_emendamenti_delle_p6, c330_15_emendamenti_delle_p7, c330_15_emendamenti_delle_p8, c330_15_emendamenti_delle_p9, c330_15_emendamenti_delle_p10] },
+        { id: "costituente-lavoro-documenti-16-intervento-di-meuccio-ruini-22-dicembre-1947", title: "Intervento di Meuccio Ruini, 22 dicembre 1947", description: "Intervento del Presidente della Commissione per la Costituzione Meuccio Ruini del 22 dicembre 1947. Resoconto stenografico della seduta pomeridiana dell’Assemblea Costituente del 22 dicembre 1947 Biblioteca della Camera dei deputati", thumb: c331_16_intervento_di_meu_t, pages: [c331_16_intervento_di_meu_p1, c331_16_intervento_di_meu_p2, c331_16_intervento_di_meu_p3] },
+        { id: "costituente-lavoro-documenti-17-intervento-del-presidente-terracini-22-dicembre-1947", title: "Intervento del Presidente Terracini, 22 dicembre 1947", description: "Intervento del Presidente Umberto Terracini durante la seduta pomeridiana del 22 dicembre 1947. Resoconto stenografico della seduta pomeridiana dell’Assemblea Costituente del 22 dicembre 1947 Biblioteca della Camera dei deputati", thumb: c332_17_intervento_del_pr_t, pages: [c332_17_intervento_del_pr_p1, c332_17_intervento_del_pr_p2, c332_17_intervento_del_pr_p3, c332_17_intervento_del_pr_p4, c332_17_intervento_del_pr_p5] },
+        { id: "costituente-lavoro-documenti-18-messaggio-di-enrico-de-nicola-alla-assemblea-costituente-22-dicembre-1947", title: "Messaggio di Enrico De Nicola alla Assemblea Costituente, 22 dicembre 1947", description: "Messaggio di Enrico De Nicola all’Assemblea Costituente, 22 dicembre 1947, ore 18,30. Archivio storico della Camera dei deputati", thumb: c333_18_messaggio_di_enri_t, pages: [c333_18_messaggio_di_enri_p1, c333_18_messaggio_di_enri_p2] },
       ],
       foto: [
-        { id: "costituente-lavoro-foto-1-prima-seduta-del-25-giugno-1946", title: "Prima seduta del 25 giugno 1946", description: "Prima seduta dell’Assemblea Costituente, 25 giugno 1946. Archivio storico della Camera dei deputati", thumb: c326_1_prima_seduta_del_2_t, pages: [c326_1_prima_seduta_del_2_p1] },
-        { id: "costituente-lavoro-foto-2-prima-seduta-del-25-giugno-1946", title: "Prima seduta del 25 giugno 1946", description: "L’aula di Montecitorio all’inizio della prima seduta dell’Assemblea Costituente. L'Unità, 26 giugno 1946 Biblioteca della Camera dei deputati", thumb: c327_2_prima_seduta_del_2_t, pages: [c327_2_prima_seduta_del_2_p1] },
-        { id: "costituente-lavoro-foto-3-dichiarazioni-di-de-gasperi-sul-programma-di-governo", title: "Dichiarazioni di De Gasperi sul programma di Governo", description: "La prima seduta dell’Assemblea Costituente dopo l’elezione del nuovo Presidente, l’onorevole Umberto Terracini. De Gasperi fa le attese dichiarazioni sul programma del Governo. L’Illustrazione italiana, 23 marzo 1947 Biblioteca della Camera dei deputati", thumb: c328_3_dichiarazioni_di_d_t, pages: [c328_3_dichiarazioni_di_d_p1] },
-        { id: "costituente-lavoro-foto-4-inizio-di-una-seduta-a-montecitorio", title: "Inizio di una seduta a Montecitorio", description: "Il Presidente delle Commissioni riunite, Ruini, e alcuni altri Costituenti all’inizio di una seduta. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c329_4_inizio_di_una_sedu_t, pages: [c329_4_inizio_di_una_sedu_p1] },
-        { id: "costituente-lavoro-foto-5-enrico-de-nicola-capo-provvisorio-dello-stato", title: "Enrico De Nicola, Capo provvisorio dello Stato", description: "Enrico De Nicola, eletto il 28 giugno 1946 Capo Provvisorio dello Stato dall’Assemblea Costituente. L’Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c330_5_enrico_de_nicola_c_t, pages: [c330_5_enrico_de_nicola_c_p1] },
-        { id: "costituente-lavoro-foto-6-salone-dei-passi-perduti", title: "Salone dei passi perduti", description: "Immagine del salone dei “passi perduti”. L’Illustrazione italiana, 4 agosto 1946 Biblioteca della Camera dei deputati", thumb: c331_6_salone_dei_passi_p_t, pages: [c331_6_salone_dei_passi_p_p1] },
-        { id: "costituente-lavoro-foto-7-una-seduta-della-prima-sottocommissione", title: "Una seduta della Prima Sottocommissione", description: "Una seduta della Prima Sottocommissione. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c332_7_una_seduta_della_p_t, pages: [c332_7_una_seduta_della_p_p1] },
-        { id: "costituente-lavoro-foto-8-una-seduta-della-seconda-sottocommissione", title: "Una seduta della Seconda Sottocommissione", description: "Una riunione della prima Sezione della Seconda Sottocommissione per l’ordinamento giudiziario. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c333_8_una_seduta_della_s_t, pages: [c333_8_una_seduta_della_s_p1] },
-        { id: "costituente-lavoro-foto-9-approvazione-della-costituzione", title: "Approvazione della Costituzione", description: "Approvazione Costituzione. Presidenza e banchi del Governo. Archivio storico della Camera dei deputati", thumb: c334_9_approvazione_della_t, pages: [c334_9_approvazione_della_p1] },
-        { id: "costituente-lavoro-foto-10-presentazione-della-costituzione-a-de-nicola", title: "Presentazione della Costituzione a De Nicola", description: "Presentazione della Costituzione ad Enrico De Nicola, 22 dicembre 1947. Archivio storico della Camera dei deputati", thumb: c335_10_presentazione_del_t, pages: [c335_10_presentazione_del_p1] },
-        { id: "costituente-lavoro-foto-11-il-presidente-de-gasperi-firma-la-costituzione", title: "Il Presidente De Gasperi firma la Costituzione", description: "Il Presidente del Consiglio Alcide De Gasperi firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c336_11_il_presidente_de__t, pages: [c336_11_il_presidente_de__p1] },
-        { id: "costituente-lavoro-foto-12-il-presidente-de-nicola-firma-la-costituzione", title: "Il Presidente De Nicola firma la Costituzione", description: "Il Presidente della Repubblica Enrico De Nicola firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c337_12_il_presidente_de__t, pages: [c337_12_il_presidente_de__p1] },
-        { id: "costituente-lavoro-foto-13-il-presidente-terracini-firma-la-costituzione", title: "Il Presidente Terracini firma la Costituzione", description: "Il Presidente dell’Assemblea Costituente Umberto Terracini firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c338_13_il_presidente_ter_t, pages: [c338_13_il_presidente_ter_p1] },
+        { id: "costituente-lavoro-foto-1-prima-seduta-del-25-giugno-1946", title: "Prima seduta del 25 giugno 1946", description: "Prima seduta dell’Assemblea Costituente, 25 giugno 1946. Archivio storico della Camera dei deputati", thumb: c334_1_prima_seduta_del_2_t, pages: [c334_1_prima_seduta_del_2_p1] },
+        { id: "costituente-lavoro-foto-2-prima-seduta-del-25-giugno-1946", title: "Prima seduta del 25 giugno 1946", description: "L’aula di Montecitorio all’inizio della prima seduta dell’Assemblea Costituente. L'Unità, 26 giugno 1946 Biblioteca della Camera dei deputati", thumb: c335_2_prima_seduta_del_2_t, pages: [c335_2_prima_seduta_del_2_p1] },
+        { id: "costituente-lavoro-foto-3-dichiarazioni-di-de-gasperi-sul-programma-di-governo", title: "Dichiarazioni di De Gasperi sul programma di Governo", description: "La prima seduta dell’Assemblea Costituente dopo l’elezione del nuovo Presidente, l’onorevole Umberto Terracini. De Gasperi fa le attese dichiarazioni sul programma del Governo. L’Illustrazione italiana, 23 marzo 1947 Biblioteca della Camera dei deputati", thumb: c336_3_dichiarazioni_di_d_t, pages: [c336_3_dichiarazioni_di_d_p1] },
+        { id: "costituente-lavoro-foto-4-inizio-di-una-seduta-a-montecitorio", title: "Inizio di una seduta a Montecitorio", description: "Il Presidente delle Commissioni riunite, Ruini, e alcuni altri Costituenti all’inizio di una seduta. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c337_4_inizio_di_una_sedu_t, pages: [c337_4_inizio_di_una_sedu_p1] },
+        { id: "costituente-lavoro-foto-5-enrico-de-nicola-capo-provvisorio-dello-stato", title: "Enrico De Nicola, Capo provvisorio dello Stato", description: "Enrico De Nicola, eletto il 28 giugno 1946 Capo Provvisorio dello Stato dall’Assemblea Costituente. L’Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c338_5_enrico_de_nicola_c_t, pages: [c338_5_enrico_de_nicola_c_p1] },
+        { id: "costituente-lavoro-foto-6-salone-dei-passi-perduti", title: "Salone dei passi perduti", description: "Immagine del salone dei “passi perduti”. L’Illustrazione italiana, 4 agosto 1946 Biblioteca della Camera dei deputati", thumb: c339_6_salone_dei_passi_p_t, pages: [c339_6_salone_dei_passi_p_p1] },
+        { id: "costituente-lavoro-foto-7-una-seduta-della-prima-sottocommissione", title: "Una seduta della Prima Sottocommissione", description: "Una seduta della Prima Sottocommissione. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c340_7_una_seduta_della_p_t, pages: [c340_7_una_seduta_della_p_p1] },
+        { id: "costituente-lavoro-foto-8-una-seduta-della-seconda-sottocommissione", title: "Una seduta della Seconda Sottocommissione", description: "Una riunione della prima Sezione della Seconda Sottocommissione per l’ordinamento giudiziario. L'Illustrazione italiana, 9 febbraio 1947 Biblioteca della Camera dei deputati", thumb: c341_8_una_seduta_della_s_t, pages: [c341_8_una_seduta_della_s_p1] },
+        { id: "costituente-lavoro-foto-9-approvazione-della-costituzione", title: "Approvazione della Costituzione", description: "Approvazione Costituzione. Presidenza e banchi del Governo. Archivio storico della Camera dei deputati", thumb: c342_9_approvazione_della_t, pages: [c342_9_approvazione_della_p1] },
+        { id: "costituente-lavoro-foto-10-presentazione-della-costituzione-a-de-nicola", title: "Presentazione della Costituzione a De Nicola", description: "Presentazione della Costituzione ad Enrico De Nicola, 22 dicembre 1947. Archivio storico della Camera dei deputati", thumb: c343_10_presentazione_del_t, pages: [c343_10_presentazione_del_p1] },
+        { id: "costituente-lavoro-foto-11-il-presidente-de-gasperi-firma-la-costituzione", title: "Il Presidente De Gasperi firma la Costituzione", description: "Il Presidente del Consiglio Alcide De Gasperi firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c344_11_il_presidente_de__t, pages: [c344_11_il_presidente_de__p1] },
+        { id: "costituente-lavoro-foto-12-il-presidente-de-nicola-firma-la-costituzione", title: "Il Presidente De Nicola firma la Costituzione", description: "Il Presidente della Repubblica Enrico De Nicola firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c345_12_il_presidente_de__t, pages: [c345_12_il_presidente_de__p1] },
+        { id: "costituente-lavoro-foto-13-il-presidente-terracini-firma-la-costituzione", title: "Il Presidente Terracini firma la Costituzione", description: "Il Presidente dell’Assemblea Costituente Umberto Terracini firma la Costituzione. L’Illustrazione italiana, 4 gennaio 1948 Biblioteca della Camera dei deputati", thumb: c346_13_il_presidente_ter_t, pages: [c346_13_il_presidente_ter_p1] },
       ],
       giornale: [
-        { id: "costituente-lavoro-giornale-1-avanti-25-giugno-1946", title: "Avanti!, 25 giugno 1946", description: "Avanti!, 25 giugno 1946", thumb: c339_1_avanti_25_giugno_1_t, pages: [c339_1_avanti_25_giugno_1_p1] },
-        { id: "costituente-lavoro-giornale-2-lunita-25-giugno-1946", title: "L'Unità, 25 giugno 1946", description: "L'Unità, 25 giugno 1946", thumb: c340_2_lunita_25_giugno_1_t, pages: [c340_2_lunita_25_giugno_1_p1] },
-        { id: "costituente-lavoro-giornale-3-il-messaggero-25-giugno-1946", title: "Il Messaggero, 25 giugno 1946", description: "Il Messaggero, 25 giugno 1946", thumb: c341_3_il_messaggero_25_g_t, pages: [c341_3_il_messaggero_25_g_p1] },
-        { id: "costituente-lavoro-giornale-4-la-voce-repubblicana-26-giugno-1946", title: "La Voce Repubblicana, 26 giugno 1946", description: "La Voce Repubblicana, 26 giugno 1946", thumb: c342_4_la_voce_repubblica_t, pages: [c342_4_la_voce_repubblica_p1] },
-        { id: "costituente-lavoro-giornale-5-gazzetta-ditalia-26-giugno-1946", title: "Gazzetta d'Italia, 26 giugno 1946", description: "Gazzetta d'Italia, 26 giugno 1946", thumb: c343_5_gazzetta_ditalia_2_t, pages: [c343_5_gazzetta_ditalia_2_p1] },
-        { id: "costituente-lavoro-giornale-6-avanti-26-giugno-1946", title: "Avanti!, 26 giugno 1946", description: "Avanti!, 26 giugno 1946", thumb: c344_6_avanti_26_giugno_1_t, pages: [c344_6_avanti_26_giugno_1_p1] },
-        { id: "costituente-lavoro-giornale-7-il-popolo-26-giugno-1946", title: "Il Popolo, 26 giugno 1946", description: "Il Popolo, 26 giugno 1946", thumb: c345_7_il_popolo_26_giugn_t, pages: [c345_7_il_popolo_26_giugn_p1] },
-        { id: "costituente-lavoro-giornale-8-lunita-26-giugno-1946", title: "L'Unità, 26 giugno 1946", description: "L'Unità, 26 giugno 1946", thumb: c346_8_lunita_26_giugno_1_t, pages: [c346_8_lunita_26_giugno_1_p1] },
-        { id: "costituente-lavoro-giornale-9-il-messaggero-26-giugno-1946", title: "Il Messaggero, 26 giugno 1946", description: "", thumb: c347_9_il_messaggero_26_g_t, pages: [c347_9_il_messaggero_26_g_p1] },
-        { id: "costituente-lavoro-giornale-10-lillustrazione-italiana-7-luglio-1946", title: "L'Illustrazione italiana, 7 luglio 1946", description: "L'Illustrazione italiana, 7 luglio 1946", thumb: c348_10_lillustrazione_it_t, pages: [c348_10_lillustrazione_it_p1] },
-        { id: "costituente-lavoro-giornale-11-la-voce-repubblicana-29-giugno-1946", title: "La Voce Repubblicana, 29 giugno 1946", description: "La Voce Repubblicana, 29 giugno 1946", thumb: c349_11_la_voce_repubblic_t, pages: [c349_11_la_voce_repubblic_p1] },
-        { id: "costituente-lavoro-giornale-12-lunita-29-giugno-1946", title: "L'Unità, 29 giugno 1946", description: "L'Unità, 29 giugno 1946", thumb: c350_12_lunita_29_giugno__t, pages: [c350_12_lunita_29_giugno__p1] },
-        { id: "costituente-lavoro-giornale-13-il-messaggero-29-giugno-1946", title: "Il Messaggero, 29 giugno 1946", description: "Il Messaggero, 29 giugno 1946", thumb: c351_13_il_messaggero_29__t, pages: [c351_13_il_messaggero_29__p1] },
-        { id: "costituente-lavoro-giornale-14-il-popolo-29-giugno-1946", title: "Il Popolo, 29 giugno 1946", description: "Il Popolo, 29 giugno 1946", thumb: c352_14_il_popolo_29_giug_t, pages: [c352_14_il_popolo_29_giug_p1] },
-        { id: "costituente-lavoro-giornale-15-lunita-30-giugno-1946", title: "L'Unità, 30 giugno 1946", description: "L'Unità, 30 giugno 1946", thumb: c353_15_lunita_30_giugno__t, pages: [c353_15_lunita_30_giugno__p1] },
-        { id: "costituente-lavoro-giornale-16-il-popolo-16-gennaio-1947", title: "Il Popolo, 16 gennaio 1947", description: "Il Popolo, 16 gennaio 1947", thumb: c354_16_il_popolo_16_genn_t, pages: [c354_16_il_popolo_16_genn_p1] },
-        { id: "costituente-lavoro-giornale-17-il-popolo-9-febbraio-1947", title: "Il Popolo, 9 febbraio 1947", description: "Il Popolo, 9 febbraio 1947", thumb: c355_17_il_popolo_9_febbr_t, pages: [c355_17_il_popolo_9_febbr_p1] },
-        { id: "costituente-lavoro-giornale-18-avanti-9-febbraio-1947", title: "Avanti!, 9 febbraio 1947", description: "Avanti!, 9 febbraio 1947", thumb: c356_18_avanti_9_febbraio_t, pages: [c356_18_avanti_9_febbraio_p1] },
-        { id: "costituente-lavoro-giornale-19-lunita-9-febbraio-1947", title: "L'Unità, 9 febbraio 1947", description: "L'Unità, 9 febbraio 1947", thumb: c357_19_lunita_9_febbraio_t, pages: [c357_19_lunita_9_febbraio_p1] },
-        { id: "costituente-lavoro-giornale-20-avanti-4-marzo-1947", title: "Avanti!, 4 marzo 1947", description: "Avanti!, 4 marzo 1947", thumb: c358_20_avanti_4_marzo_19_t, pages: [c358_20_avanti_4_marzo_19_p1] },
-        { id: "costituente-lavoro-giornale-21-corriere-della-sera-4-marzo-1947", title: "Corriere della Sera, 4 marzo 1947", description: "Corriere della Sera, 4 marzo 1947", thumb: c359_21_corriere_della_se_t, pages: [c359_21_corriere_della_se_p1] },
-        { id: "costituente-lavoro-giornale-22-risorgimento-liberale-4-marzo-1947", title: "Risorgimento liberale, 4 marzo 1947", description: "Risorgimento liberale, 4 marzo 1947", thumb: c360_22_risorgimento_libe_t, pages: [c360_22_risorgimento_libe_p1] },
-        { id: "costituente-lavoro-giornale-23-il-popolo-4-marzo-1947", title: "Il Popolo, 4 marzo 1947", description: "Il Popolo, 4 marzo 1947", thumb: c361_23_il_popolo_4_marzo_t, pages: [c361_23_il_popolo_4_marzo_p1] },
-        { id: "costituente-lavoro-giornale-24-lunita-4-marzo-1947", title: "L'Unità, 4 marzo 1947", description: "L'Unità, 4 marzo 1947", thumb: c362_24_lunita_4_marzo_19_t, pages: [c362_24_lunita_4_marzo_19_p1] },
-        { id: "costituente-lavoro-giornale-25-avanti-23-dicembre-1947", title: "Avanti!, 23 dicembre 1947", description: "Avanti!, 23 dicembre 1947", thumb: c363_25_avanti_23_dicembr_t, pages: [c363_25_avanti_23_dicembr_p1] },
-        { id: "costituente-lavoro-giornale-26-corriere-della-sera-23-dicembre-1947", title: "Corriere della Sera, 23 dicembre 1947", description: "Corriere della Sera, 23 dicembre 1947", thumb: c364_26_corriere_della_se_t, pages: [c364_26_corriere_della_se_p1] },
-        { id: "costituente-lavoro-giornale-27-giornale-ditalia-23-dicembre-1947", title: "Giornale d'Italia, 23 dicembre 1947", description: "Giornale d'Italia, 23 dicembre 1947", thumb: c365_27_giornale_ditalia__t, pages: [c365_27_giornale_ditalia__p1] },
-        { id: "costituente-lavoro-giornale-28-il-popolo-23-dicembre-1947", title: "Il Popolo, 23 dicembre 1947", description: "Il Popolo, 23 dicembre 1947", thumb: c366_28_il_popolo_23_dice_t, pages: [c366_28_il_popolo_23_dice_p1] },
-        { id: "costituente-lavoro-giornale-29-il-tempo-23-dicembre-1947", title: "Il Tempo, 23 dicembre 1947", description: "Il Tempo, 23 dicembre 1947", thumb: c367_29_il_tempo_23_dicem_t, pages: [c367_29_il_tempo_23_dicem_p1] },
-        { id: "costituente-lavoro-giornale-30-la-voce-repubblicana-23-dicembre-1947", title: "La Voce Repubblicana, 23 dicembre 1947", description: "La Voce Repubblicana, 23 dicembre 1947", thumb: c368_30_la_voce_repubblic_t, pages: [c368_30_la_voce_repubblic_p1] },
-        { id: "costituente-lavoro-giornale-31-lunita-23-dicembre-1947", title: "L'Unità, 23 dicembre 1947", description: "L'Unità, 23 dicembre 1947", thumb: c369_31_lunita_23_dicembr_t, pages: [c369_31_lunita_23_dicembr_p1] },
-        { id: "costituente-lavoro-giornale-32-il-tempo-24-dicembre-1947", title: "Il Tempo, 24 dicembre 1947", description: "Il Tempo, 24 dicembre 1947", thumb: c370_32_il_tempo_24_dicem_t, pages: [c370_32_il_tempo_24_dicem_p1] },
-        { id: "costituente-lavoro-giornale-33-il-popolo-24-dicembre-1947", title: "Il Popolo, 24 dicembre 1947", description: "Il Popolo, 24 dicembre 1947", thumb: c371_33_il_popolo_24_dice_t, pages: [c371_33_il_popolo_24_dice_p1] },
-        { id: "costituente-lavoro-giornale-34-avanti-24-dicembre-1947", title: "Avanti!, 24 dicembre 1947", description: "Avanti!, 24 dicembre 1947", thumb: c372_34_avanti_24_dicembr_t, pages: [c372_34_avanti_24_dicembr_p1] },
-        { id: "costituente-lavoro-giornale-35-la-stampa-28-dicembre-1947", title: "La Stampa, 28 dicembre 1947", description: "La Stampa, 28 dicembre 1947", thumb: c373_35_la_stampa_28_dice_t, pages: [c373_35_la_stampa_28_dice_p1] },
-        { id: "costituente-lavoro-giornale-36-corriere-della-sera-28-dicembre-1947", title: "Corriere della Sera, 28 dicembre 1947", description: "Corriere della Sera, 28 dicembre 1947", thumb: c374_36_corriere_della_se_t, pages: [c374_36_corriere_della_se_p1] },
-        { id: "costituente-lavoro-giornale-37-il-giornale-ditalia-28-dicembre-1947", title: "Il Giornale d'Italia, 28 dicembre 1947", description: "Il Giornale d'Italia, 28 dicembre 1947", thumb: c375_37_il_giornale_dital_t, pages: [c375_37_il_giornale_dital_p1] },
-        { id: "costituente-lavoro-giornale-38-lunita-28-dicembre-1947", title: "L'Unità, 28 dicembre 1947", description: "L'Unità, 28 dicembre 1947", thumb: c376_38_lunita_28_dicembr_t, pages: [c376_38_lunita_28_dicembr_p1] },
-        { id: "costituente-lavoro-giornale-39-il-popolo-28-dicembre-1947", title: "Il Popolo, 28 dicembre 1947", description: "Il Popolo, 28 dicembre 1947", thumb: c377_39_il_popolo_28_dice_t, pages: [c377_39_il_popolo_28_dice_p1] },
-        { id: "costituente-lavoro-giornale-40-avanti-28-dicembre-1947", title: "Avanti!, 28 dicembre 1947", description: "Avanti, 28 dicembre 1947", thumb: c378_40_avanti_28_dicembr_t, pages: [c378_40_avanti_28_dicembr_p1] },
-        { id: "costituente-lavoro-giornale-41-la-voce-repubblicana-28-dicembre-1947", title: "La Voce Repubblicana, 28 dicembre 1947", description: "La Voce Repubblicana, 28 dicembre 1947", thumb: c379_41_la_voce_repubblic_t, pages: [c379_41_la_voce_repubblic_p1] },
-        { id: "costituente-lavoro-giornale-42-avanti-1-gennaio-1948", title: "Avanti!, 1 gennaio 1948", description: "Avanti!, 1 gennaio 1948", thumb: c380_42_avanti_1_gennaio__t, pages: [c380_42_avanti_1_gennaio__p1] },
-        { id: "costituente-lavoro-giornale-43-il-corriere-della-sera-1-gennaio-1948", title: "Il Corriere della Sera, 1 gennaio 1948", description: "Il Corriere della Sera, 1 gennaio 1948", thumb: c381_43_il_corriere_della_t, pages: [c381_43_il_corriere_della_p1] },
-        { id: "costituente-lavoro-giornale-44-la-nazione-1-gennaio-1948", title: "La Nazione, 1 gennaio 1948", description: "La Nazione, 1 gennaio 1948", thumb: c382_44_la_nazione_1_genn_t, pages: [c382_44_la_nazione_1_genn_p1] },
-        { id: "costituente-lavoro-giornale-45-avanti-2-gennaio-1948", title: "Avanti!, 2 gennaio 1948", description: "", thumb: c383_45_avanti_2_gennaio__t, pages: [c383_45_avanti_2_gennaio__p1] },
-        { id: "costituente-lavoro-giornale-46-corriere-della-sera-2-gennaio-1948", title: "Corriere della Sera, 2 gennaio 1948", description: "Corriere della Sera, 2 gennaio 1948", thumb: c384_46_corriere_della_se_t, pages: [c384_46_corriere_della_se_p1] },
-        { id: "costituente-lavoro-giornale-47-la-voce-repubblicana-2-gennaio-1948", title: "La Voce Repubblicana, 2 gennaio 1948", description: "La Voce Repubblicana, 2 gennaio 1948", thumb: c385_47_la_voce_repubblic_t, pages: [c385_47_la_voce_repubblic_p1] },
+        { id: "costituente-lavoro-giornale-1-avanti-25-giugno-1946", title: "Avanti!, 25 giugno 1946", description: "Avanti!, 25 giugno 1946", thumb: c347_1_avanti_25_giugno_1_t, pages: [c347_1_avanti_25_giugno_1_p1] },
+        { id: "costituente-lavoro-giornale-2-lunita-25-giugno-1946", title: "L'Unità, 25 giugno 1946", description: "L'Unità, 25 giugno 1946", thumb: c348_2_lunita_25_giugno_1_t, pages: [c348_2_lunita_25_giugno_1_p1] },
+        { id: "costituente-lavoro-giornale-3-il-messaggero-25-giugno-1946", title: "Il Messaggero, 25 giugno 1946", description: "Il Messaggero, 25 giugno 1946", thumb: c349_3_il_messaggero_25_g_t, pages: [c349_3_il_messaggero_25_g_p1] },
+        { id: "costituente-lavoro-giornale-4-la-voce-repubblicana-26-giugno-1946", title: "La Voce Repubblicana, 26 giugno 1946", description: "La Voce Repubblicana, 26 giugno 1946", thumb: c350_4_la_voce_repubblica_t, pages: [c350_4_la_voce_repubblica_p1] },
+        { id: "costituente-lavoro-giornale-5-gazzetta-ditalia-26-giugno-1946", title: "Gazzetta d'Italia, 26 giugno 1946", description: "Gazzetta d'Italia, 26 giugno 1946", thumb: c351_5_gazzetta_ditalia_2_t, pages: [c351_5_gazzetta_ditalia_2_p1] },
+        { id: "costituente-lavoro-giornale-6-avanti-26-giugno-1946", title: "Avanti!, 26 giugno 1946", description: "Avanti!, 26 giugno 1946", thumb: c352_6_avanti_26_giugno_1_t, pages: [c352_6_avanti_26_giugno_1_p1] },
+        { id: "costituente-lavoro-giornale-7-il-popolo-26-giugno-1946", title: "Il Popolo, 26 giugno 1946", description: "Il Popolo, 26 giugno 1946", thumb: c353_7_il_popolo_26_giugn_t, pages: [c353_7_il_popolo_26_giugn_p1] },
+        { id: "costituente-lavoro-giornale-8-lunita-26-giugno-1946", title: "L'Unità, 26 giugno 1946", description: "L'Unità, 26 giugno 1946", thumb: c354_8_lunita_26_giugno_1_t, pages: [c354_8_lunita_26_giugno_1_p1] },
+        { id: "costituente-lavoro-giornale-9-il-messaggero-26-giugno-1946", title: "Il Messaggero, 26 giugno 1946", description: "", thumb: c355_9_il_messaggero_26_g_t, pages: [c355_9_il_messaggero_26_g_p1] },
+        { id: "costituente-lavoro-giornale-10-lillustrazione-italiana-7-luglio-1946", title: "L'Illustrazione italiana, 7 luglio 1946", description: "L'Illustrazione italiana, 7 luglio 1946", thumb: c356_10_lillustrazione_it_t, pages: [c356_10_lillustrazione_it_p1] },
+        { id: "costituente-lavoro-giornale-11-la-voce-repubblicana-29-giugno-1946", title: "La Voce Repubblicana, 29 giugno 1946", description: "La Voce Repubblicana, 29 giugno 1946", thumb: c357_11_la_voce_repubblic_t, pages: [c357_11_la_voce_repubblic_p1] },
+        { id: "costituente-lavoro-giornale-12-lunita-29-giugno-1946", title: "L'Unità, 29 giugno 1946", description: "L'Unità, 29 giugno 1946", thumb: c358_12_lunita_29_giugno__t, pages: [c358_12_lunita_29_giugno__p1] },
+        { id: "costituente-lavoro-giornale-13-il-messaggero-29-giugno-1946", title: "Il Messaggero, 29 giugno 1946", description: "Il Messaggero, 29 giugno 1946", thumb: c359_13_il_messaggero_29__t, pages: [c359_13_il_messaggero_29__p1] },
+        { id: "costituente-lavoro-giornale-14-il-popolo-29-giugno-1946", title: "Il Popolo, 29 giugno 1946", description: "Il Popolo, 29 giugno 1946", thumb: c360_14_il_popolo_29_giug_t, pages: [c360_14_il_popolo_29_giug_p1] },
+        { id: "costituente-lavoro-giornale-15-lunita-30-giugno-1946", title: "L'Unità, 30 giugno 1946", description: "L'Unità, 30 giugno 1946", thumb: c361_15_lunita_30_giugno__t, pages: [c361_15_lunita_30_giugno__p1] },
+        { id: "costituente-lavoro-giornale-16-il-popolo-16-gennaio-1947", title: "Il Popolo, 16 gennaio 1947", description: "Il Popolo, 16 gennaio 1947", thumb: c362_16_il_popolo_16_genn_t, pages: [c362_16_il_popolo_16_genn_p1] },
+        { id: "costituente-lavoro-giornale-17-il-popolo-9-febbraio-1947", title: "Il Popolo, 9 febbraio 1947", description: "Il Popolo, 9 febbraio 1947", thumb: c363_17_il_popolo_9_febbr_t, pages: [c363_17_il_popolo_9_febbr_p1] },
+        { id: "costituente-lavoro-giornale-18-avanti-9-febbraio-1947", title: "Avanti!, 9 febbraio 1947", description: "Avanti!, 9 febbraio 1947", thumb: c364_18_avanti_9_febbraio_t, pages: [c364_18_avanti_9_febbraio_p1] },
+        { id: "costituente-lavoro-giornale-19-lunita-9-febbraio-1947", title: "L'Unità, 9 febbraio 1947", description: "L'Unità, 9 febbraio 1947", thumb: c365_19_lunita_9_febbraio_t, pages: [c365_19_lunita_9_febbraio_p1] },
+        { id: "costituente-lavoro-giornale-20-avanti-4-marzo-1947", title: "Avanti!, 4 marzo 1947", description: "Avanti!, 4 marzo 1947", thumb: c366_20_avanti_4_marzo_19_t, pages: [c366_20_avanti_4_marzo_19_p1] },
+        { id: "costituente-lavoro-giornale-21-corriere-della-sera-4-marzo-1947", title: "Corriere della Sera, 4 marzo 1947", description: "Corriere della Sera, 4 marzo 1947", thumb: c367_21_corriere_della_se_t, pages: [c367_21_corriere_della_se_p1] },
+        { id: "costituente-lavoro-giornale-22-risorgimento-liberale-4-marzo-1947", title: "Risorgimento liberale, 4 marzo 1947", description: "Risorgimento liberale, 4 marzo 1947", thumb: c368_22_risorgimento_libe_t, pages: [c368_22_risorgimento_libe_p1] },
+        { id: "costituente-lavoro-giornale-23-il-popolo-4-marzo-1947", title: "Il Popolo, 4 marzo 1947", description: "Il Popolo, 4 marzo 1947", thumb: c369_23_il_popolo_4_marzo_t, pages: [c369_23_il_popolo_4_marzo_p1] },
+        { id: "costituente-lavoro-giornale-24-lunita-4-marzo-1947", title: "L'Unità, 4 marzo 1947", description: "L'Unità, 4 marzo 1947", thumb: c370_24_lunita_4_marzo_19_t, pages: [c370_24_lunita_4_marzo_19_p1] },
+        { id: "costituente-lavoro-giornale-25-avanti-23-dicembre-1947", title: "Avanti!, 23 dicembre 1947", description: "Avanti!, 23 dicembre 1947", thumb: c371_25_avanti_23_dicembr_t, pages: [c371_25_avanti_23_dicembr_p1] },
+        { id: "costituente-lavoro-giornale-26-corriere-della-sera-23-dicembre-1947", title: "Corriere della Sera, 23 dicembre 1947", description: "Corriere della Sera, 23 dicembre 1947", thumb: c372_26_corriere_della_se_t, pages: [c372_26_corriere_della_se_p1] },
+        { id: "costituente-lavoro-giornale-27-giornale-ditalia-23-dicembre-1947", title: "Giornale d'Italia, 23 dicembre 1947", description: "Giornale d'Italia, 23 dicembre 1947", thumb: c373_27_giornale_ditalia__t, pages: [c373_27_giornale_ditalia__p1] },
+        { id: "costituente-lavoro-giornale-28-il-popolo-23-dicembre-1947", title: "Il Popolo, 23 dicembre 1947", description: "Il Popolo, 23 dicembre 1947", thumb: c374_28_il_popolo_23_dice_t, pages: [c374_28_il_popolo_23_dice_p1] },
+        { id: "costituente-lavoro-giornale-29-il-tempo-23-dicembre-1947", title: "Il Tempo, 23 dicembre 1947", description: "Il Tempo, 23 dicembre 1947", thumb: c375_29_il_tempo_23_dicem_t, pages: [c375_29_il_tempo_23_dicem_p1] },
+        { id: "costituente-lavoro-giornale-30-la-voce-repubblicana-23-dicembre-1947", title: "La Voce Repubblicana, 23 dicembre 1947", description: "La Voce Repubblicana, 23 dicembre 1947", thumb: c376_30_la_voce_repubblic_t, pages: [c376_30_la_voce_repubblic_p1] },
+        { id: "costituente-lavoro-giornale-31-lunita-23-dicembre-1947", title: "L'Unità, 23 dicembre 1947", description: "L'Unità, 23 dicembre 1947", thumb: c377_31_lunita_23_dicembr_t, pages: [c377_31_lunita_23_dicembr_p1] },
+        { id: "costituente-lavoro-giornale-32-il-tempo-24-dicembre-1947", title: "Il Tempo, 24 dicembre 1947", description: "Il Tempo, 24 dicembre 1947", thumb: c378_32_il_tempo_24_dicem_t, pages: [c378_32_il_tempo_24_dicem_p1] },
+        { id: "costituente-lavoro-giornale-33-il-popolo-24-dicembre-1947", title: "Il Popolo, 24 dicembre 1947", description: "Il Popolo, 24 dicembre 1947", thumb: c379_33_il_popolo_24_dice_t, pages: [c379_33_il_popolo_24_dice_p1] },
+        { id: "costituente-lavoro-giornale-34-avanti-24-dicembre-1947", title: "Avanti!, 24 dicembre 1947", description: "Avanti!, 24 dicembre 1947", thumb: c380_34_avanti_24_dicembr_t, pages: [c380_34_avanti_24_dicembr_p1] },
+        { id: "costituente-lavoro-giornale-35-la-stampa-28-dicembre-1947", title: "La Stampa, 28 dicembre 1947", description: "La Stampa, 28 dicembre 1947", thumb: c381_35_la_stampa_28_dice_t, pages: [c381_35_la_stampa_28_dice_p1] },
+        { id: "costituente-lavoro-giornale-36-corriere-della-sera-28-dicembre-1947", title: "Corriere della Sera, 28 dicembre 1947", description: "Corriere della Sera, 28 dicembre 1947", thumb: c382_36_corriere_della_se_t, pages: [c382_36_corriere_della_se_p1] },
+        { id: "costituente-lavoro-giornale-37-il-giornale-ditalia-28-dicembre-1947", title: "Il Giornale d'Italia, 28 dicembre 1947", description: "Il Giornale d'Italia, 28 dicembre 1947", thumb: c383_37_il_giornale_dital_t, pages: [c383_37_il_giornale_dital_p1] },
+        { id: "costituente-lavoro-giornale-38-lunita-28-dicembre-1947", title: "L'Unità, 28 dicembre 1947", description: "L'Unità, 28 dicembre 1947", thumb: c384_38_lunita_28_dicembr_t, pages: [c384_38_lunita_28_dicembr_p1] },
+        { id: "costituente-lavoro-giornale-39-il-popolo-28-dicembre-1947", title: "Il Popolo, 28 dicembre 1947", description: "Il Popolo, 28 dicembre 1947", thumb: c385_39_il_popolo_28_dice_t, pages: [c385_39_il_popolo_28_dice_p1] },
+        { id: "costituente-lavoro-giornale-40-avanti-28-dicembre-1947", title: "Avanti!, 28 dicembre 1947", description: "Avanti, 28 dicembre 1947", thumb: c386_40_avanti_28_dicembr_t, pages: [c386_40_avanti_28_dicembr_p1] },
+        { id: "costituente-lavoro-giornale-41-la-voce-repubblicana-28-dicembre-1947", title: "La Voce Repubblicana, 28 dicembre 1947", description: "La Voce Repubblicana, 28 dicembre 1947", thumb: c387_41_la_voce_repubblic_t, pages: [c387_41_la_voce_repubblic_p1] },
+        { id: "costituente-lavoro-giornale-42-avanti-1-gennaio-1948", title: "Avanti!, 1 gennaio 1948", description: "Avanti!, 1 gennaio 1948", thumb: c388_42_avanti_1_gennaio__t, pages: [c388_42_avanti_1_gennaio__p1] },
+        { id: "costituente-lavoro-giornale-43-il-corriere-della-sera-1-gennaio-1948", title: "Il Corriere della Sera, 1 gennaio 1948", description: "Il Corriere della Sera, 1 gennaio 1948", thumb: c389_43_il_corriere_della_t, pages: [c389_43_il_corriere_della_p1] },
+        { id: "costituente-lavoro-giornale-44-la-nazione-1-gennaio-1948", title: "La Nazione, 1 gennaio 1948", description: "La Nazione, 1 gennaio 1948", thumb: c390_44_la_nazione_1_genn_t, pages: [c390_44_la_nazione_1_genn_p1] },
+        { id: "costituente-lavoro-giornale-45-avanti-2-gennaio-1948", title: "Avanti!, 2 gennaio 1948", description: "", thumb: c391_45_avanti_2_gennaio__t, pages: [c391_45_avanti_2_gennaio__p1] },
+        { id: "costituente-lavoro-giornale-46-corriere-della-sera-2-gennaio-1948", title: "Corriere della Sera, 2 gennaio 1948", description: "Corriere della Sera, 2 gennaio 1948", thumb: c392_46_corriere_della_se_t, pages: [c392_46_corriere_della_se_p1] },
+        { id: "costituente-lavoro-giornale-47-la-voce-repubblicana-2-gennaio-1948", title: "La Voce Repubblicana, 2 gennaio 1948", description: "La Voce Repubblicana, 2 gennaio 1948", thumb: c393_47_la_voce_repubblic_t, pages: [c393_47_la_voce_repubblic_p1] },
       ],
     },
   },
