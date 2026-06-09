@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto'
-import { readdir, readFile, writeFile, mkdir, stat } from 'node:fs/promises'
+import { readdir, readFile, writeFile, mkdir, mkdtemp, rm, stat } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
+import { tmpdir } from 'node:os'
 import { dirname, join, relative, resolve, basename, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { spawnSync } from 'node:child_process'
 import sharp from 'sharp'
 import mammoth from 'mammoth'
 import { pdf } from 'pdf-to-img'
@@ -17,6 +19,53 @@ const JPG_QUALITY = 82
 const THUMB_WIDTH = 640
 const THUMB_QUALITY = 70
 const PDF_SCALE = 2
+const PDF_DPI = 72 * PDF_SCALE // pdf-to-img usa 72dpi * scale; allineiamo poppler
+
+// `pdf-to-img` rasterizza alcuni PDF scansionati (es. Adobe Acrobat "Paper
+// Capture") come pagine completamente bianche. Poppler (`pdftoppm`) li rende
+// correttamente, quindi è il renderer primario; pdf-to-img resta come fallback
+// se poppler non è installato.
+let popplerChecked = false
+let popplerOk = false
+function hasPoppler() {
+  if (!popplerChecked) {
+    popplerChecked = true
+    popplerOk = !spawnSync('pdftoppm', ['-h']).error
+    if (!popplerOk) {
+      console.warn('[ingest] pdftoppm (poppler) non trovato — uso pdf-to-img (può produrre pagine bianche su PDF scansionati)')
+    }
+  }
+  return popplerOk
+}
+
+// Restituisce un array di Buffer PNG, uno per pagina, nell'ordine del PDF.
+async function renderPdfBuffers(pdfPath) {
+  if (hasPoppler()) {
+    const outDir = await mkdtemp(join(tmpdir(), 'ingest-pdf-'))
+    try {
+      const r = spawnSync(
+        'pdftoppm',
+        ['-png', '-r', String(PDF_DPI), pdfPath, join(outDir, 'page')],
+        { maxBuffer: 1024 * 1024 * 1024 },
+      )
+      if (r.status === 0) {
+        const files = (await readdir(outDir))
+          .filter((f) => f.toLowerCase().endsWith('.png'))
+          .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+        const bufs = []
+        for (const f of files) bufs.push(await readFile(join(outDir, f)))
+        if (bufs.length > 0) return bufs
+      }
+      console.warn(`[ingest] pdftoppm fallito su ${basename(pdfPath)} (status ${r.status}) — fallback pdf-to-img`)
+    } finally {
+      await rm(outDir, { recursive: true, force: true })
+    }
+  }
+  const document = await pdf(pdfPath, { scale: PDF_SCALE })
+  const bufs = []
+  for await (const pageBuf of document) bufs.push(pageBuf)
+  return bufs
+}
 
 // Per-app, per-topic config: maps source folder names → content.js ids.
 // Add new app/topic entries here when new contents arrive.
@@ -294,8 +343,8 @@ async function ingestTopic(app, topicId, topicConfig, allImports, counterRef) {
           } else {
             for (const pf of pdfFiles) {
               try {
-                const document = await pdf(join(leafDir, pf), { scale: PDF_SCALE })
-                for await (const pageBuf of document) {
+                const buffers = await renderPdfBuffers(join(leafDir, pf))
+                for (const pageBuf of buffers) {
                   await pushPage(pageBuf)
                 }
               } catch (err) {

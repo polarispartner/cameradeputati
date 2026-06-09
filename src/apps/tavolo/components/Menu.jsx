@@ -2,23 +2,23 @@ import { useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import Sidebar from "./Sidebar";
 import bgImg from "../assets/images/menu-bg.jpg";
-// TODO: SVG provvisorio, mostra ancora il vecchio testo "Il ruolo delle donne".
-// Sostituire con asset definitivo "Il voto alle donne" appena fornito dal cliente.
-import donneRetino from "../assets/images/menu/01_Il voto alle donne_RETINO.svg";
-import donnePieno from "../assets/images/menu/01_Il voto alle donne_PIENO.svg";
-import consultaRetino from "../assets/images/menu/02_La Consulta nazionale_RETINO.svg";
-import consultaPieno from "../assets/images/menu/02_La Consulta nazionale_PIENO.svg";
-import referendumRetino from "../assets/images/menu/03_Il-Referendum_RETINO.svg";
-import referendumPieno from "../assets/images/menu/03_Il Referendum_PIENO.svg";
-import costituenteRetino from "../assets/images/menu/04_Assemblea_RETINO.svg";
-import costituentePieno from "../assets/images/menu/04_Assemblea_PIENO.svg";
 
+// I titoli erano SVG (glifi convertiti in tracciati): non editabili e con copy
+// obsoleto. Ora sono testo vero in Open Sans (già caricato) riproducendo i due
+// stati del design: "retino" (riempimento a righe diagonali) di default e
+// "pieno" (bianco solido) al tocco. Modificare i titoli qui sotto.
 const sections = [
-  { id: "donne", to: "/t/donne", alt: "Il voto alle donne", retino: donneRetino, pieno: donnePieno },
-  { id: "consulta", to: "/t/consulta", alt: "La Consulta nazionale", retino: consultaRetino, pieno: consultaPieno },
-  { id: "referendum", to: "/t/referendum", alt: "Il Referendum istituzionale", retino: referendumRetino, pieno: referendumPieno },
-  { id: "costituente", to: "/t/costituente", alt: "L'Assemblea Costituente", retino: costituenteRetino, pieno: costituentePieno },
+  { id: "consulta", to: "/t/consulta", title: "La Consulta Nazionale" },
+  { id: "donne", to: "/t/donne", title: "Il voto alle donne" },
+  { id: "referendum", to: "/t/referendum", title: "Il referendum istituzionale" },
+  { id: "costituente", to: "/t/costituente", title: "L'Assemblea Costituente" },
 ];
+
+// Riempimento "retino": righe diagonali bianche sottili che salgono da sinistra
+// verso destra (/), ottenute con un gradiente ripetuto ritagliato sul testo.
+// Le misure sono in `em` così scalano col font.
+const RETINO_FILL =
+  "repeating-linear-gradient(45deg, #fff 0 0.06em, transparent 0.06em 0.09em)";
 
 export default function Menu() {
   const navigate = useNavigate();
@@ -46,7 +46,7 @@ export default function Menu() {
         />
         <div className="absolute inset-0 bg-black/45" />
 
-        <ul className="relative flex h-full flex-col justify-center gap-[2rem] pl-[4rem] pr-[3rem]">
+        <ul className="relative flex h-full flex-col justify-center gap-[2.5rem] pl-[4rem] pr-[3rem]">
           {sections.map((s) => {
             const isFilled = tapped === s.id;
             return (
@@ -54,14 +54,17 @@ export default function Menu() {
                 <button
                   type="button"
                   onClick={() => onSection(s)}
-                  className="block cursor-pointer"
+                  aria-label={s.title}
+                  className="block cursor-pointer text-left"
                 >
-                  <img
-                    src={isFilled ? s.pieno : s.retino}
-                    alt={s.alt}
-                    className="h-[6rem] w-auto"
-                    draggable={false}
-                  />
+                  <span
+                    className={`block whitespace-nowrap text-[5rem] leading-none font-extrabold ${
+                      isFilled ? "text-white" : "bg-clip-text text-transparent"
+                    }`}
+                    style={isFilled ? undefined : { backgroundImage: RETINO_FILL }}
+                  >
+                    {s.title}
+                  </span>
                 </button>
               </li>
             );
