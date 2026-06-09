@@ -27,7 +27,7 @@ const section = (topicId, id, title) => ({
 export const TOPICS = [
   {
     id: 'consulta',
-    title: 'La Consulta nazionale',
+    title: 'La Consulta Nazionale',
     theme: '#ec1f81',
     bg: consultaBg,
     sections: [

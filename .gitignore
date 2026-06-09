@@ -20,6 +20,7 @@ dist-ssr
 /fix_nuova_struttura
 /la_memorialistica
 /Totem_backstage*.mp4
+/FEEDBACK PANCIERA
 
 # Output di render-pdfs e ingest-contents: gli asset e i manifest sono committati come
 # statici; ri-eseguire gli script solo quando arrivano nuovi PDF/contenuti.
