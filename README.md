@@ -35,3 +35,6 @@ Per anteprima desktop usare la modalità _Responsive_ di Chrome DevTools imposta
 - `design/` — PSD sorgenti e riferimenti grafici (fuori dalla build)
 
 Vedi `CLAUDE.md` per dettagli su convenzioni, regole UI e workflow.
+
+
+Per fare deploy: dm (deploy-mostra)
