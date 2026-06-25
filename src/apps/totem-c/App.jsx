@@ -1,5 +1,5 @@
 import HiddenReload from "../../shared/components/HiddenReload";
-import backstageVideo from "./assets/video/Totem_3.mp4";
+import backstageVideo from "./assets/video/totem5.mp4";
 
 export default function App() {
   return (
